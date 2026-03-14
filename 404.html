@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages SPA redirect solution.
+    // GitHub Pages only serves the ROOT 404.html for the entire site.
+    // This file captures the full requested path and redirects to the deck's
+    // base URL so that Slidev can handle the route client-side.
+    //
+    // Path structure on GitHub Pages: /<org>/<repo>/<deck-name>/<slide-number>
+    // We redirect to:                 /<org>/<repo>/<deck-name>/
+    sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+
+    var parts = location.pathname.split('/').filter(Boolean);
+    var base = '/' + parts.slice(0, 3).join('/') + '/';
+    location.replace(base);
+  </script>
+</head>
+<body>
+</body>
+</html>

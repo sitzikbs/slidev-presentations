@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // GitHub Pages SPA redirect solution
+    // Store the attempted path in sessionStorage
+    sessionStorage.setItem('redirect', location.pathname + location.search + location.hash);
+    
+    // Redirect to the base URL
+    location.replace('/your-username/your-slides-repo/example-deck/');
+  </script>
+</head>
+<body>
+</body>
+</html>

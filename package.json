@@ -1,0 +1,12 @@
+{
+  "name": "slidev-deck-template",
+  "version": "1.0.0",
+  "description": "Slidev multi-deck template with custom theme, GitHub Pages deployment, and deck scaffolding",
+  "private": true,
+  "scripts": {
+    "deploy-landing": "bash deploy-landing.sh"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
+}

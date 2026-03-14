@@ -1,0 +1,21 @@
+{
+  "name": "slidev-theme-dark-geometric",
+  "version": "1.0.0",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "slidev": ">=0.48.0"
+  },
+  "scripts": {},
+  "slidev": {
+    "defaults": {
+      "highlighter": "shiki",
+      "colorSchema": "dark",
+      "shiki": {
+        "theme": "dracula"
+      }
+    }
+  }
+}
