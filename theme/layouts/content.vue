@@ -1,20 +1,5 @@
-<script setup>
-import logoUrl from '../assets/RBLX_Wordmark_White.svg'
-import tiltLogoUrl from '../assets/RBLX_Tilt_Secondary_White.svg'
-</script>
-
 <template>
   <div class="slidev-layout content">
-    <!-- Tilt Logo - Top Left -->
-    <div style="position: absolute; top: 2.25rem; left: 1rem; z-index: 1000; opacity: 0.8; pointer-events: none;">
-      <img 
-        :src="tiltLogoUrl" 
-        alt="Roblox Tilt" 
-        style="height: 2rem; width: auto; display: block;" 
-      />
-    </div>
-    
-    <!-- Content Slot -->
     <div class="slide-content-wrapper">
       <slot />
     </div>

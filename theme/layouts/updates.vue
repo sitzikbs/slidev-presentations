@@ -1,6 +1,5 @@
 <script setup>
-import backgroundUrl from '../assets/background.svg'
-import logoUrl from '../assets/RBLX_Wordmark_White.svg'
+import backgroundUrl from '../assets/background.jpg'
 </script>
 
 <template>
@@ -9,10 +8,6 @@ import logoUrl from '../assets/RBLX_Wordmark_White.svg'
     
     <div class="updates-content">
       <slot />
-    </div>
-
-    <div class="logo-container-left">
-      <img :src="logoUrl" class="logo" alt="Roblox" />
     </div>
   </div>
 </template>
@@ -47,20 +42,6 @@ import logoUrl from '../assets/RBLX_Wordmark_White.svg'
 .updates-content {
   max-width: 800px;
   z-index: 1;
-}
-
-/* Logo positioning for Updates layout (Bottom Left) */
-.logo-container-left {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  z-index: 10;
-  opacity: 1;
-}
-
-.logo-container-left .logo {
-  height: 1.5rem;
-  width: auto;
 }
 
 /* Typography overrides for Updates layout */

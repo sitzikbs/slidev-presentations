@@ -1,5 +1,5 @@
 <script setup>
-import backgroundUrl from '../assets/background.svg'
+import backgroundUrl from '../assets/background.jpg'
 </script>
 
 <template>

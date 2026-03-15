@@ -63,7 +63,6 @@ Use this layout (`layout: updates`) to mark a new section, project milestone, or
 This slide uses the **default layout**. You don't need to specify `layout: default` - it's automatic.
 
 - **Pure Black Background**: Optimized for content readability.
-- **Logo**: Automatically appears in the bottom-right corner.
 - **Page Numbers**: Automatically appear in the bottom-center.
 - **Progress Bar**: Interactive dots at the top of the screen.
 

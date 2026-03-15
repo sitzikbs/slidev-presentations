@@ -7,7 +7,7 @@ A custom Slidev theme with a dark background and geometric patterns.
 - **Dark Mode**: Optimized for dark backgrounds (#0a0a0a) with white text.
 - **Layouts**:
   - `cover`: Geometric background, left-aligned title, centered author.
-  - `default`: Pure black background, RBLX logo (bottom-right), top progress dots.
+  - `default`: Pure black background, top progress dots.
   - `content`: Same as default (alias).
   - `updates`: Section divider with geometric background for changelogs/milestones.
   - `figure`: Title + Media (image/video) + Caption. Preserves aspect ratio (1:1, 4:3, etc.).

@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import DriveMedia from '../components/DriveMedia.vue'
-import tiltLogoUrl from '../assets/RBLX_Tilt_Secondary_White.svg'
 
 const props = defineProps({
   media: {
@@ -28,15 +27,6 @@ const props = defineProps({
 
 <template>
   <div class="slidev-layout grid-cols">
-    <!-- Tilt Logo - Top Left -->
-    <div style="position: absolute; top: 2.25rem; left: 1rem; z-index: 1000; opacity: 0.8; pointer-events: none;">
-      <img 
-        :src="tiltLogoUrl" 
-        alt="Roblox Tilt" 
-        style="height: 2rem; width: auto; display: block;" 
-      />
-    </div>
-
     <div class="grid-text-content">
       <slot />
     </div>

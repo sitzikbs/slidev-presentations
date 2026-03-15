@@ -109,7 +109,7 @@ Open `slides.md` in your deck directory. The template includes:
 
 - **Cover slide** — title, date, presenter, GitHub link
 - **Updates slide** — `layout: updates` for section dividers / changelogs
-- **Content slides** — standard default layout with auto logo, page number, progress bar
+- **Content slides** — standard default layout with page number, progress bar
 - **Figure slide** — `layout: figure` with caption; supports local paths and Google Drive IDs
 - **Grid layouts** — `layout: grid-cols` and `layout: media-grid` for multi-image panels
 - **Code slide** — syntax highlighting via Shiki (VS Code Dark Plus theme)

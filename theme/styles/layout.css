@@ -11,28 +11,6 @@
   background-color: #0a0a0a;
 }
 
-/* GLOBAL LOGO STYLING - FORCE OVERRIDE */
-.logo-container {
-  position: absolute !important;
-  bottom: 1.5rem !important;
-  right: 1.5rem !important;
-  top: auto !important;
-  left: auto !important;
-  z-index: 1000;
-  opacity: 1;
-  display: block !important;
-  width: auto !important;
-  height: auto !important;
-  background: transparent !important;
-}
-
-.logo {
-  height: 1.2rem !important; /* Force small size */
-  width: auto !important;
-  max-width: 120px !important;
-  display: block !important;
-}
-
 /* Base slide styling */
 .slidev-layout {
   color: #ffffff;
