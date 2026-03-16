@@ -194,7 +194,7 @@ layout: updates
 # My Story
 
 <p style="font-size: 1.5rem; color: #ccc;">
-How a mechanical engineer ended up building AI for 3D worlds
+How a mechanical engineer ended up building AI for 3D worlds?
 </p>
 
 <!--
@@ -204,22 +204,20 @@ Personal story. The real engineering origin of the career path.
 
 ---
 layout: media-cols
-media: /images/story-pointcloud-vs-cad.jpg
+media: /images/point_cloud_to_cad.png
 position: right
-width: 50%
+width: 38%
 ---
 
 # The Missing Shape
 
-- Studied **Mechanical Engineering** through Atuda (academic military program)
+- Studied **Mechanical Engineering**
 
-- First engineering job: design a part that connects to a **physical object with a unique shape**
+- First job: design a part that fits a **unique physical shape**
 
-- We had a **3D scanner** in the basement — it sampled points on the surface
+- The **3D scanner** gave us points — but engineers need **CAD models**
 
-- But points are not what engineers need. Engineers need **parametric CAD** models.
-
-- **There was no button** to go from the real world to the computer.
+- **No button existed** to bridge that gap
 
 <!--
 🎨 GEMINI IMAGE PROMPT (for media):
@@ -230,33 +228,19 @@ Points → usable model. That gap became my entire career.
 -->
 
 ---
-layout: media-cols
-media: /images/story-journey.jpg
-position: right
-width: 45%
+layout: figure
+media: /images/Career_Evolution.png
 ---
 
 # That Gap Became My Life's Work
 
-<div style="font-size: 1.4rem; line-height: 2.2;">
-
-🎓 **PhD at Technion** — 3D point cloud understanding
-
-🌏 **Postdoc in Australia** — deep learning for 3D
-
-🇪🇺 **Marie Curie Fellowship** — back at Technion
-
-🎮 **Roblox** — Senior Scientist, building 3D worlds at scale
-
-</div>
-
-<br>
-
-> **"Today — we press that button together."**
+<p style="position: absolute; bottom: 3.5rem; left: 0; right: 0; text-align: center; font-size: 1.5rem; font-weight: 700; color: #38bdf8; z-index: 10;">
+"Today — we will press that button together!"
+</p>
 
 <!--
 🎨 GEMINI IMAGE PROMPT (for media):
-"An illustrated winding path connecting landmarks in a travel journal style: starting at a military academy building, then a university tower with a 3D point cloud floating above it, then the Sydney Opera House, then a European Union flag with golden stars, ending at a modern tech campus with a glowing game controller sign, the path is made of glowing digital dots that gradually become solid 3D rendered shapes as it progresses, warm illustrated storybook style"
+"A humorous evolution-of-man style illustration walking left to right on a dark background. Instead of apes becoming humans, show 5 Lego/Roblox-style blocky characters progressing through career stages. Stage 1 (leftmost): a small student character wearing a graduation cap and holding a glowing 3D point cloud, with a tiny Israeli flag and the word 'PhD' above — represents Technion, Israel. Stage 2: a slightly taller character with a backpack and a kangaroo beside them, holding a neural network diagram, with 'Postdoc' above — represents Australia. Stage 3: the character is now wearing a lab coat with EU golden stars on the sleeve, holding a glowing fellowship certificate, with 'Fellowship' above — represents Marie Curie back in Israel. Stage 4: a confident character in a hoodie with the Roblox logo, holding a game controller in one hand and a 3D cube in the other, with 'Roblox' above. Stage 5 (rightmost): the fully evolved character is tall, glowing, standing on a podium made of Lego bricks, radiating light. A subtle dotted arrow runs left to right underneath them all showing progression. Fun, colorful, clean vector illustration style with a dark background, warm lighting."
 
 Speaker: Foreshadow the Lego → photo → 3D → Roblox pipeline coming later.
 "Spoiler alert: by the end of today, we will literally take something you build
@@ -280,7 +264,7 @@ Fast. Visual. Minimal text. Yuval Noah Harari reference (Sapiens).
 
 ---
 layout: figure
-media: /images/revolutions-fears.jpg
+media: /images/Revolutions.png
 caption: "Every revolution was feared. Every one changed the world for the better. (Inspired by Sapiens, Yuval Noah Harari)"
 ---
 
@@ -288,11 +272,66 @@ caption: "Every revolution was feared. Every one changed the world for the bette
 
 <!--
 🎨 GEMINI IMAGE PROMPT:
-"Four vintage-style editorial panels in a 2x2 grid on aged paper: (top-left) alarmed monks looking at a Gutenberg printing press with text 'IT WILL DESTROY MEMORY! 1450', (top-right) Victorian people fleeing from an early automobile with text 'DEATH MACHINES! 1900', (bottom-left) a 1990s person terrified of a desktop computer screen with text 'THE END OF PRIVACY! 1995', (bottom-right) a modern person looking at a glowing AI hologram with text 'THE END OF HUMANITY? 2024', sepia tone transitioning to color in the last panel, editorial cartoon satire style, warm paper texture"
+"Four vintage-style editorial panels in a 2x2 grid on aged paper: (top-left) alarmed monks gathered around a Gutenberg printing press, one holding a scroll protectively, with bold text 'IT WILL SPREAD LIES AND HERESY! ~1450', (top-right) angry Luddite workers smashing a large textile loom in a dark factory, with bold text 'MACHINES WILL STEAL OUR JOBS! ~1800', (bottom-left) a worried 1990s parent standing behind a child glued to a bulky desktop computer in a dark room, with bold text 'IT WILL ROT OUR CHILDREN\'S BRAINS! ~1995', (bottom-right) a modern person staring up at a towering glowing AI hologram with neural network patterns, with bold text 'IT WILL REPLACE US ALL! ~2024', sepia tone in the first two panels transitioning to muted color then full color in the last panel, editorial cartoon satire style, warm aged paper texture, hand-drawn ink line art feel"
 
-Speaker: Quick. "Printing press — they said it would destroy memory. Cars — death machines.
-Internet — end of privacy. AI — end of humanity? Every. Single. Time. Wrong."
-Mention Harari's Sapiens: "Humanity runs on revolutions. We adapt. We thrive."
+Speaker: Quick. "The printing press — the Church said it would spread heresy and lies.
+The Industrial Revolution — workers literally smashed machines, terrified of losing their jobs. Sound familiar?
+The Internet — parents panicked it would rot children's brains.
+And now AI — it will replace us all.
+Every. Single. Time. We adapted. We thrived."
+Mention Harari's Sapiens: "Humanity runs on revolutions. Each one automated something we did — 
+writing, labor, information, and now intelligence. And each time, we found new things to do."
+-->
+
+---
+
+# Why We Always Get It Wrong
+
+<div style="display: flex; justify-content: center; margin-top: 0.2rem;">
+  <img :src="'/images/hollywood_vs_reality.png?v=2'" style="height: 280px; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.5);" />
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.4rem; padding: 0 1.5rem;">
+  <div style="display: flex; align-items: stretch; gap: 0.5rem;">
+    <div style="background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.25); border-radius: 8px; padding: 0.35rem 0.7rem; flex: 1; display: flex; align-items: center; gap: 0.6rem;">
+      <img :src="'/images/bttf_poster.jpg'" style="height: 52px; border-radius: 4px;" />
+      <div>
+        <p style="font-size: 0.85rem; color: #ccc; margin: 0;"><strong style="color: #f87171;">Back to the Future II</strong> <span style="color: #64748b; font-size: 0.8rem;">'89</span></p>
+        <p style="font-size: 0.8rem; color: #ccc; margin: 0.15rem 0 0 0;">same town + flying cars & hoverboards</p>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; font-size: 1.1rem; color: #38bdf8;">→</div>
+    <div style="background: rgba(74,222,128,0.08); border: 1px solid rgba(74,222,128,0.25); border-radius: 8px; padding: 0.35rem 0.7rem; flex: 1; display: flex; align-items: center;">
+      <p style="font-size: 0.85rem; color: #ccc; margin: 0; white-space: nowrap;">Smartphones changed how we do <em>everything</em></p>
+    </div>
+  </div>
+</div>
+
+<p style="text-align: center; margin-top: 0.5rem; font-size: 1.05rem; line-height: 1.5;">
+  <span style="color: #f87171;">Hollywood adds <strong>one cool thing</strong> to the same world</span><br>
+  <span style="color: #4ade80;">Reality quietly <strong>changes everything</strong></span>
+</p>
+
+<!--
+🎨 GEMINI IMAGE PROMPT:
+"A split-screen illustration in a fun editorial style, dark background. Left half labeled 'HOLLYWOOD' in bold red: shows a colorful 1980s suburban town square (Hill Valley style) with a flying DeLorean car soaring overhead, a kid on a hoverboard zipping past, and a holographic Jaws shark billboard — but the houses, streets, and people are exactly the same as the 1980s, just with one flashy gadget added. Right half labeled 'REALITY' in green: shows the same suburban street but EVERYTHING is subtly different — people walking while staring at smartphones, a kid on the lawn wearing a VR headset, a delivery drone overhead, a Ring doorbell camera on every house, someone video-calling on a tablet on the porch, an electric car in the driveway, a smart speaker on a windowsill — no flying cars anywhere, but nothing is the same as before. Clean vector illustration style, vibrant colors, the contrast should be humorous and obvious."
+Save as: public/images/hollywood_vs_reality.png
+
+Speaker: "We all grew up on Back to the Future. Remember their version of 2015?
+Same Hill Valley, just add flying cars and hoverboards. That's it.
+
+That's how Hollywood imagines the future — take today's world, change ONE dramatic thing, 
+keep everything else exactly the same.
+
+But look at what actually happened. No flying cars. No hoverboards.
+Instead, smartphones quietly changed how we communicate, date, work, shop, navigate, 
+raise kids, and even sleep. EVERYTHING changed — not one thing.
+
+(I learned this framing from Rodney Brooks — one of the greatest roboticists alive —
+he calls it one of the 'Seven Deadly Sins of Predicting the Future of AI.')
+
+AI won't add one dramatic gadget to your life. It'll be a million small changes 
+to how you write, learn, create, and play — like the caricature you just made."
 -->
 
 ---
