@@ -113,7 +113,7 @@ Give them 30 seconds. Most will guess Van Gogh (left) and Monet (right).
 
 ---
 
-<h1 style="text-align: center; margin-bottom: 0.5rem;">The Artist Is... AI</h1>
+<h1 style="text-align: center; margin-bottom: 0.5rem;">The Artist Is... Me! (+AI) </h1>
 
 <div style="display: flex; justify-content: center; gap: 3rem; align-items: flex-start; margin-top: 0.5rem; height: 55%;">
   <div style="text-align: center; flex: 1; max-width: 38%;">
@@ -335,76 +335,33 @@ to how you write, learn, create, and play — like the caricature you just made.
 -->
 
 ---
+layout: figure
+media: /images/knowledge_revolution.png
+caption: "Each one replaced the last. Each time, access got easier."
+---
 
 # The Knowledge Revolution
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 2rem; height: 60%; flex-wrap: wrap;">
-  <div style="text-align: center;">
-    <div style="font-size: 4rem;">🏛️</div>
-    <p style="font-size: 1.2rem; color: #ccc;">Libraries</p>
-  </div>
-  <div style="font-size: 3rem; color: #38bdf8;">→</div>
-  <div style="text-align: center;">
-    <div style="font-size: 4rem;">📚</div>
-    <p style="font-size: 1.2rem; color: #ccc;">Encyclopedias</p>
-  </div>
-  <div style="font-size: 3rem; color: #38bdf8;">→</div>
-  <div style="text-align: center;">
-    <div style="font-size: 4rem;">🌐</div>
-    <p style="font-size: 1.2rem; color: #ccc;">Wikipedia</p>
-  </div>
-  <div style="font-size: 3rem; color: #38bdf8;">→</div>
-  <div style="text-align: center;">
-    <div style="font-size: 4rem;">🤖</div>
-    <p style="font-size: 1.2rem; color: #ccc;">ChatGPT / Gemini</p>
-  </div>
-</div>
-
-<p style="text-align: center; font-size: 1.5rem; color: #ccc; margin-top: 1rem;">
-Each one replaced the last. Each time, <strong style="color: white;">access got easier</strong>.
-</p>
-
 <!--
-Speaker: "Encyclopedias replaced going to the library. Wikipedia replaced encyclopedias.
-And now ChatGPT and Gemini are replacing Wikipedia. Same knowledge — just faster, more personal."
+🎨 GEMINI IMAGE PROMPT:
+"A horizontal evolution-style illustration on a dark background showing 4 stages of how humans access knowledge, progressing left to right with glowing arrows between them. Stage 1: a grand ancient library with tall bookshelves and a person climbing a ladder to reach a book, warm candlelight, labeled 'LIBRARIES'. Stage 2: a cozy living room with a family gathered around a thick encyclopedia set on a wooden bookshelf, 1970s warm tones, labeled 'ENCYCLOPEDIAS'. Stage 3: a glowing computer monitor showing the Google search page and a Wikipedia article side by side, early 2000s feel with a desk lamp, labeled 'GOOGLE + WIKIPEDIA'. Stage 4: a modern person casually holding a smartphone with a glowing AI chat interface, the AI response floating above the phone as holographic text, futuristic blue glow, labeled 'AI ASSISTANTS'. Each stage should be visually distinct with its own color temperature — warm/amber for libraries, cozy/yellow for encyclopedias, cool/white for internet, vibrant/blue-purple for AI. The progression should feel like an acceleration — the stages get closer together toward the right. Clean editorial illustration style, vibrant colors, no text other than the labels."
+Save as: public/images/knowledge_revolution.png
+
+Speaker: "Think about how you used to find information.
+You'd go to the library — open specific hours, hope the book was there.
+Then encyclopedias — Britannica at home, but outdated before you finished reading.
+Then Google and Wikipedia — instant, free, from anywhere.
+And now? You ASK a question in plain language and get a personal answer.
+Same knowledge — just faster, easier, more personal every time."
 -->
 
----
+<!-- COMMENTED OUT — Slide 12: Same Field, New Suit Every 5 Years (feels out of place for now)
+To restore: uncomment and add slide separator (three dashes) before and after.
 
-# Same Field, New Suit Every 5 Years
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; height: 50%; flex-wrap: wrap;">
-  <div style="background: #1e293b; padding: 1.5rem 2rem; border-radius: 12px; text-align: center;">
-    <div style="font-size: 1.1rem; color: #94a3b8;">~2010</div>
-    <div style="font-size: 1.8rem; font-weight: 700; color: white;">Machine Learning</div>
-  </div>
-  <div style="font-size: 2.5rem; color: #38bdf8;">→</div>
-  <div style="background: #1e293b; padding: 1.5rem 2rem; border-radius: 12px; text-align: center;">
-    <div style="font-size: 1.1rem; color: #94a3b8;">~2015</div>
-    <div style="font-size: 1.8rem; font-weight: 700; color: white;">Deep Learning</div>
-  </div>
-  <div style="font-size: 2.5rem; color: #38bdf8;">→</div>
-  <div style="background: #1e293b; padding: 1.5rem 2rem; border-radius: 12px; text-align: center;">
-    <div style="font-size: 1.1rem; color: #94a3b8;">~2022</div>
-    <div style="font-size: 1.8rem; font-weight: 700; color: white;">LLMs</div>
-  </div>
-  <div style="font-size: 2.5rem; color: #38bdf8;">→</div>
-  <div style="background: #1e293b; padding: 1.5rem 2rem; border-radius: 12px; text-align: center;">
-    <div style="font-size: 1.1rem; color: #94a3b8;">~2025</div>
-    <div style="font-size: 1.8rem; font-weight: 700; color: white;">Agents</div>
-  </div>
-</div>
-
-<p style="text-align: center; font-size: 1.4rem; color: #ccc; margin-top: 2rem;">
-Same technology evolving. New buzzword each cycle. 🙃<br>
-<span style="color: #94a3b8; font-size: 1.2rem;">And it's not just about the companies — it's about the <strong style="color: white;">data</strong>.</span>
-</p>
-
-<!--
-Speaker: Light humor. "The media loves a new name. But it's the same field, just growing up.
-Machine learning → deep learning → large language models → agents.
-And remember: the real power isn't in OpenAI or Google — it's in the DATA they trained on.
-Your data. The internet's data. That's the real asset."
+Content: ML ~2010 → DL ~2015 → LLMs ~2022 → Agents ~2025
+Punchline: "Same technology evolving. New buzzword each cycle."
+Speaker notes: Light humor about media renaming the field.
+"The real power isn't in OpenAI or Google — it's in the DATA they trained on."
 -->
 
 ---
@@ -414,7 +371,7 @@ layout: updates
 # The AI Timeline
 
 <p style="font-size: 1.5rem; color: #ccc;">
-14 years of breakthroughs — accelerating
+70 years of breakthroughs — accelerating
 </p>
 
 <!--
@@ -423,34 +380,49 @@ One dense visual timeline. Tell the story quickly.
 -->
 
 ---
-layout: figure
-media: /images/ai-timeline.jpg
-caption: "Notice the gaps getting shorter? We're living on the steepest part of the curve."
----
 
 # The Speed of Change
 
+<div style="display: flex; justify-content: center; margin-top: -1.7rem;">
+  <img :src="'/images/Evolution_of_AI.png'" style="width: 985%; border-radius: 8px;" />
+</div>
+
+<p style="text-align: center; color: #9ca3af; font-size: 1rem; font-style: italic; margin-top: -2.5rem;">
+Notice the gaps getting shorter? We're living on the steepest part of the curve.
+</p>
+
 <!--
 🎨 GEMINI IMAGE PROMPT:
-"A beautiful glowing horizontal timeline infographic from 2012 to 2026 on a dark background. Each milestone is a glowing node on the line with a small icon and label: 2012 AlexNet (camera lens icon), 2014 GANs (two mirrored face silhouettes), 2017 PointNet (3D point cloud) and Transformers (attention eye icon), 2018 GPT-1 (speech bubble), 2020 GPT-3 (larger speech bubble), 2021 DALL-E (paintbrush), 2022 ChatGPT (chat window icon) and Stable Diffusion (diffusion pattern), 2023 GPT-4 (brain), 2024 Flow Matching (flowing river icon) and Sora video generation (film strip), 2025-2026 Agents (robot hand) and 3D Generation (3D cube). The gaps between nodes visibly decrease toward the right showing acceleration. Neon blue and purple glow, futuristic clean infographic style"
+"A beautiful glowing horizontal timeline infographic spanning from 1957 to 2026+ on a dark background. The timeline is divided into two visual eras: a slow sparse LEFT section (1957–2007) with muted warm tones and wider gaps between nodes, and a dense accelerating RIGHT section (2012–2026) with vibrant neon blue/purple glow and nodes packed closer together. Milestones as glowing nodes with small icons and labels: 1957 Perceptron (single neuron icon), 1986 Backpropagation (gradient arrow flowing backward through layers), 1989 CNNs/LeNet (small grid/filter icon), 2007 NVIDIA CUDA (GPU chip icon, green glow), 2012 AlexNet (camera lens icon, spark connecting it to the GPU node), 2014 GANs (two mirrored face silhouettes), 2017 Transformers (attention eye icon), 2018 Turing Award (medal icon with three small silhouettes), 2022 ChatGPT (chat window icon), 2024 Sora (film strip icon), 2025–2026 Agents & 3D Generation (robot hand holding a 3D cube). After the last node, the timeline continues with a glowing dotted line fading into the right edge with faint ghost nodes labeled '... World Models?' and '... Robotics?' in a softer, mysterious glow — suggesting the future is unwritten. A subtle NVIDIA green glow radiates from the 2007 CUDA node forward, visually showing GPUs powering everything after it. Clean futuristic infographic style, the acceleration from sparse to dense should be visually dramatic. Dark background, neon blue and purple palette."
+Save as: public/images/Evolution_of_AI.png
 
-Speaker: Walk through FAST:
-"2012: computers first beat humans at recognizing images.
-2014: AI learned to create fake images — GANs.
-2017: AI understood 3D points (my field!) AND the Transformer was invented — the engine behind everything today.
-2018-2020: GPT language models — 1, 2, 3 — each bigger.
-2021: DALL-E — type text, get an image.
-2022: ChatGPT goes viral — AI goes mainstream.
-2024: Video generation, Flow Matching — making things look real.
-2025-26: Agents that can use tools, and generating 3D worlds from text.
-Notice something? The gaps get shorter. We're accelerating."
+Speaker: Walk through FAST — point at the image as you go:
+"1957: the first artificial neuron — the Perceptron. One tiny math trick.
+1986: Backpropagation — the algorithm that lets networks LEARN from mistakes. 
+  Hinton, Rumelhart, and Williams. Without this, nothing after it works.
+1989: LeCun builds the first CNN — a network that can SEE. Reads handwritten digits.
+  (pause) Notice the long gaps? Decades of slow progress. The ideas were there, 
+  but the HARDWARE wasn't.
+2007: NVIDIA releases CUDA — suddenly GPUs, designed for video games, 
+  become the engine of AI. This is the hidden turning point most people don't know about.
+2012: AlexNet — runs on NVIDIA GPUs — crushes the competition in image recognition. 
+  Deep learning explodes overnight.
+2014: GANs — AI learns to CREATE images, not just recognize them.
+2017: The Transformer — 'Attention is All You Need.' The architecture behind everything today.
+2018: Hinton, LeCun, and Bengio win the Turing Award — the Nobel Prize of computing. 
+  The three 'Godfathers of AI.'
+2022: ChatGPT goes viral. AI enters everyone's living room.
+2024: Sora — AI generates video from text.
+2025-26: Agents that use tools, 3D world generation from text.
+And what's next? World models that truly understand physics? Robots that move in the real world?
+Notice the pattern — decades of patience, then BOOM. We're living in the boom."
 -->
 
 ---
 layout: updates
 ---
 
-# ✏️ Your Turn: AI Caricature
+# Your Turn! <br> AI Caricature
 
 <p style="font-size: 1.5rem; color: #ccc;">
 Time to try it yourself!
@@ -466,7 +438,7 @@ Pre-homework: photo + 3-5 traits. Now they learn to prompt.
 
 # Remember Your Homework?
 
-<div style="font-size: 1.5rem; line-height: 2;">
+<div style="font-size: 1.4rem; line-height: 1.8; margin-bottom: 0.8rem;">
 
 📸 You each brought a **photo of yourself**
 
@@ -474,20 +446,14 @@ Pre-homework: photo + 3-5 traits. Now they learn to prompt.
 
 </div>
 
-<br>
-
-### Here's what happens when we give that to AI:
-
-<div style="display: flex; justify-content: center; gap: 3rem; margin-top: 2rem; align-items: center;">
-  <div style="text-align: center;">
-    <div style="font-size: 1rem; color: #94a3b8; margin-bottom: 0.5rem;">📷 Original</div>
-    <div style="width: 200px; height: 200px; background: #1e293b; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧑</div>
-  </div>
-  <div style="font-size: 3rem; color: #38bdf8;">→ 🤖 →</div>
-  <div style="text-align: center;">
-    <div style="font-size: 1rem; color: #94a3b8; margin-bottom: 0.5rem;">🎨 AI Caricature</div>
-    <div style="width: 200px; height: 200px; background: #1e293b; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🎭</div>
-  </div>
+<div style="background: #1e293b; padding: 0.8rem 1.5rem; border-radius: 12px; font-size: 1.2rem; margin-top: 0.5rem;">
+  <p style="margin: 0 0 0.6rem 0; font-size: 1.3rem; font-weight: 700; color: #38bdf8;">How to do it:</p>
+  <ol style="margin: 0; padding-left: 1.4rem; line-height: 1.5;">
+    <li style="margin: 0.2rem 0; padding: 0;"><strong>Open ChatGPT</strong> on your phone</li>
+    <li style="margin: 0.2rem 0; padding: 0;">Tap <strong>+</strong> on the bottom left → attach your <strong>photo</strong></li>
+    <li style="margin: 0.2rem 0; padding: 0;">Paste the prompt (next slide) and <strong>fill in your traits</strong></li>
+    <li style="margin: 0.2rem 0; padding: 0;">Hit <strong>Send</strong> and wait for the magic! ✨</li>
+  </ol>
 </div>
 
 <!--
@@ -503,31 +469,99 @@ at least it has good taste in vacation spots!"
 
 # Let's Make Yours — Together! 🎨
 
-### The prompt template:
-
-<div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.3rem; line-height: 1.8; margin: 1.5rem 0;">
-
-**Open ChatGPT on your phone** → tap the camera icon → upload your photo → paste this:
-
-<br>
-
-*"Create a colorful cartoon caricature of the person in this photo. Make it fun and exaggerated with a warm friendly style. They are passionate about **[your trait 1]**, **[your trait 2]**, and **[your trait 3]**. Include visual elements representing these passions floating around them. Place them on the Eilat promenade with the Red Sea in the background."*
-
-</div>
-
-<p style="text-align: center; font-size: 1.5rem; margin-top: 1rem;">
-
-📱 **Go ahead — you have 8 minutes!**
-
-<br><span style="color: #94a3b8; font-size: 1.2rem;">Show your neighbors when you're done! This is something you can do tonight with your grandkids.</span>
+<p style="text-align: center; font-size: 1.1rem; color: #94a3b8; margin: 0.2rem 0 0.5rem;">
+Open ChatGPT → tap <strong style="color: white;">+</strong> → attach photo → paste prompt → send!
 </p>
 
+<div style="display: flex; gap: 1.2rem; align-items: flex-start;">
+  <div style="flex: 1;">
+    <div style="background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.25); padding: 0.6rem 1rem; border-radius: 12px; font-size: 0.88rem; line-height: 1.45; color: #e0e0e0;">
+      <p style="margin: 0;"><em>"Create a colorful cartoon caricature of the person in this photo. Make it fun and exaggerated with a warm friendly style. They are passionate about <strong style="color: #38bdf8;">[your trait 1]</strong>, <strong style="color: #38bdf8;">[your trait 2]</strong>, and <strong style="color: #38bdf8;">[your trait 3]</strong>. Include visual elements representing these passions floating around them. Place them on the Eilat promenade with the Red Sea in the background."</em></p>
+    </div>
+
+<p style="font-size: 1.3rem; margin-top: 0.6rem; text-align: center;">
+⏱️ <strong>You have 8 minutes — go!</strong>
+<br><span style="color: #94a3b8; font-size: 1.05rem;">Share with us when you're done!</span>
+</p>
+  </div>
+  <div style="text-align: center; flex-shrink: 0;">
+    <img :src="'/images/caricature_prompt_qr.png'" style="width: 160px; border-radius: 8px;" />
+    <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
+  </div>
+</div>
+
 <!--
-Speaker: Walk around and help people. Have a QR code printed that links to ChatGPT.
+Speaker: Walk around and help people. 
+"Don't want to type? Scan the QR code — it copies the prompt for you. Just fill in YOUR traits."
 For those without smartphones, pair them with a neighbor.
-WiFi info should be displayed or on a handout.
-This is the KEY takeaway: they learn a skill, not just watch a demo.
 After ~8 min: "Show your neighbors! Beautiful. You are all AI artists now."
+-->
+
+---
+
+# Here's What Happened to Me 😄
+
+<div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; align-items: center;">
+  <div style="text-align: center;">
+    <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;">📷 Original</div>
+    <img :src="'/images/Itzik_ben_shabat_protrait.jpg'" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+  </div>
+  <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
+    <svg width="32" height="32" viewBox="0 0 41 41" fill="none"><path d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835A9.964 9.964 0 0 0 18.306.5a10.079 10.079 0 0 0-9.614 6.977 9.967 9.967 0 0 0-6.664 4.834 10.08 10.08 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 7.516 3.35 10.078 10.078 0 0 0 9.617-6.981 9.967 9.967 0 0 0 6.663-4.834 10.079 10.079 0 0 0-1.243-11.813ZM22.498 37.886a7.474 7.474 0 0 1-4.799-1.735c.061-.033.168-.091.237-.134l7.964-4.6a1.294 1.294 0 0 0 .655-1.134V19.054l3.366 1.944a.12.12 0 0 1 .066.092v9.299a7.505 7.505 0 0 1-7.49 7.496ZM6.392 31.006a7.471 7.471 0 0 1-.894-5.023c.06.036.162.099.237.141l7.964 4.6a1.297 1.297 0 0 0 1.308 0l9.724-5.614v3.888a.12.12 0 0 1-.048.103l-8.051 4.649a7.504 7.504 0 0 1-10.24-2.744ZM4.297 13.62A7.469 7.469 0 0 1 8.2 10.333c0 .068-.004.19-.004.274v9.201a1.294 1.294 0 0 0 .654 1.132l9.723 5.614-3.366 1.944a.12.12 0 0 1-.114.012L7.044 23.86a7.504 7.504 0 0 1-2.747-10.24Zm27.658 6.437-9.724-5.615 3.367-1.943a.12.12 0 0 1 .113-.012l8.051 4.649a7.497 7.497 0 0 1-1.158 13.528v-9.476a1.293 1.293 0 0 0-.649-1.131Zm3.35-5.043c-.059-.037-.162-.099-.236-.141l-7.965-4.6a1.298 1.298 0 0 0-1.308 0l-9.723 5.614v-3.888a.12.12 0 0 1 .048-.103l8.05-4.645a7.497 7.497 0 0 1 11.135 7.763Zm-21.063 6.929-3.367-1.944a.12.12 0 0 1-.065-.092v-9.299a7.497 7.497 0 0 1 12.293-5.756 6.94 6.94 0 0 0-.236.134l-7.965 4.6a1.294 1.294 0 0 0-.654 1.132l-.006 11.225Zm1.829-3.943 4.33-2.501 4.332 2.5v5l-4.331 2.5-4.331-2.5V18Z" fill="#ffffff"/></svg>
+    <span style="font-size: 3rem; color: white; font-weight: 700; line-height: 1;">→</span>
+  </div>
+  <div style="text-align: center;">
+    <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;">🎨 AI Caricature <span style="font-size: 0.75rem;"></span></div>
+    <div class="caricature-reveal">
+      <img :src="'/images/caricature_itzik.png'" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+      <div class="caricature-overlay">
+        <p class="caricature-prompt-text">Create a colorful cartoon caricature of the person in this photo. Make it fun and exaggerated with a warm friendly style. They are passionate about volleyball, AI, teaching, and research. Include visual elements representing these passions floating around them. Place them on the Eilat promenade with the Red Sea in the background.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<p style="text-align: center; font-size: 1.3rem; color: #ccc; margin-top: 1rem;">
+And yes, ChatGPT insists this is the Eilat promenade... 🏖️<br>
+</p>
+
+<style>
+.caricature-reveal {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: inline-block;
+}
+.caricature-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 12px;
+  overflow-y: auto;
+}
+.caricature-reveal:hover .caricature-overlay {
+  opacity: 1;
+}
+.caricature-prompt-text {
+  color: #e0e0e0 !important;
+  font-size: 0.6rem !important;
+  line-height: 1.35 !important;
+  text-align: left;
+  font-family: 'Courier New', monospace;
+  margin: 0 !important;
+}
+</style>
+
+<!--
+Speaker: Show your own caricature result side-by-side. Hover over the caricature to reveal the prompt.
+"Here's what happened when I tried it with my photo and traits — volleyball, AI, teaching, and research.
+Not bad, right? Now imagine doing this with your grandkids tonight!"
 -->
 
 ---
@@ -577,33 +611,12 @@ AI neurons learn from data — text, images, the internet.
 That's why it can paint like Van Gogh but can't tell you why sunflowers are beautiful."
 -->
 
----
+<!-- COMMENTED OUT — AI Agents slide (feels unnecessary for now)
+To restore: uncomment and add slide separator (three dashes) before and after.
 
-# "But What About AI Agents?"
-
-<div style="display: flex; justify-content: center; align-items: center; height: 55%; gap: 3rem;">
-  <div style="text-align: center; max-width: 500px;">
-    <div style="font-size: 6rem; margin-bottom: 1rem;">🤖🧰</div>
-    <h3 style="color: #38bdf8; font-size: 2rem; margin-bottom: 1rem;">Agent = AI + Tools</h3>
-    <p style="font-size: 1.4rem; color: #ccc; line-height: 1.8;">
-      Think of it as a <strong style="color: white;">very fast intern</strong><br>
-      with a small toolbox.<br><br>
-      It can only do what<br>the <strong style="color: #38bdf8;">tools allow</strong>.
-    </p>
-  </div>
-</div>
-
-<p style="text-align: center; font-size: 1.3rem; color: #94a3b8; margin-top: 1rem;">
-That ChatGPT you just used? It had a camera tool and a drawing tool.<br>
-No tools = no caricature. <strong style="color: #ccc;">You're the one who directed it.</strong>
-</p>
-
-<!--
-Speaker: "You hear 'AI agents' in the news and it sounds scary — like robots taking over.
-But an agent is just AI connected to tools — a camera, a text editor, a calculator.
-Take away the tools? It's just a brain in a jar. It can't DO anything.
-That ChatGPT caricature? It had a camera tool and a drawing tool.
-YOU told it what to draw. Without you — nothing happens."
+Content: Agent = AI + Tools, "very fast intern with a small toolbox"
+Punchline: "That ChatGPT you just used? It had a camera tool and a drawing tool."
+Speaker notes: Agents are just AI connected to tools. Take away the tools, it can't do anything.
 -->
 
 ---
