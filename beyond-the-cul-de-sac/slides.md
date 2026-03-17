@@ -581,34 +581,127 @@ Keep it simple. Neuron analogy, agents = intern, AI as utility.
 -->
 
 ---
-layout: media-cols
-media: /images/neuron-comparison.jpg
-position: right
-width: 50%
+layout: figure
+media: /images/bio_vs_ai_neuron.png
 ---
 
-# The Building Block
+# Biological Neuron vs AI Neuron
 
-### Your brain vs. the machine
+<div style="position: absolute; bottom: 2rem; left: 0; right: 0; text-align: center; z-index: 10; line-height: 1.5;">
+  <span style="font-size: 1.25rem; color: #ccc;">Signals come in through <strong style="color: #f59e0b;">dendrites</strong> → the <strong style="color: #f59e0b;">cell body</strong> decides → output fires through the <strong style="color: #f59e0b;">axon</strong></span>
+  <br>
+  <span style="font-size: 1rem; color: #888; font-style: italic;">vs</span>
+  <br>
+  <span style="font-size: 1.25rem; color: #ccc;">Inputs × <strong style="color: #38bdf8;">weights</strong> → sum → output. The weights are learned from <strong style="color: #38bdf8;">data</strong>.</span>
+</div>
 
-- **Your neurons:** electrical & chemical signals, ~86 billion, massively parallel
+<!--
+Speaker: "Let's peek behind the curtain. Your brain is made of about 86 billion neurons.
+Each one is incredibly simple: it receives signals through its dendrites,
+the cell body decides if there's enough signal to care about,
+and if yes — it fires a signal out through the axon to the next neurons.
+Receive, decide, send. That's thinking.
 
-- **AI neurons:** math (multiply, add, activate), billions of parameters, layer by layer
+In 1957, someone asked: can we build one of these in math?
+The answer is the Perceptron — the artificial neuron.
+Inputs come in — just numbers. Each input has a WEIGHT — how important is it?
+Multiply, add them up, and decide: fire or not.
+The magic? Those weights start random — totally wrong.
+But you show it DATA — thousands of examples — and it adjusts the weights
+until it gets the right answers. That's LEARNING.
+One neuron isn't very smart. But what if we stack millions of them?"
+-->
 
-- **Same idea:** inputs → processing → output
+---
+layout: figure
+media: /images/neural_network.png
+---
 
-- **Key difference:** yours learn from *living*. AI learns from *data*.
+# Stack Them: A Neural Network
+
+<p style="position: absolute; bottom: 2.5rem; left: 0; right: 0; text-align: center; font-size: 1.3rem; color: #ccc; z-index: 10;">
+  Layers of neurons, each one learning a different pattern. <strong style="color: #38bdf8;">Billions of weights</strong> — all learned from data.
+</p>
 
 <!--
 🎨 GEMINI IMAGE PROMPT:
-"A side-by-side educational comparison illustration: left side shows a beautiful biological neuron with glowing golden dendrites receiving signals, a cell body, and an axon transmitting output, labels 'Inputs (dendrites)', 'Processing (cell body)', 'Output (axon)'. Right side shows an artificial neuron diagram with the same structure: multiple input arrows with weights, a summation circle with activation function, and one output arrow, labels 'Inputs x Weights', 'Sum + Activate', 'Output'. Both connected by a large equals sign with a small asterisk. Dark background, clean scientific illustration style, warm colors for biological side, cool blue for artificial side"
+"A wide illustration on a dark background showing two visual worlds blending into each other. On the LEFT, a warm golden-toned artistic rendering of the human brain's interior — dense clusters of biological neurons with glowing dendrites and axons forming intricate webs, signal pulses traveling through them, organic and alive, almost like a glowing coral reef. On the RIGHT, a cool blue-toned artificial neural network — clean columns of glowing nodes connected by thin luminous lines of varying brightness (representing learned weights), structured and geometric, with labels 'INPUT', 'HIDDEN LAYERS', 'OUTPUT'. In the CENTER, the two worlds gently merge — organic tendrils on the left transition into geometric connections on the right, suggesting inspiration rather than exact equivalence. A faint '≈' symbol floats where the two styles blend. A small annotation at the bottom reads 'Each connection = a learned weight. GPT-4 has ~1.8 trillion.' Left side warm amber/gold palette, right side cool blue palette. The feeling should be: nature inspired the math, not nature equals the math. Clean futuristic infographic style, sense of wonder."
+Save as: public/images/neural_network.png
 
-Speaker: "Your brain has 86 billion neurons connected in incredible ways.
-An AI model has billions of simple math operations stacked in layers.
-Same basic idea — inputs, processing, output.
-But YOUR neurons learn from living, experiencing, feeling.
-AI neurons learn from data — text, images, the internet.
-That's why it can paint like Van Gogh but can't tell you why sunflowers are beautiful."
+Speaker: "Now stack millions of these neurons in layers — that's a neural network.
+Each layer learns something different. The first layer might learn simple edges and shapes.
+The next layer combines those into features — eyes, noses, expressions.
+Deeper layers understand concepts — style, mood, composition.
+Every connection between neurons has a weight — and ALL of them are learned from data.
+GPT-4? About 1.8 TRILLION weights. All learned. None programmed by hand.
+Now let's see how this actually made your caricature..."
+-->
+
+---
+
+# How It Made Your Caricature
+
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 0.5rem;">
+  <div style="display: flex; align-items: center; gap: 0.8rem;">
+    <div style="background: #1e293b; padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 100px;">
+      <div style="font-size: 2rem;">📸</div>
+      <p style="color: #ccc; font-size: 0.85rem; margin: 0.3rem 0 0;">Your photo</p>
+    </div>
+    <span style="font-size: 1.5rem; color: #38bdf8;">→</span>
+    <div style="background: #1e293b; padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 100px;">
+      <div style="font-size: 2rem;">📝</div>
+      <p style="color: #ccc; font-size: 0.85rem; margin: 0.3rem 0 0;">Your prompt</p>
+    </div>
+    <span style="font-size: 1.5rem; color: #38bdf8;">→</span>
+    <div style="background: linear-gradient(135deg, #1e3a5f, #1e293b); padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 140px; border: 1px solid rgba(56,189,248,0.3);">
+      <div style="font-size: 2rem;">🧠</div>
+      <p style="color: #38bdf8; font-size: 0.85rem; margin: 0.3rem 0 0; font-weight: 600;">Neural network<br><span style="font-size: 0.75rem; color: #94a3b8;">billions of weights</span></p>
+    </div>
+    <span style="font-size: 1.5rem; color: #38bdf8;">→</span>
+    <div style="background: #1e293b; padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 100px;">
+      <div style="font-size: 2rem;">🎨</div>
+      <p style="color: #ccc; font-size: 0.85rem; margin: 0.3rem 0 0;">Caricature!</p>
+    </div>
+  </div>
+</div>
+
+<div style="margin-top: 1.2rem; padding: 0 2rem;">
+  <div style="display: flex; gap: 1rem;">
+    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
+      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
+        <strong style="color: #38bdf8;">1.</strong> The network <strong>sees</strong> your face — detects features, proportions, expression
+      </p>
+    </div>
+    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
+      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
+        <strong style="color: #38bdf8;">2.</strong> It <strong>reads</strong> your prompt — understands "cartoon", "exaggerated", your traits
+      </p>
+    </div>
+  </div>
+  <div style="display: flex; gap: 1rem; margin-top: 0.6rem;">
+    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
+      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
+        <strong style="color: #38bdf8;">3.</strong> It <strong>generates</strong> the image pixel by pixel — guided by everything it learned from millions of images
+      </p>
+    </div>
+    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
+      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
+        <strong style="color: #38bdf8;">4.</strong> <strong>You directed it</strong> — it can't create without your instructions
+      </p>
+    </div>
+  </div>
+</div>
+
+<!--
+Speaker: "So what actually happened when you made that caricature?
+Your photo went in. Your prompt went in. Together they hit a massive neural network —
+billions of weights, all learned from millions of images and text.
+Step 1: it analyzed your face — where are the eyes, the nose, what's your expression.
+Step 2: it read your words — 'cartoon', 'exaggerated', 'volleyball', 'Eilat promenade'.
+Step 3: it generated a brand new image, pixel by pixel, combining everything it learned
+about faces, cartoon styles, and your specific instructions.
+Step 4: none of this happens without YOU. You chose the photo. You wrote the traits.
+You pressed send. The network is the brush — you are still the artist."
 -->
 
 <!-- COMMENTED OUT — AI Agents slide (feels unnecessary for now)
@@ -617,41 +710,6 @@ To restore: uncomment and add slide separator (three dashes) before and after.
 Content: Agent = AI + Tools, "very fast intern with a small toolbox"
 Punchline: "That ChatGPT you just used? It had a camera tool and a drawing tool."
 Speaker notes: Agents are just AI connected to tools. Take away the tools, it can't do anything.
--->
-
----
-
-# AI Is Becoming a Utility
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 2rem; height: 55%; flex-wrap: wrap;">
-  <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
-    <div style="font-size: 3rem;">⚡</div>
-    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Electricity<br>Bill</p>
-  </div>
-  <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
-    <div style="font-size: 3rem;">💧</div>
-    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Water<br>Bill</p>
-  </div>
-  <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
-    <div style="font-size: 3rem;">📱</div>
-    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Phone<br>Bill</p>
-  </div>
-  <div style="background: linear-gradient(135deg, #1e3a5f, #1e293b); padding: 2rem; border-radius: 12px; text-align: center; width: 150px; border: 2px solid #38bdf8;">
-    <div style="font-size: 3rem;">🧠</div>
-    <p style="color: #38bdf8; font-size: 1.1rem; margin-top: 0.5rem; font-weight: 700;">AI Token<br>Bill</p>
-  </div>
-</div>
-
-<p style="text-align: center; font-size: 1.5rem; color: #ccc; margin-top: 2rem;">
-Just like electricity became a bill you pay monthly,<br>
-<strong style="color: white;">AI will be another utility</strong>. Tokens are the new minutes.
-</p>
-
-<!--
-Speaker: "Think about it. Your grandparents were amazed by electricity.
-Now it's just a bill. Same with phones, internet.
-AI is heading the same way — you'll pay for 'tokens' like you pay for minutes.
-Nothing scary. Just another tool that becomes part of life."
 -->
 
 ---
@@ -687,7 +745,7 @@ Split into two groups. Builders make a Lego mascot. Poets write an anthem.
     <h2 style="color: #a78bfa; font-size: 2.2rem; margin-bottom: 1rem;">Poets</h2>
     <p style="font-size: 1.3rem; color: #ccc; line-height: 1.6;">
       Write a short <strong style="color: white;">anthem or cheer</strong><br>for your team!<br><br>
-      <span style="color: #94a3b8; font-size: 1.1rem;">4–8 lines. Rhymes welcome!</span>
+      <span style="color: #94a3b8; font-size: 1.1rem;">8-16 lines. Rhymes welcome!</span>
     </p>
   </div>
 </div>
@@ -696,7 +754,7 @@ Split into two groups. Builders make a Lego mascot. Poets write an anthem.
 Speaker: "Left side of the room — you're builders. Right side — poets.
 Builders: grab the Lego bricks from the bags. Build your team a mascot.
 Any shape, animal, creature — surprise me.
-Poets: grab paper and pens. Write 4-8 lines. A team anthem. It can be funny,
+Poets: grab paper and pens. Write 8-16 lines. A team anthem. It can be funny,
 inspiring, silly — just make it yours.
 You have 15 minutes. GO!"
 -->
@@ -966,6 +1024,41 @@ It's knowledge without barriers."
 
 ---
 
+# AI Is Becoming a Utility
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 2rem; height: 55%; flex-wrap: wrap;">
+  <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
+    <div style="font-size: 3rem;">⚡</div>
+    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Electricity<br>Bill</p>
+  </div>
+  <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
+    <div style="font-size: 3rem;">💧</div>
+    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Water<br>Bill</p>
+  </div>
+  <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
+    <div style="font-size: 3rem;">📱</div>
+    <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Phone<br>Bill</p>
+  </div>
+  <div style="background: linear-gradient(135deg, #1e3a5f, #1e293b); padding: 2rem; border-radius: 12px; text-align: center; width: 150px; border: 2px solid #38bdf8;">
+    <div style="font-size: 3rem;">🧠</div>
+    <p style="color: #38bdf8; font-size: 1.1rem; margin-top: 0.5rem; font-weight: 700;">AI Token<br>Bill</p>
+  </div>
+</div>
+
+<p style="text-align: center; font-size: 1.5rem; color: #ccc; margin-top: 2rem;">
+Just like electricity became a bill you pay monthly,<br>
+<strong style="color: white;">AI will be another utility</strong>. Tokens are the new minutes.
+</p>
+
+<!--
+Speaker: "Think about it. Your grandparents were amazed by electricity.
+Now it's just a bill. Same with phones, internet.
+AI is heading the same way — you'll pay for 'tokens' like you pay for minutes.
+Nothing scary. Just another tool that becomes part of life."
+-->
+
+---
+
 # Our Greatest Tool
 
 <div style="display: flex; justify-content: center; align-items: center; height: 65%; flex-direction: column;">
@@ -1066,4 +1159,31 @@ Speaker: "All these links will be in a handout / QR code.
 Go home and try these with your families.
 Make caricatures of your grandkids. Turn their drawings into 3D models.
 The tools are free or very cheap. The only limit is your imagination."
+-->
+
+---
+
+<div style="display: flex; justify-content: center; align-items: center; height: 80%; flex-direction: column;">
+  <p style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 1.5rem; font-style: italic;">
+    "What is the most important thing kids today should learn?"
+  </p>
+  <h1 style="font-size: 4.5rem; font-weight: 900; background: linear-gradient(135deg, #38bdf8, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-align: center; margin-bottom: 1.5rem;">
+    Critical Thinking.
+  </h1>
+  <p style="font-size: 1.4rem; color: #ccc; text-align: center; max-width: 700px; line-height: 1.7;">
+    We are about to be <strong style="color: white;">swamped with information</strong> — some real, some fake.<br><br>
+    AI will simplify many things in our lives.<br>
+    What will make us stand out is <strong style="color: #38bdf8;">how we think</strong>.
+  </p>
+</div>
+
+<!--
+🥚 EASTER EGG SLIDE — hidden after the final slide.
+Only shown if someone in the audience asks "What should kids learn?"
+
+Speaker: "We'll be drowning in content — text, images, video — and much of it 
+will be generated by AI. Some brilliant. Some nonsense. Some dangerous.
+The skill that matters most isn't coding or prompt engineering. 
+It's the ability to THINK — to question, to evaluate, to reason.
+AI makes answers cheap. Thinking makes answers valuable."
 -->
