@@ -59,7 +59,7 @@ By the end of this session, you will have created something with AI — with you
 layout: updates
 ---
 
-# 🎨 Guess the Artist
+# <span class="i-lucide-palette inline-block" /> Guess the Artist
 
 <p style="font-size: 1.8rem; color: #ccc;">
 I'm going to show you some beautiful artwork.<br>
@@ -74,7 +74,7 @@ The reveal: the artist is AI. But YOU gave the direction.
 
 ---
 
-<h1 style="text-align: center; margin-bottom: 0.5rem;">🎨 Who Are the Artists?</h1>
+<h1 style="text-align: center; margin-bottom: 0.5rem;"><span class="i-lucide-palette inline-block" /> Who Are the Artists?</h1>
 
 <div style="display: flex; justify-content: center; gap: 3rem; align-items: flex-start; margin-top: 1rem; height: 72%;">
   <div style="text-align: center; flex: 1; max-width: 42%;">
@@ -440,9 +440,9 @@ Pre-homework: photo + 3-5 traits. Now they learn to prompt.
 
 <div style="font-size: 1.4rem; line-height: 1.8; margin-bottom: 0.8rem;">
 
-📸 You each brought a **photo of yourself**
+<span class="i-lucide-camera inline-block" style="vertical-align: middle;" /> You each brought a **photo of yourself**
 
-📝 And a list of **3–5 things** that define you
+<span class="i-lucide-clipboard-list inline-block" style="vertical-align: middle;" /> And a list of **3–5 things** that define you
 
 </div>
 
@@ -452,7 +452,7 @@ Pre-homework: photo + 3-5 traits. Now they learn to prompt.
     <li style="margin: 0.2rem 0; padding: 0;"><strong>Open ChatGPT</strong> on your phone</li>
     <li style="margin: 0.2rem 0; padding: 0;">Tap <strong>+</strong> on the bottom left → attach your <strong>photo</strong></li>
     <li style="margin: 0.2rem 0; padding: 0;">Paste the prompt (next slide) and <strong>fill in your traits</strong></li>
-    <li style="margin: 0.2rem 0; padding: 0;">Hit <strong>Send</strong> and wait for the magic! ✨</li>
+    <li style="margin: 0.2rem 0; padding: 0;">Hit <strong>Send</strong> and wait for the magic! <span class="i-lucide-sparkles inline-block" style="vertical-align: middle;" /></li>
   </ol>
 </div>
 
@@ -467,7 +467,7 @@ at least it has good taste in vacation spots!"
 
 ---
 
-# Let's Make Yours — Together! 🎨
+# Let's Make Yours — Together! <span class="i-lucide-palette inline-block" />
 
 <p style="text-align: center; font-size: 1.1rem; color: #94a3b8; margin: 0.2rem 0 0.5rem;">
 Open ChatGPT → tap <strong style="color: white;">+</strong> → attach photo → paste prompt → send!
@@ -480,7 +480,7 @@ Open ChatGPT → tap <strong style="color: white;">+</strong> → attach photo �
     </div>
 
 <p style="font-size: 1.3rem; margin-top: 0.6rem; text-align: center;">
-⏱️ <strong>You have 8 minutes — go!</strong>
+<span class="i-lucide-timer inline-block" style="vertical-align: middle;" /> <strong>You have 8 minutes — go!</strong>
 <br><span style="color: #94a3b8; font-size: 1.05rem;">Share with us when you're done!</span>
 </p>
   </div>
@@ -499,11 +499,11 @@ After ~8 min: "Show your neighbors! Beautiful. You are all AI artists now."
 
 ---
 
-# Here's What Happened to Me 😄
+# Here's What Happened to Me <span class="i-lucide-smile inline-block" />
 
 <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; align-items: center;">
   <div style="text-align: center;">
-    <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;">📷 Original</div>
+    <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;"><span class="i-lucide-camera inline-block" style="vertical-align: middle;" /> Original</div>
     <img :src="'/images/Itzik_ben_shabat_protrait.jpg'" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
   </div>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
@@ -511,7 +511,7 @@ After ~8 min: "Show your neighbors! Beautiful. You are all AI artists now."
     <span style="font-size: 3rem; color: white; font-weight: 700; line-height: 1;">→</span>
   </div>
   <div style="text-align: center;">
-    <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;">🎨 AI Caricature <span style="font-size: 0.75rem;"></span></div>
+    <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;"><span class="i-lucide-palette inline-block" style="vertical-align: middle;" /> AI Caricature <span style="font-size: 0.75rem;"></span></div>
     <div class="caricature-reveal">
       <img :src="'/images/caricature_itzik.png'" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
       <div class="caricature-overlay">
@@ -522,7 +522,7 @@ After ~8 min: "Show your neighbors! Beautiful. You are all AI artists now."
 </div>
 
 <p style="text-align: center; font-size: 1.3rem; color: #ccc; margin-top: 1rem;">
-And yes, ChatGPT insists this is the Eilat promenade... 🏖️<br>
+And yes, ChatGPT insists this is the Eilat promenade... <span class="i-lucide-sun inline-block" style="vertical-align: middle;" /><br>
 </p>
 
 <style>
@@ -615,13 +615,10 @@ One neuron isn't very smart. But what if we stack millions of them?"
 ---
 layout: figure
 media: /images/neural_network.png
+caption: "Layers of neurons, each one learning a different pattern. Billions of weights — all learned from data."
 ---
 
 # Stack Them: A Neural Network
-
-<p style="position: absolute; bottom: 2.5rem; left: 0; right: 0; text-align: center; font-size: 1.3rem; color: #ccc; z-index: 10;">
-  Layers of neurons, each one learning a different pattern. <strong style="color: #38bdf8;">Billions of weights</strong> — all learned from data.
-</p>
 
 <!--
 🎨 GEMINI IMAGE PROMPT:
@@ -638,61 +635,17 @@ Now let's see how this actually made your caricature..."
 -->
 
 ---
+layout: figure
+media: /images/caricature_pipeline.png
+---
 
 # How It Made Your Caricature
 
-<div style="display: flex; justify-content: center; align-items: center; margin-top: 0.5rem;">
-  <div style="display: flex; align-items: center; gap: 0.8rem;">
-    <div style="background: #1e293b; padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 100px;">
-      <div style="font-size: 2rem;">📸</div>
-      <p style="color: #ccc; font-size: 0.85rem; margin: 0.3rem 0 0;">Your photo</p>
-    </div>
-    <span style="font-size: 1.5rem; color: #38bdf8;">→</span>
-    <div style="background: #1e293b; padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 100px;">
-      <div style="font-size: 2rem;">📝</div>
-      <p style="color: #ccc; font-size: 0.85rem; margin: 0.3rem 0 0;">Your prompt</p>
-    </div>
-    <span style="font-size: 1.5rem; color: #38bdf8;">→</span>
-    <div style="background: linear-gradient(135deg, #1e3a5f, #1e293b); padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 140px; border: 1px solid rgba(56,189,248,0.3);">
-      <div style="font-size: 2rem;">🧠</div>
-      <p style="color: #38bdf8; font-size: 0.85rem; margin: 0.3rem 0 0; font-weight: 600;">Neural network<br><span style="font-size: 0.75rem; color: #94a3b8;">billions of weights</span></p>
-    </div>
-    <span style="font-size: 1.5rem; color: #38bdf8;">→</span>
-    <div style="background: #1e293b; padding: 1rem 1.2rem; border-radius: 12px; text-align: center; min-width: 100px;">
-      <div style="font-size: 2rem;">🎨</div>
-      <p style="color: #ccc; font-size: 0.85rem; margin: 0.3rem 0 0;">Caricature!</p>
-    </div>
-  </div>
-</div>
-
-<div style="margin-top: 1.2rem; padding: 0 2rem;">
-  <div style="display: flex; gap: 1rem;">
-    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
-      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
-        <strong style="color: #38bdf8;">1.</strong> The network <strong>sees</strong> your face — detects features, proportions, expression
-      </p>
-    </div>
-    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
-      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
-        <strong style="color: #38bdf8;">2.</strong> It <strong>reads</strong> your prompt — understands "cartoon", "exaggerated", your traits
-      </p>
-    </div>
-  </div>
-  <div style="display: flex; gap: 1rem; margin-top: 0.6rem;">
-    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
-      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
-        <strong style="color: #38bdf8;">3.</strong> It <strong>generates</strong> the image pixel by pixel — guided by everything it learned from millions of images
-      </p>
-    </div>
-    <div style="flex: 1; background: rgba(56,189,248,0.05); border: 1px solid rgba(56,189,248,0.15); border-radius: 10px; padding: 0.8rem 1rem;">
-      <p style="margin: 0; font-size: 1rem; color: #ccc; line-height: 1.6;">
-        <strong style="color: #38bdf8;">4.</strong> <strong>You directed it</strong> — it can't create without your instructions
-      </p>
-    </div>
-  </div>
-</div>
-
 <!--
+🎨 GEMINI IMAGE PROMPT:
+"A clean AI pipeline architecture diagram on a dark background, reading left to right. START with a real photograph of a person (leave a blank photo placeholder frame with a subtle label 'YOUR PHOTO') on the far left. An arrow leads into a dark rounded box labeled 'FACE ANALYSIS' with a subtle wireframe mesh overlay on a face silhouette inside — the intermediate result shows detected facial landmarks (dots on eyes, nose, mouth). Another arrow leads into a second dark box labeled 'TEXT UNDERSTANDING' with small glowing words floating inside ('cartoon', 'exaggerated', 'volleyball', 'Eilat'). Both boxes feed arrows into a large central dark box with a neural network icon and label 'IMAGE GENERATION — billions of weights', glowing with blue edges. Inside this box, show a blurry/noisy image gradually becoming clearer (the diffusion process — 3 small panels from static noise → rough shape → nearly finished). A final arrow leads to a vibrant finished cartoon caricature placeholder on the far right (leave a frame labeled 'YOUR CARICATURE'). Each box has a thin blue border with rounded corners on a dark (#1e293b) background. Arrows are glowing blue. The intermediate results inside each box should feel like peeking inside a black box. Cool blue palette, clean technical infographic style, dark background, the feel of a simplified engineering diagram made accessible for a non-technical audience."
+Save as: public/images/caricature_pipeline.png
+
 Speaker: "So what actually happened when you made that caricature?
 Your photo went in. Your prompt went in. Together they hit a massive neural network —
 billions of weights, all learned from millions of images and text.
@@ -716,7 +669,12 @@ Speaker notes: Agents are just AI connected to tools. Take away the tools, it ca
 layout: updates
 ---
 
-# 🧱 ✍️ Workshop Time!
+<div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 0.5rem;">
+  <span class="i-lucide-toy-brick" style="font-size: 3rem; color: #f59e0b;" />
+  <span class="i-lucide-pen-line" style="font-size: 3rem; color: #a78bfa;" />
+</div>
+
+# Workshop Time!
 
 <p style="font-size: 1.8rem; color: #ccc;">
 Builders & Poets — let's create!
@@ -731,22 +689,22 @@ Split into two groups. Builders make a Lego mascot. Poets write an anthem.
 
 # Split Into Two Groups!
 
-<div style="display: flex; justify-content: center; gap: 4rem; height: 60%; align-items: center;">
-  <div style="background: #1e293b; padding: 3rem; border-radius: 16px; text-align: center; width: 350px;">
-    <div style="font-size: 5rem; margin-bottom: 1rem;">🧱</div>
-    <h2 style="color: #f59e0b; font-size: 2.2rem; margin-bottom: 1rem;">Builders</h2>
-    <p style="font-size: 1.3rem; color: #ccc; line-height: 1.6;">
-      Build a <strong style="color: white;">Lego mascot</strong><br>for your team!<br><br>
-      <span style="color: #94a3b8; font-size: 1.1rem;">Be creative. Be weird. Be bold.</span>
+<div style="display: flex; justify-content: center; gap: 4rem; height: 65%; align-items: stretch;">
+  <div style="background: #1e293b; padding: 2.5rem 3rem; border-radius: 16px; text-align: center; width: 350px; display: flex; flex-direction: column; align-items: center; border: 1px solid rgba(245,158,11,0.25);">
+    <div class="i-lucide-toy-brick" style="font-size: 4rem; margin-bottom: 0.8rem; color: #f59e0b;" />
+    <h2 style="color: #f59e0b; font-size: 2.2rem; margin: 0 0 1rem 0;">Builders</h2>
+    <p style="font-size: 1.3rem; color: #ccc; line-height: 1.6; flex: 1; display: flex; flex-direction: column; justify-content: center; margin: 0;">
+      Build a <strong style="color: white;">Lego mascot</strong><br>for your team!
     </p>
+    <p style="color: #94a3b8; font-size: 1.1rem; margin-top: 1rem;">Be creative. Be weird. Be bold.</p>
   </div>
-  <div style="background: #1e293b; padding: 3rem; border-radius: 16px; text-align: center; width: 350px;">
-    <div style="font-size: 5rem; margin-bottom: 1rem;">✍️</div>
-    <h2 style="color: #a78bfa; font-size: 2.2rem; margin-bottom: 1rem;">Poets</h2>
-    <p style="font-size: 1.3rem; color: #ccc; line-height: 1.6;">
-      Write a short <strong style="color: white;">anthem or cheer</strong><br>for your team!<br><br>
-      <span style="color: #94a3b8; font-size: 1.1rem;">8-16 lines. Rhymes welcome!</span>
+  <div style="background: #1e293b; padding: 2.5rem 3rem; border-radius: 16px; text-align: center; width: 350px; display: flex; flex-direction: column; align-items: center; border: 1px solid rgba(167,139,250,0.25);">
+    <div class="i-lucide-pen-line" style="font-size: 4rem; margin-bottom: 0.8rem; color: #a78bfa;" />
+    <h2 style="color: #a78bfa; font-size: 2.2rem; margin: 0 0 1rem 0;">Poets</h2>
+    <p style="font-size: 1.3rem; color: #ccc; line-height: 1.6; flex: 1; display: flex; flex-direction: column; justify-content: center; margin: 0;">
+      Write a short <strong style="color: white;">anthem or cheer</strong><br>for your team!
     </p>
+    <p style="color: #94a3b8; font-size: 1.1rem; margin-top: 1rem;">8–16 lines. Rhymes welcome!</p>
   </div>
 </div>
 
@@ -761,25 +719,22 @@ You have 15 minutes. GO!"
 
 ---
 
-<div style="display: flex; justify-content: center; align-items: center; height: 80%; flex-direction: column;">
-  <h1 style="font-size: 4rem; font-weight: 900; margin-bottom: 2rem;">⏱️ 15:00</h1>
-  <p style="font-size: 1.8rem; color: #ccc;">Build! Write! Create!</p>
-  <br>
-  <p style="font-size: 1.2rem; color: #94a3b8;">🎵 Background music playing...</p>
-</div>
+<WorkshopTimer />
 
 <!--
-Speaker: Start a 15-minute timer on your phone.
-Play some light background music. Walk around, encourage, help.
-5 min warning: "5 minutes left!"
-2 min warning: "Finish up!"
+Speaker: Press ▶ Start to begin the countdown, then 🎵 Music On for ambient background music.
+Walk around, encourage, help.
+5 min warning: timer turns amber and reads "5 minutes left!"
+2 min warning: timer turns red and reads "Finish up!"
 -->
 
 ---
 layout: updates
 ---
 
-# 🔘 Let's Press THE BUTTON
+<img src="/images/red_button.png" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin: -3rem auto 0; display: block; filter: drop-shadow(0 4px 24px rgba(255,50,50,0.35));" />
+
+# Let's Press THE BUTTON
 
 <p style="font-size: 1.5rem; color: #ccc;">
 Remember the missing shape? Today we close the gap.
@@ -793,10 +748,10 @@ Have pre-generated backups ready in case of connectivity issues.
 
 ---
 
-# Step 1: Photograph the Mascot 📸
+# Step 1: Photograph the Mascot <span class="i-lucide-camera inline-block" />
 
 <div style="display: flex; justify-content: center; align-items: center; height: 60%; flex-direction: column;">
-  <div style="font-size: 8rem; margin-bottom: 2rem;">📸 → 🧱</div>
+  <div style="font-size: 8rem; margin-bottom: 2rem;"><span class="i-lucide-camera inline-block" /> → <span class="i-lucide-toy-brick inline-block" /></div>
   <p style="font-size: 1.5rem; color: #ccc; text-align: center;">
     Let's take a photo of what the Builders created.<br>
     <span style="color: #94a3b8;">Good lighting, white background if possible.</span>
@@ -810,7 +765,7 @@ Speaker: Take the photo live. Show it on screen.
 
 ---
 
-# Step 2: Enhance with Gemini ✨
+# Step 2: Enhance with Gemini <span class="i-lucide-sparkles inline-block" />
 
 <div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.2rem; line-height: 1.8; margin: 1rem 0;">
 
@@ -822,13 +777,13 @@ Speaker: Take the photo live. Show it on screen.
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 3rem; margin-top: 2rem;">
   <div style="text-align: center;">
-    <div style="font-size: 1rem; color: #94a3b8;">📷 Photo</div>
-    <div style="width: 180px; height: 180px; background: #0f172a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🧱</div>
+    <div style="font-size: 1rem; color: #94a3b8;"><span class="i-lucide-camera inline-block" style="vertical-align: middle;" /> Photo</div>
+    <div style="width: 180px; height: 180px; background: #0f172a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><span class="i-lucide-toy-brick inline-block" /></div>
   </div>
-  <div style="font-size: 3rem; color: #38bdf8;">→ ✨ →</div>
+  <div style="font-size: 3rem; color: #38bdf8;">→ <span class="i-lucide-sparkles inline-block" /> →</div>
   <div style="text-align: center;">
-    <div style="font-size: 1rem; color: #94a3b8;">🎨 Concept Art</div>
-    <div style="width: 180px; height: 180px; background: #0f172a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;">🎮</div>
+    <div style="font-size: 1rem; color: #94a3b8;"><span class="i-lucide-palette inline-block" style="vertical-align: middle;" /> Concept Art</div>
+    <div style="width: 180px; height: 180px; background: #0f172a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><span class="i-lucide-gamepad-2 inline-block" /></div>
   </div>
 </div>
 
@@ -840,7 +795,7 @@ Have a pre-generated backup ready in /images/demo-gemini-enhanced.jpg
 
 ---
 
-# Step 3: Turn It into 3D — Meshy 🧊
+# Step 3: Turn It into 3D — Meshy <span class="i-lucide-box inline-block" />
 
 <div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.3rem; line-height: 1.8; margin: 1.5rem 0; text-align: center;">
 
@@ -852,9 +807,9 @@ Upload the enhanced image to <strong style="color: #38bdf8;">meshy.ai</strong><b
 </div>
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 3rem; margin-top: 2rem;">
-  <div style="font-size: 4rem;">🎨</div>
-  <div style="font-size: 3rem; color: #38bdf8;">→ 🧊 →</div>
-  <div style="font-size: 4rem;">🏗️</div>
+  <div style="font-size: 4rem;"><span class="i-lucide-palette inline-block" /></div>
+  <div style="font-size: 3rem; color: #38bdf8;">→ <span class="i-lucide-box inline-block" /> →</div>
+  <div style="font-size: 4rem;"><span class="i-lucide-hammer inline-block" /></div>
 </div>
 
 <p style="text-align: center; font-size: 1.2rem; color: #94a3b8; margin-top: 1.5rem;">
@@ -870,10 +825,10 @@ Website: https://www.meshy.ai/
 
 ---
 
-# Step 4: Into Roblox! 🎮
+# Step 4: Into Roblox! <span class="i-lucide-gamepad-2 inline-block" />
 
 <div style="display: flex; justify-content: center; align-items: center; height: 55%; flex-direction: column;">
-  <div style="font-size: 6rem; margin-bottom: 2rem;">🧱 → 📸 → ✨ → 🧊 → 🎮</div>
+  <div style="font-size: 6rem; margin-bottom: 2rem;"><span class="i-lucide-toy-brick inline-block" /> → <span class="i-lucide-camera inline-block" /> → <span class="i-lucide-sparkles inline-block" /> → <span class="i-lucide-box inline-block" /> → <span class="i-lucide-gamepad-2 inline-block" /></div>
   <p style="font-size: 1.8rem; color: white; text-align: center; font-weight: 700;">
     From a pile of Lego bricks<br>to a character in a digital world.
   </p>
@@ -892,7 +847,7 @@ HUGE moment. Let it land.
 
 ---
 
-# Now the Poem! 🎵
+# Now the Poem! <span class="i-lucide-music inline-block" />
 
 <div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.2rem; line-height: 1.8; margin: 1rem 0;">
 
@@ -926,7 +881,7 @@ Have a pre-generated backup song ready.
 layout: updates
 ---
 
-# 🎉 Show & Tell
+# <span class="i-lucide-party-popper inline-block" /> Show & Tell
 
 <p style="font-size: 1.5rem; color: #ccc;">
 Let's see what we created together!
@@ -943,17 +898,17 @@ Show the 3D mascot in Roblox. Play the anthem. Celebrate.
 
 <div style="display: flex; justify-content: center; gap: 4rem; height: 60%; align-items: center;">
   <div style="background: #1e293b; padding: 2.5rem; border-radius: 16px; text-align: center; width: 300px;">
-    <div style="font-size: 4rem; margin-bottom: 1rem;">🎮</div>
+    <div style="font-size: 4rem; margin-bottom: 1rem;"><span class="i-lucide-gamepad-2 inline-block" /></div>
     <h3 style="color: #f59e0b; font-size: 1.5rem;">The Mascot</h3>
     <p style="font-size: 1.1rem; color: #94a3b8; margin-top: 0.5rem;">Living in Roblox</p>
   </div>
   <div style="background: #1e293b; padding: 2.5rem; border-radius: 16px; text-align: center; width: 300px;">
-    <div style="font-size: 4rem; margin-bottom: 1rem;">🎵</div>
+    <div style="font-size: 4rem; margin-bottom: 1rem;"><span class="i-lucide-music inline-block" /></div>
     <h3 style="color: #a78bfa; font-size: 1.5rem;">The Anthem</h3>
     <p style="font-size: 1.1rem; color: #94a3b8; margin-top: 0.5rem;">A real song!</p>
   </div>
   <div style="background: #1e293b; padding: 2.5rem; border-radius: 16px; text-align: center; width: 300px;">
-    <div style="font-size: 4rem; margin-bottom: 1rem;">🎭</div>
+    <div style="font-size: 4rem; margin-bottom: 1rem;"><span class="i-lucide-image inline-block" /></div>
     <h3 style="color: #38bdf8; font-size: 1.5rem;">Your Caricatures</h3>
     <p style="font-size: 1.1rem; color: #94a3b8; margin-top: 0.5rem;">Take home!</p>
   </div>
@@ -1028,19 +983,19 @@ It's knowledge without barriers."
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; height: 55%; flex-wrap: wrap;">
   <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
-    <div style="font-size: 3rem;">⚡</div>
+    <div style="font-size: 3rem;"><span class="i-lucide-zap inline-block" /></div>
     <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Electricity<br>Bill</p>
   </div>
   <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
-    <div style="font-size: 3rem;">💧</div>
+    <div style="font-size: 3rem;"><span class="i-lucide-droplets inline-block" /></div>
     <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Water<br>Bill</p>
   </div>
   <div style="background: #1e293b; padding: 2rem; border-radius: 12px; text-align: center; width: 150px;">
-    <div style="font-size: 3rem;">📱</div>
+    <div style="font-size: 3rem;"><span class="i-lucide-smartphone inline-block" /></div>
     <p style="color: #ccc; font-size: 1.1rem; margin-top: 0.5rem;">Phone<br>Bill</p>
   </div>
   <div style="background: linear-gradient(135deg, #1e3a5f, #1e293b); padding: 2rem; border-radius: 12px; text-align: center; width: 150px; border: 2px solid #38bdf8;">
-    <div style="font-size: 3rem;">🧠</div>
+    <div style="font-size: 3rem;"><span class="i-lucide-brain inline-block" /></div>
     <p style="color: #38bdf8; font-size: 1.1rem; margin-top: 0.5rem; font-weight: 700;">AI Token<br>Bill</p>
   </div>
 </div>
@@ -1103,7 +1058,7 @@ That's not scary. That's EXCITING. And you should be proud."
 layout: end
 ---
 
-# Thank You! 🙏
+# Thank You! <span class="i-lucide-heart-handshake inline-block" />
 
 <p style="font-size: 1.5rem; color: #ccc; margin-bottom: 2rem;">
 The future is being built right now. And it needs your stories.
@@ -1117,18 +1072,18 @@ Itzik (Yizhak) Ben-Shabat
 
 ---
 
-# Resources & Links 📚
+# Resources & Links <span class="i-lucide-book-open inline-block" />
 
 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; font-size: 1.2rem; padding: 1rem 2rem;">
 
 <div>
 
-### 📖 Books & Papers
+### <span class="i-lucide-book-open-text inline-block" style="vertical-align: middle;" /> Books & Papers
 - **Sapiens** — Yuval Noah Harari
 - [PointNet Paper](https://arxiv.org/abs/1612.00593)
 - [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
 
-### 🎨 Tools We Used
+### <span class="i-lucide-palette inline-block" style="vertical-align: middle;" /> Tools We Used
 - [ChatGPT](https://chat.openai.com/) — Caricatures
 - [Google Gemini](https://gemini.google.com/) — Image Enhancement
 - [Meshy.ai](https://www.meshy.ai/) — Image to 3D
@@ -1138,14 +1093,14 @@ Itzik (Yizhak) Ben-Shabat
 
 <div>
 
-### 🎮 Platforms
+### <span class="i-lucide-gamepad-2 inline-block" style="vertical-align: middle;" /> Platforms
 - [Roblox Studio](https://www.roblox.com/create)
 
-### 🧠 Learn More
+### <span class="i-lucide-brain inline-block" style="vertical-align: middle;" /> Learn More
 - [Google AI Experiments](https://experiments.withgoogle.com/collection/ai)
 - [Teachable Machine](https://teachablemachine.withgoogle.com/)
 
-### 📱 Try at Home
+### <span class="i-lucide-smartphone inline-block" style="vertical-align: middle;" /> Try at Home
 - Make caricatures with your family!
 - Turn drawings into 3D models
 - Create songs from poems
