@@ -203,28 +203,33 @@ Personal story. The real engineering origin of the career path.
 -->
 
 ---
-layout: media-cols
-media: /images/point_cloud_to_cad.png
-position: right
-width: 38%
+layout: figure
+media: /images/the_missing_shape.png
 ---
 
 # The Missing Shape
 
-- Studied **Mechanical Engineering**
-
-- First job: design a part that fits a **unique physical shape**
-
-- The **3D scanner** gave us points — but engineers need **CAD models**
-
-- **No button existed** to bridge that gap
+<div style="position: absolute; bottom: 2rem; left: 0; right: 0; text-align: center; z-index: 10; line-height: 1.6;">
+  <span style="font-size: 1.3rem; color: #ccc;">The 3D scanner gave us <strong style="color: #f59e0b;">points</strong> — but engineers needed <strong style="color: #f59e0b;">models</strong></span>
+  <br>
+  <span style="font-size: 1.3rem; color: #94a3b8;">No button existed to bridge that gap</span>
+</div>
 
 <!--
 🎨 GEMINI IMAGE PROMPT (for media):
-"Split image: left side shows a messy scattered cloud of thousands of tiny colored dots forming the rough outline of an organic mechanical part floating in dark space, right side shows the same part as a clean precise parametric CAD wireframe model with smooth surfaces and engineering dimension lines, dark background, technical illustration style, the gap between them highlighted with a glowing question mark"
+"A dramatic, moody digital painting on a dark background. A young engineer sits at a dimly lit workstation late at night, their face illuminated by the glow of a monitor. The monitor displays a colorful 3D point cloud scan — thousands of tiny colored dots forming the rough shape of an organic mechanical part, floating in dark space. The engineer's hand is reaching toward the screen, fingers outstretched. Between the hand and the screen, a semi-transparent ghostly red button floats in mid-air — round, glossy, glowing faintly red with a soft halo, clearly intangible and not yet real, like a dream or a wish. The button looks like a classic arcade push-button, circular, domed, vivid red but faded and translucent with about 40% opacity. The overall mood is longing and frustration — the tool they wished existed, but doesn't. Dramatic cinematic lighting from the monitor, dark shadows, a sense of isolation and determination. Cool blue tones from the screen contrast with the warm red glow of the phantom button. Photorealistic digital art style, dark background (#0a0a0a), widescreen 16:9 composition."
+Save as: public/images/the_missing_shape.png
 
-Speaker: This was the moment. The gap between 3D scan and CAD.
-Points → usable model. That gap became my entire career.
+Speaker: "I studied mechanical engineering at the Technion. My first real job:
+design a part that fits a unique physical shape.
+We had a 3D scanner — state of the art — and it gave us thousands of points in space.
+A cloud of dots. Beautiful to look at, but completely useless for engineering.
+Engineers need clean, precise CAD models to actually build things.
+I sat at that screen night after night, staring at those points, thinking:
+why isn't there a BUTTON that just... converts this? That does the hard part for me?
+But there was no button. That gap — between a raw scan and a usable model —
+became my entire career.
+(pause) Keep that red button in mind. We'll come back to it."
 -->
 
 ---
@@ -235,7 +240,7 @@ media: /images/Career_Evolution.png
 # That Gap Became My Life's Work
 
 <p style="position: absolute; bottom: 3.5rem; left: 0; right: 0; text-align: center; font-size: 1.5rem; font-weight: 700; color: #38bdf8; z-index: 10;">
-"Today — we will press that button together!"
+Today — we will press that button together!
 </p>
 
 <!--
@@ -669,9 +674,9 @@ Speaker notes: Agents are just AI connected to tools. Take away the tools, it ca
 layout: updates
 ---
 
-<div style="display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 0.5rem;">
-  <span class="i-lucide-toy-brick" style="font-size: 3rem; color: #f59e0b;" />
-  <span class="i-lucide-pen-line" style="font-size: 3rem; color: #a78bfa;" />
+<div style="font-size: 4rem; text-align: center; margin-bottom: 0.2rem; line-height: 1;">
+  <span class="i-lucide-toy-brick inline-block" style="color: #f59e0b;" />
+  <span class="i-lucide-pen-line inline-block" style="color: #a78bfa;" />
 </div>
 
 # Workshop Time!
@@ -719,7 +724,7 @@ You have 15 minutes. GO!"
 
 ---
 
-<WorkshopTimer />
+s<WorkshopTimer />
 
 <!--
 Speaker: Press ▶ Start to begin the countdown, then 🎵 Music On for ambient background music.
@@ -767,30 +772,29 @@ Speaker: Take the photo live. Show it on screen.
 
 # Step 2: Enhance with Gemini <span class="i-lucide-sparkles inline-block" />
 
-<div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.2rem; line-height: 1.8; margin: 1rem 0;">
+<p style="text-align: center; font-size: 1.1rem; color: #94a3b8; margin: 0.2rem 0 0.5rem;">
+Open Gemini → tap <strong style="color: white;">+</strong> → attach photo → paste prompt → send!
+</p>
 
-### Gemini Prompt:
-
-*"Take this photo of a Lego figure and create polished character concept art of this mascot. Keep the same proportions, colors, and personality but make it look like a professional game character design. Studio lighting, white background, suitable as a 3D game character. Show front view."*
-
-</div>
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 3rem; margin-top: 2rem;">
-  <div style="text-align: center;">
-    <div style="font-size: 1rem; color: #94a3b8;"><span class="i-lucide-camera inline-block" style="vertical-align: middle;" /> Photo</div>
-    <div style="width: 180px; height: 180px; background: #0f172a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><span class="i-lucide-toy-brick inline-block" /></div>
+<div style="display: flex; gap: 1.2rem; align-items: flex-start;">
+  <div style="flex: 1;">
+    <div style="background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.25); padding: 0.6rem 1rem; border-radius: 12px; font-size: 0.88rem; line-height: 1.45; color: #e0e0e0;">
+      <p style="margin: 0;"><em>"Take this photo of a Lego figure and create polished character concept art of this mascot. Keep the same proportions, colors, and personality but make it look like a <strong style="color: #38bdf8;">[your preferred art style, e.g. cartoon, realistic, anime]</strong> game character design. Studio lighting, white background, suitable as a 3D game character. <strong style="color: #38bdf8;">Strictly front view only — centered, fully upright, absolutely no angle or perspective.</strong> Square 1:1 ratio."</em></p>
+    </div>
   </div>
-  <div style="font-size: 3rem; color: #38bdf8;">→ <span class="i-lucide-sparkles inline-block" /> →</div>
-  <div style="text-align: center;">
-    <div style="font-size: 1rem; color: #94a3b8;"><span class="i-lucide-palette inline-block" style="vertical-align: middle;" /> Concept Art</div>
-    <div style="width: 180px; height: 180px; background: #0f172a; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 4rem;"><span class="i-lucide-gamepad-2 inline-block" /></div>
+  <div style="text-align: center; flex-shrink: 0;">
+    <img :src="'/images/gemini_lego_prompt_qr.png'" style="width: 160px; border-radius: 8px;" />
+    <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
+    <button onclick="navigator.clipboard.writeText('Take this photo of a Lego figure and create polished character concept art of this mascot. Keep the same proportions, colors, and personality but make it look like a [your preferred art style, e.g. cartoon, realistic, anime] game character design. Studio lighting, white background, suitable as a 3D game character. Strictly front view only — centered, fully upright, absolutely no angle or perspective. Square 1:1 ratio.').then(() => { this.textContent = '✓ Copied!'; setTimeout(() => { this.textContent = '📋 Copy Prompt' }, 1500) })" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; padding: 0.35rem 1.1rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 0.4rem;">📋 Copy Prompt</button>
   </div>
 </div>
 
 <!--
-Speaker: Open Gemini. Upload the photo. Paste the prompt.
+Speaker: Open Gemini. Upload the photo. Paste the prompt (or scan QR / click Copy Prompt).
 Show the result. "From Lego bricks to concept art in 10 seconds."
 Have a pre-generated backup ready in /images/demo-gemini-enhanced.jpg
+
+📌 TODO: Generate gemini_lego_prompt_qr.png — QR encoding the prompt text (or a web page with a copy button).
 -->
 
 ---
@@ -799,7 +803,7 @@ Have a pre-generated backup ready in /images/demo-gemini-enhanced.jpg
 
 <div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.3rem; line-height: 1.8; margin: 1.5rem 0; text-align: center;">
 
-Upload the enhanced image to <strong style="color: #38bdf8;">meshy.ai</strong><br>
+Upload the enhanced image to <strong style="color: #38bdf8;"><a href="https://www.meshy.ai/" target="_blank">meshy.ai</a></strong><br>
 → Select "Image to 3D"<br>
 → Wait ~2 minutes<br>
 → Download the 3D model
@@ -827,8 +831,8 @@ Website: https://www.meshy.ai/
 
 # Step 4: Into Roblox! <span class="i-lucide-gamepad-2 inline-block" />
 
-<div style="display: flex; justify-content: center; align-items: center; height: 55%; flex-direction: column;">
-  <div style="font-size: 6rem; margin-bottom: 2rem;"><span class="i-lucide-toy-brick inline-block" /> → <span class="i-lucide-camera inline-block" /> → <span class="i-lucide-sparkles inline-block" /> → <span class="i-lucide-box inline-block" /> → <span class="i-lucide-gamepad-2 inline-block" /></div>
+<div style="display: flex; justify-content: center; align-items: center; height: 70%; flex-direction: column; padding-top: 2rem;">
+  <div style="font-size: 5.5rem; margin-bottom: 2rem; white-space: nowrap; display: flex; align-items: center; justify-content: center; gap: 0.5rem;"><span class="i-lucide-toy-brick inline-block" /><span style="font-size: 2.5rem;">→</span><span class="i-lucide-camera inline-block" /><span style="font-size: 2.5rem;">→</span><span class="i-lucide-sparkles inline-block" /><span style="font-size: 2.5rem;">→</span><span class="i-lucide-box inline-block" /><span style="font-size: 2.5rem;">→</span><span class="i-lucide-gamepad-2 inline-block" /></div>
   <p style="font-size: 1.8rem; color: white; text-align: center; font-weight: 700;">
     From a pile of Lego bricks<br>to a character in a digital world.
   </p>
@@ -849,31 +853,60 @@ HUGE moment. Let it land.
 
 # Now the Poem! <span class="i-lucide-music inline-block" />
 
-<div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.2rem; line-height: 1.8; margin: 1rem 0;">
+<hr style="border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 0.2rem 0 0.8rem;" />
 
-### Step 1: Gemini Polish
+<p style="font-size: 1.25rem; font-weight: 600; color: #e0e0e0; margin: 0 0 0.4rem;">Step 1: Polish with Gemini</p>
 
-*"Take this anthem written by a group and enhance the rhythm. Keep the original heart and meaning but make it singable with a verse-chorus-verse structure. Add vivid imagery. Keep it warm and fun."*
-
-</div>
-
-<div style="background: #1e293b; padding: 2rem; border-radius: 12px; font-size: 1.2rem; line-height: 1.8; margin: 1rem 0;">
-
-### Step 2: Suno Music
-
-*"Upbeat folk anthem, community choir style, joyful and clap-along, acoustic guitar and tambourine, warm and celebratory, Hebrew-English mix"*
-
-</div>
-
-<p style="text-align: center; font-size: 1.3rem; color: #94a3b8; margin-top: 1rem;">
-Website: <strong style="color: #38bdf8;">suno.com</strong>
+<p style="text-align: center; font-size: 1.1rem; color: #94a3b8; margin: 0.2rem 0 0.5rem;">
+Open Gemini → paste your group's poem + this prompt → get a singable version!
 </p>
+
+<div style="display: flex; gap: 1.2rem; align-items: flex-start;">
+  <div style="flex: 1;">
+    <div style="background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.25); padding: 0.6rem 1rem; border-radius: 12px; font-size: 0.88rem; line-height: 1.45; color: #e0e0e0;">
+      <p style="margin: 0;"><em>"Take this anthem written by a group and enhance the rhythm. Keep the original heart and meaning but make it singable with a verse-chorus-verse structure. Keep it warm and fun."</em></p>
+    </div>
+  </div>
+  <div style="text-align: center; flex-shrink: 0;">
+    <img :src="'/images/gemini_poem_prompt_qr.png'" style="width: 160px; border-radius: 8px;" />
+    <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
+    <button onclick="navigator.clipboard.writeText('Take this anthem written by a group and enhance the rhythm. Keep the original heart and meaning but make it singable with a verse-chorus-verse structure. Add vivid imagery. Keep it warm and fun.').then(() => { this.textContent = '✓ Copied!'; setTimeout(() => { this.textContent = '📋 Copy Prompt' }, 1500) })" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; padding: 0.35rem 1.1rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 0.4rem;">📋 Copy Prompt</button>
+  </div>
+</div>
 
 <!--
 Speaker: Read the original poem out loud first. "Beautiful. Now let's give it superpowers."
-1. Paste into Gemini with the polish prompt. Show the enhanced version.
-2. Paste lyrics into Suno. Generate.
-3. Play the result for everyone. This is usually a BIG crowd-pleaser.
+Paste into Gemini with the polish prompt. Show the enhanced version.
+-->
+
+---
+
+# Now the Poem! <span class="i-lucide-music inline-block" />
+
+<hr style="border: none; border-top: 1px solid rgba(255,255,255,0.15); margin: 0.2rem 0 0.8rem;" />
+
+<p style="font-size: 1.25rem; font-weight: 600; color: #e0e0e0; margin: 0 0 0.4rem;">Step 2: Turn it into Music with Suno</p>
+
+<p style="text-align: center; font-size: 1.1rem; color: #94a3b8; margin: 0.2rem 0 0.5rem;">
+Open <strong style="color: #38bdf8;"><a href="https://suno.com/home" target="_blank">suno.com</a></strong> → paste polished lyrics + this style prompt → generate!
+</p>
+
+<div style="display: flex; gap: 1.2rem; align-items: flex-start;">
+  <div style="flex: 1;">
+    <div style="background: rgba(56,189,248,0.08); border: 1px solid rgba(56,189,248,0.25); padding: 0.6rem 1rem; border-radius: 12px; font-size: 0.88rem; line-height: 1.45; color: #e0e0e0;">
+      <p style="margin: 0;"><em>"<strong style="color: #38bdf8;">[your favourite genre, e.g. pop, jazz, rock]</strong>, community choir style, joyful and clap-along, acoustic guitar and tambourine, warm and celebratory."</em></p>
+    </div>
+  </div>
+  <div style="text-align: center; flex-shrink: 0;">
+    <img :src="'/images/suno_music_prompt_qr.png'" style="width: 160px; border-radius: 8px;" />
+    <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
+    <button onclick="navigator.clipboard.writeText('[your favourite genre, e.g. pop, jazz, rock], community choir style, joyful and clap-along, acoustic guitar and tambourine, warm and celebratory.').then(() => { this.textContent = '✓ Copied!'; setTimeout(() => { this.textContent = '📋 Copy Prompt' }, 1500) })" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; padding: 0.35rem 1.1rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 0.4rem;">📋 Copy Prompt</button>
+  </div>
+</div>
+
+<!--
+Speaker: Paste lyrics into Suno. Generate.
+Play the result for everyone. This is usually a BIG crowd-pleaser.
 Have a pre-generated backup song ready.
 -->
 
@@ -881,40 +914,41 @@ Have a pre-generated backup song ready.
 layout: updates
 ---
 
-# <span class="i-lucide-party-popper inline-block" /> Show & Tell
+# <span class="i-lucide-refresh-cw inline-block" /> Let's Recap
 
 <p style="font-size: 1.5rem; color: #ccc;">
-Let's see what we created together!
+Here's what we built together today.
 </p>
 
 <!--
-SECTION 9: SHOW & TELL (5 min)
-Show the 3D mascot in Roblox. Play the anthem. Celebrate.
+SECTION 9: RECAP (5 min)
+Presenter does the AI enhancements live: Gemini → Meshy → Roblox, and Gemini → Suno.
+Narrate each step as you go. Play the anthem at the end. Celebrate.
 -->
 
 ---
 
 # Look What We Made Together
 
-<div style="display: flex; justify-content: center; gap: 4rem; height: 60%; align-items: center;">
-  <div style="background: #1e293b; padding: 2.5rem; border-radius: 16px; text-align: center; width: 300px;">
-    <div style="font-size: 4rem; margin-bottom: 1rem;"><span class="i-lucide-gamepad-2 inline-block" /></div>
-    <h3 style="color: #f59e0b; font-size: 1.5rem;">The Mascot</h3>
-    <p style="font-size: 1.1rem; color: #94a3b8; margin-top: 0.5rem;">Living in Roblox</p>
+<div style="display: flex; justify-content: center; gap: 2rem; align-items: stretch; margin-top: 0.5rem;">
+  <div style="background: #1e293b; padding: 1.5rem; border-radius: 16px; text-align: center; width: 220px;">
+    <div style="font-size: 2.8rem; margin-bottom: 0.6rem;"><span class="i-lucide-gamepad-2 inline-block" /></div>
+    <h3 style="color: #f59e0b; font-size: 1.2rem;">The Mascot</h3>
+    <p style="font-size: 0.95rem; color: #94a3b8; margin-top: 0.4rem;">Living in Roblox</p>
   </div>
-  <div style="background: #1e293b; padding: 2.5rem; border-radius: 16px; text-align: center; width: 300px;">
-    <div style="font-size: 4rem; margin-bottom: 1rem;"><span class="i-lucide-music inline-block" /></div>
-    <h3 style="color: #a78bfa; font-size: 1.5rem;">The Anthem</h3>
-    <p style="font-size: 1.1rem; color: #94a3b8; margin-top: 0.5rem;">A real song!</p>
+  <div style="background: #1e293b; padding: 1.5rem; border-radius: 16px; text-align: center; width: 220px;">
+    <div style="font-size: 2.8rem; margin-bottom: 0.6rem;"><span class="i-lucide-music inline-block" /></div>
+    <h3 style="color: #a78bfa; font-size: 1.2rem;">The Anthem</h3>
+    <p style="font-size: 0.95rem; color: #94a3b8; margin-top: 0.4rem;">A real song!</p>
   </div>
-  <div style="background: #1e293b; padding: 2.5rem; border-radius: 16px; text-align: center; width: 300px;">
-    <div style="font-size: 4rem; margin-bottom: 1rem;"><span class="i-lucide-image inline-block" /></div>
-    <h3 style="color: #38bdf8; font-size: 1.5rem;">Your Caricatures</h3>
-    <p style="font-size: 1.1rem; color: #94a3b8; margin-top: 0.5rem;">Take home!</p>
+  <div style="background: #1e293b; padding: 1.5rem; border-radius: 16px; text-align: center; width: 220px;">
+    <div style="font-size: 2.8rem; margin-bottom: 0.6rem;"><span class="i-lucide-image inline-block" /></div>
+    <h3 style="color: #38bdf8; font-size: 1.2rem;">Your Caricatures</h3>
+    <p style="font-size: 0.95rem; color: #94a3b8; margin-top: 0.4rem;">Take home!</p>
   </div>
 </div>
 
-<p style="text-align: center; font-size: 1.5rem; color: #ccc; margin-top: 2rem;">
+<p style="text-align: center; font-size: 1.3rem; color: #ccc; margin-top: 1.2rem;">
 From Lego bricks, paper, and a photo → to a game character, a song, and digital art.<br>
 <strong style="color: white;">You did this. Not the machine. You directed it.</strong>
 </p>
@@ -945,27 +979,31 @@ Our greatest tool is adaptability.
 -->
 
 ---
-layout: media-cols
-media: /images/bright-future.jpg
-position: right
-width: 50%
----
 
 # What's Coming
 
-### Healthcare
-- AI-assisted diagnostics
-- Personalized treatment plans
-- 24/7 health monitoring
-
-### Education
-- A personal tutor for every child
-- Learning adapted to YOUR pace
-- Knowledge in any language, instantly
-
-<br>
-
-> It's not about replacing people. It's about **giving every person superpowers**.
+<div style="display: flex; gap: 2rem; align-items: flex-start; margin-top: 0.8rem;">
+  <div style="flex: 1;">
+    <p style="font-size: 1.05rem; font-weight: 700; color: #f59e0b; margin: 0 0 0.3rem;">🏥 Healthcare</p>
+    <ul style="font-size: 0.95rem; color: #ccc; line-height: 1.7; margin: 0 0 1rem; padding-left: 1.2rem;">
+      <li>AI-assisted diagnostics</li>
+      <li>Personalized treatment plans</li>
+      <li>24/7 health monitoring</li>
+    </ul>
+    <p style="font-size: 1.05rem; font-weight: 700; color: #a78bfa; margin: 0 0 0.3rem;">📚 Education</p>
+    <ul style="font-size: 0.95rem; color: #ccc; line-height: 1.7; margin: 0 0 1.2rem; padding-left: 1.2rem;">
+      <li>A personal tutor for every child</li>
+      <li>Learning adapted to YOUR pace</li>
+      <li>Knowledge in any language, instantly</li>
+    </ul>
+    <blockquote style="border-left: 3px solid #38bdf8; padding-left: 1rem; color: #94a3b8; font-size: 1rem; margin: 0;">
+      It's not about replacing people. It's about <strong style="color: white;">giving every person superpowers</strong>.
+    </blockquote>
+  </div>
+  <div style="flex-shrink: 0; width: 42%;">
+    <img src="/images/the_future_of_ai.png" style="width: 100%; border-radius: 12px; object-fit: cover; max-height: 340px;" />
+  </div>
+</div>
 
 <!--
 🎨 GEMINI IMAGE PROMPT:
@@ -1016,17 +1054,13 @@ Nothing scary. Just another tool that becomes part of life."
 
 # Our Greatest Tool
 
-<div style="display: flex; justify-content: center; align-items: center; height: 65%; flex-direction: column;">
-  <h2 style="font-size: 3.5rem; font-weight: 900; text-align: center; line-height: 1.3; max-width: 800px;">
-    People feared the printing press.<br>
-    <span style="color: #94a3b8;">We got libraries.</span><br><br>
-    People feared automobiles.<br>
-    <span style="color: #94a3b8;">We got freedom.</span><br><br>
-    People feared the internet.<br>
-    <span style="color: #94a3b8;">We got connection.</span><br><br>
-    People fear AI.<br>
-    <span style="color: #38bdf8;">We'll get...</span>
-  </h2>
+<div style="display: flex; justify-content: center; align-items: flex-start; padding-top: 0; flex-direction: column; margin-top: -0.5rem;">
+  <div style="font-size: 2.1rem; font-weight: 900; text-align: center; max-width: 800px; margin: 0 auto;">
+    <div style="line-height: 1.2; margin-bottom: 0.8rem;">People feared the printing press.<br><span style="color: #94a3b8;">We got libraries.</span></div>
+    <div style="line-height: 1.2; margin-bottom: 0.8rem;">People feared automobiles.<br><span style="color: #94a3b8;">We got freedom.</span></div>
+    <div style="line-height: 1.2; margin-bottom: 0.8rem;">People feared the internet.<br><span style="color: #94a3b8;">We got connection.</span></div>
+    <div style="line-height: 1.2;">People fear AI.<br><span style="color: #38bdf8;">We'll get...</span></div>
+  </div>
 </div>
 
 <!--
@@ -1060,65 +1094,29 @@ layout: end
 
 # Thank You! <span class="i-lucide-heart-handshake inline-block" />
 
-<p style="font-size: 1.5rem; color: #ccc; margin-bottom: 2rem;">
+<p style="font-size: 1.5rem; color: #ccc; margin-bottom: 1.5rem;">
 The future is being built right now. And it needs your stories.
 </p>
 
-<div class="presenter-info">
-Itzik (Yizhak) Ben-Shabat
-<br>
-<span style="font-size: 1rem; color: #94a3b8;">Senior Scientist, Roblox</span>
+<div style="display: flex; align-items: center; gap: 2rem; justify-content: center;">
+  <img src="/images/Itzik_ben_shabat_protrait.jpg" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(56,189,248,0.4); flex-shrink: 0;" />
+  <div style="text-align: left;">
+    <div style="font-size: 1.3rem; font-weight: 700; color: white;">Itzik (Yizhak) Ben-Shabat</div>
+    <div style="font-size: 1rem; color: #94a3b8; margin-top: 0.2rem;">Senior Scientist, Roblox</div>
+    <div style="display: flex; align-items: center; gap: 0.6rem; margin-top: 0.8rem;">
+      <span class="i-lucide-globe inline-block" style="color: #38bdf8; font-size: 1rem;" />
+      <a href="https://itzikbs.com" target="_blank" style="color: #38bdf8; font-size: 1rem; text-decoration: none;">itzikbs.com</a>
+    </div>
+  </div>
+  <div style="text-align: center; flex-shrink: 0;">
+    <img src="/images/itzikbs_qr.png" style="width: 90px; border-radius: 6px;" />
+    <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.3rem;">scan to visit</p>
+  </div>
 </div>
 
 ---
 
-# Resources & Links <span class="i-lucide-book-open inline-block" />
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; font-size: 1.2rem; padding: 1rem 2rem;">
-
-<div>
-
-### <span class="i-lucide-book-open-text inline-block" style="vertical-align: middle;" /> Books & Papers
-- **Sapiens** — Yuval Noah Harari
-- [PointNet Paper](https://arxiv.org/abs/1612.00593)
-- [Attention Is All You Need](https://arxiv.org/abs/1706.03762)
-
-### <span class="i-lucide-palette inline-block" style="vertical-align: middle;" /> Tools We Used
-- [ChatGPT](https://chat.openai.com/) — Caricatures
-- [Google Gemini](https://gemini.google.com/) — Image Enhancement
-- [Meshy.ai](https://www.meshy.ai/) — Image to 3D
-- [Suno](https://suno.com/) — AI Music
-
-</div>
-
-<div>
-
-### <span class="i-lucide-gamepad-2 inline-block" style="vertical-align: middle;" /> Platforms
-- [Roblox Studio](https://www.roblox.com/create)
-
-### <span class="i-lucide-brain inline-block" style="vertical-align: middle;" /> Learn More
-- [Google AI Experiments](https://experiments.withgoogle.com/collection/ai)
-- [Teachable Machine](https://teachablemachine.withgoogle.com/)
-
-### <span class="i-lucide-smartphone inline-block" style="vertical-align: middle;" /> Try at Home
-- Make caricatures with your family!
-- Turn drawings into 3D models
-- Create songs from poems
-
-</div>
-
-</div>
-
-<!--
-Speaker: "All these links will be in a handout / QR code.
-Go home and try these with your families.
-Make caricatures of your grandkids. Turn their drawings into 3D models.
-The tools are free or very cheap. The only limit is your imagination."
--->
-
----
-
-<div style="display: flex; justify-content: center; align-items: center; height: 80%; flex-direction: column;">
+<div style="display: flex; justify-content: flex-start; align-items: center; padding-top: 5rem; flex-direction: column;">
   <p style="font-size: 1.2rem; color: #94a3b8; margin-bottom: 1.5rem; font-style: italic;">
     "What is the most important thing kids today should learn?"
   </p>
