@@ -27,10 +27,23 @@ jobs:
         working-directory: beyond-the-cul-de-sac
         run: npm run build
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy slides to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: beyond-the-cul-de-sac/dist
           destination_dir: beyond-the-cul-de-sac
+          keep_files: true
+
+      - name: Prepare landing page
+        run: |
+          mkdir -p _landing
+          cp index.html _landing/index.html
+          cp 404.html _landing/404.html
+
+      - name: Deploy landing page to GitHub Pages root
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _landing
           keep_files: true

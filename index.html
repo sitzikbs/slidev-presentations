@@ -67,7 +67,7 @@
             left: 0;
             right: 0;
             height: 4px;
-            background: linear-gradient(90deg, #ffffff 0%, #888888 100%);
+            background: var(--accent, linear-gradient(90deg, #ffffff 0%, #888888 100%));
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -149,41 +149,24 @@
 <body>
     <div class="container">
         <header>
-            <!-- Update this title to match your presenter name or team -->
-            <h1>Slide Decks</h1>
-            <p class="subtitle">Presentations powered by Slidev</p>
+            <h1>Itzik Ben-Shabat</h1>
+            <p class="subtitle">Presentations &amp; Talks</p>
         </header>
         
         <main>
             <div class="deck-grid">
-                <!-- Example deck card — demonstrates all available layouts -->
-                <div class="deck-card">
-                    <h2 class="deck-title">Example Deck</h2>
+                <div class="deck-card" style="--accent: linear-gradient(90deg, #38bdf8 0%, #a78bfa 100%);">
+                    <h2 class="deck-title">Beyond the Cul-de-Sac</h2>
                     <div class="deck-meta">
-                        <span>📅 Created: 2025-11-24</span>
+                        <span>📅 March 2026</span>
+                        <span>🎤 Popular Science Talk</span>
                     </div>
                     <p class="deck-description">
-                        Demonstrates all available layouts: cover, updates, figure, grid-cols, media-grid, code highlighting, and Google Drive media embedding.
+                        How AI and 3D Worlds are Redefining Play, Creativity, and Education.
+                        An interactive ~70-minute talk for a non-technical audience — live AI demos, Lego workshops, and more.
                     </p>
-                    <a href="./example-deck/" class="deck-link">View Slides →</a>
+                    <a href="./beyond-the-cul-de-sac/" class="deck-link" style="background: linear-gradient(90deg, #38bdf8, #a78bfa); color: #0a0a0a;">View Slides →</a>
                 </div>
-
-                <!--
-                    ADD YOUR DECK CARDS HERE.
-                    Copy the block below and fill in the details for each new deck
-                    you create with ./create-deck.sh.
-
-                    <div class="deck-card">
-                        <h2 class="deck-title">Your Deck Title</h2>
-                        <div class="deck-meta">
-                            <span>📅 Created: YYYY-MM-DD</span>
-                        </div>
-                        <p class="deck-description">
-                            Short description of what this deck covers.
-                        </p>
-                        <a href="./your-deck-name/" class="deck-link">View Slides →</a>
-                    </div>
-                -->
             </div>
         </main>
         
