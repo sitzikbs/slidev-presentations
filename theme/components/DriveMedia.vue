@@ -39,7 +39,11 @@ const srcUrl = computed(() => {
       : `https://drive.google.com/uc?export=view&id=${url}`
   }
 
-  // Otherwise treat as direct URL / Local path
+  // Local path — prepend Vite base URL so sub-path deployments work
+  if (url.startsWith('/')) {
+    return import.meta.env.BASE_URL + url.slice(1)
+  }
+
   return url
 })
 
