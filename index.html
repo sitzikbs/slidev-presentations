@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Decks</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 2px solid #2a2a2a;
+            margin-bottom: 3rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: #888;
+        }
+        
+        .deck-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .deck-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%);
+            border: 1px solid #2a2a2a;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .deck-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--accent, linear-gradient(90deg, #ffffff 0%, #888888 100%));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .deck-card:hover {
+            transform: translateY(-4px);
+            border-color: #ffffff;
+            box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+        }
+        
+        .deck-card:hover::before {
+            opacity: 1;
+        }
+        
+        .deck-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+        
+        .deck-description {
+            color: #b0b0b0;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+        
+        .deck-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.875rem;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+        
+        .deck-link {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: #ffffff;
+            color: #0a0a0a;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        
+        .deck-link:hover {
+            background-color: #e0e0e0;
+            transform: scale(1.05);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #2a2a2a;
+            color: #666;
+        }
+        
+        .empty-state {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: #666;
+        }
+        
+        .empty-state h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #888;
+        }
+        
+        .empty-state code {
+            background: #1a1a1a;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Itzik Ben-Shabat</h1>
+            <p class="subtitle">Presentations &amp; Talks</p>
+        </header>
+        
+        <main>
+            <div class="deck-grid">
+                <div class="deck-card" style="--accent: linear-gradient(90deg, #38bdf8 0%, #a78bfa 100%);">
+                    <h2 class="deck-title">Beyond the Cul-de-Sac</h2>
+                    <div class="deck-meta">
+                        <span>📅 March 2026</span>
+                        <span>🎤 Popular Science Talk</span>
+                    </div>
+                    <p class="deck-description">
+                        How AI and 3D Worlds are Redefining Play, Creativity, and Education.
+                        An interactive ~70-minute talk for a non-technical audience — live AI demos, Lego workshops, and more.
+                    </p>
+                    <a href="./beyond-the-cul-de-sac/" class="deck-link" style="background: linear-gradient(90deg, #38bdf8, #a78bfa); color: #0a0a0a;">View Slides →</a>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Built with <a href="https://sli.dev" style="color: #888; text-decoration: underline;">Slidev</a></p>
+        </footer>
+    </div>
+</body>
+</html>
