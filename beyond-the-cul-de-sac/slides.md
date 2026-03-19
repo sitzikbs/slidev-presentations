@@ -642,6 +642,8 @@ Now let's see how this actually made your caricature..."
 ---
 layout: figure
 media: /images/caricature_pipeline.png
+mediaWidth: 96%
+mediaHeight: 82%
 ---
 
 # How It Made Your Caricature

@@ -18,6 +18,14 @@ const props = defineProps({
     type: String,
     default: 'contain',
   },
+  mediaWidth: {
+    type: String,
+    default: '80%',
+  },
+  mediaHeight: {
+    type: String,
+    default: '65%',
+  },
 })
 </script>
 
@@ -27,7 +35,7 @@ const props = defineProps({
       <slot />
     </div>
 
-    <div class="figure-media-container">
+    <div class="figure-media-container" :style="{ width: mediaWidth, maxHeight: mediaHeight }">
       <DriveMedia :media="media" :type="type" :fit="fit" />
     </div>
     
