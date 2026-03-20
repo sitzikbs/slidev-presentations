@@ -26,7 +26,7 @@ Itzik (Yizhak) Ben-Shabat
 <br>
 Senior Scientist, Roblox
 <br>
-<img :src="`${import.meta.env.BASE_URL}images/Itzik_ben_shabat_protrait.jpg`" style="width: 112px; height: 112px; border-radius: 50%; object-fit: cover; margin-top: 1rem; display: block; margin-left: auto; margin-right: auto;" />
+<img :src="`${$base}images/Itzik_ben_shabat_protrait.jpg`" style="width: 112px; height: 112px; border-radius: 50%; object-fit: cover; margin-top: 1rem; display: block; margin-left: auto; margin-right: auto;" />
 </div>
 
 <div class="cover-date">2026</div>
@@ -78,11 +78,11 @@ The reveal: the artist is AI. But YOU gave the direction.
 
 <div style="display: flex; justify-content: center; gap: 3rem; align-items: flex-start; margin-top: 1rem; height: 72%;">
   <div style="text-align: center; flex: 1; max-width: 42%;">
-    <img :src="`${import.meta.env.BASE_URL}images/van_gogh_gemini.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+    <img :src="`${$base}images/van_gogh_gemini.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
     <p style="font-size: 2rem; margin-top: 0.8rem; color: #38bdf8; font-weight: 700;">?</p>
   </div>
   <div style="text-align: center; flex: 1; max-width: 42%;">
-    <img :src="`${import.meta.env.BASE_URL}images/Monet_chatGPT.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+    <img :src="`${$base}images/Monet_chatGPT.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
     <p style="font-size: 2rem; margin-top: 0.8rem; color: #38bdf8; font-weight: 700;">?</p>
   </div>
 </div>
@@ -118,7 +118,7 @@ Give them 30 seconds. Most will guess Van Gogh (left) and Monet (right).
 <div style="display: flex; justify-content: center; gap: 3rem; align-items: flex-start; margin-top: 0.5rem; height: 55%;">
   <div style="text-align: center; flex: 1; max-width: 38%;">
     <div class="prompt-reveal">
-      <img :src="`${import.meta.env.BASE_URL}images/van_gogh_gemini.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+      <img :src="`${$base}images/van_gogh_gemini.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
       <div class="prompt-overlay">
         <p class="prompt-text">A highly textured oil painting of a bustling open-air street market in ancient Jaffa, Israel, rendered strictly in the Post-Impressionist style of Vincent van Gogh. Blistering midday heat. Stalls overflowing with vibrant Jaffa oranges and ruby-red pomegranates. The ancient, weathered limestone archways cast deep, rhythmic cobalt-blue and violet shadows. Above, a swirling, turbulent sky in vivid ultramarine. Heavy, sculptural impasto brushwork, with visible ridges of paint catching the light. Aggressive, directional brushstrokes outlining the figures in the crowd. Masterpiece, intense complementary colors, emotional, expressive. Do NOT include any text, signature, watermark, or modern vehicles.</p>
       </div>
@@ -130,7 +130,7 @@ Give them 30 seconds. Most will guess Van Gogh (left) and Monet (right).
   </div>
   <div style="text-align: center; flex: 1; max-width: 38%;">
     <div class="prompt-reveal">
-      <img :src="`${import.meta.env.BASE_URL}images/Monet_chatGPT.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+      <img :src="`${$base}images/Monet_chatGPT.png`" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
       <div class="prompt-overlay">
         <p class="prompt-text">A luminous masterwork oil painting of a cat asleep by a window, executed in the distinctive style of Claude Monet. The focus is entirely on capturing the fleeting "envelope" of light surrounding the subjects. The composition is built from myriad small, rapid strokes of pure, unblended paint that create an optical vibration. Lavender, pale sage green, soft cerulean, and peach hues merge to form the image. The cat is defined by colored shadows (never black or gray), blending into the texture of the windowsill and the vague, shimmering forms of a wildflower bouquet. The light from the window is so intense it seems to dissolve the solid edges of the objects. The paint has visible texture and a matte, chalky finish typical of aged oil on canvas. Dreamy, ethereal, and saturated with soft, natural light. Do NOT include any text, signature, or watermark.</p>
       </div>
@@ -293,13 +293,13 @@ writing, labor, information, and now intelligence. And each time, we found new t
 # Why We Always Get It Wrong
 
 <div style="display: flex; justify-content: center; margin-top: 0.2rem;">
-  <img :src="`${import.meta.env.BASE_URL}images/hollywood_vs_reality.png?v=2`" style="height: 280px; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.5);" />
+  <img :src="`${$base}images/hollywood_vs_reality.png?v=2`" style="height: 280px; border-radius: 8px; box-shadow: 0 4px 24px rgba(0,0,0,0.5);" />
 </div>
 
 <div style="display: flex; flex-direction: column; gap: 0.4rem; margin-top: 0.4rem; padding: 0 1.5rem;">
   <div style="display: flex; align-items: stretch; gap: 0.5rem;">
     <div style="background: rgba(248,113,113,0.08); border: 1px solid rgba(248,113,113,0.25); border-radius: 8px; padding: 0.35rem 0.7rem; flex: 1; display: flex; align-items: center; gap: 0.6rem;">
-      <img :src="`${import.meta.env.BASE_URL}images/bttf_poster.jpg`" style="height: 52px; border-radius: 4px;" />
+      <img :src="`${$base}images/bttf_poster.jpg`" style="height: 52px; border-radius: 4px;" />
       <div>
         <p style="font-size: 0.85rem; color: #ccc; margin: 0;"><strong style="color: #f87171;">Back to the Future II</strong> <span style="color: #64748b; font-size: 0.8rem;">'89</span></p>
         <p style="font-size: 0.8rem; color: #ccc; margin: 0.15rem 0 0 0;">same town + flying cars & hoverboards</p>
@@ -389,7 +389,7 @@ One dense visual timeline. Tell the story quickly.
 # The Speed of Change
 
 <div style="display: flex; justify-content: center; margin-top: -1.7rem;">
-  <img :src="`${import.meta.env.BASE_URL}images/Evolution_of_AI.png`" style="width: 985%; border-radius: 8px;" />
+  <img :src="`${$base}images/Evolution_of_AI.png`" style="width: 985%; border-radius: 8px;" />
 </div>
 
 <p style="text-align: center; color: #9ca3af; font-size: 1rem; font-style: italic; margin-top: -2.5rem;">
@@ -490,7 +490,7 @@ Open ChatGPT → tap <strong style="color: white;">+</strong> → attach photo �
 </p>
   </div>
   <div style="text-align: center; flex-shrink: 0;">
-    <img :src="`${import.meta.env.BASE_URL}images/caricature_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
+    <img :src="`${$base}images/caricature_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
     <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
   </div>
 </div>
@@ -509,7 +509,7 @@ After ~8 min: "Show your neighbors! Beautiful. You are all AI artists now."
 <div style="display: flex; justify-content: center; gap: 2rem; margin-top: 1rem; align-items: center;">
   <div style="text-align: center;">
     <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;"><span class="i-lucide-camera inline-block" style="vertical-align: middle;" /> Original</div>
-    <img :src="`${import.meta.env.BASE_URL}images/Itzik_ben_shabat_protrait.jpg`" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+    <img :src="`${$base}images/Itzik_ben_shabat_protrait.jpg`" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
   </div>
   <div style="display: flex; flex-direction: column; align-items: center; gap: 0.5rem;">
     <svg width="32" height="32" viewBox="0 0 41 41" fill="none"><path d="M37.532 16.87a9.963 9.963 0 0 0-.856-8.184 10.078 10.078 0 0 0-10.855-4.835A9.964 9.964 0 0 0 18.306.5a10.079 10.079 0 0 0-9.614 6.977 9.967 9.967 0 0 0-6.664 4.834 10.08 10.08 0 0 0 1.24 11.817 9.965 9.965 0 0 0 .856 8.185 10.079 10.079 0 0 0 10.855 4.835 9.965 9.965 0 0 0 7.516 3.35 10.078 10.078 0 0 0 9.617-6.981 9.967 9.967 0 0 0 6.663-4.834 10.079 10.079 0 0 0-1.243-11.813ZM22.498 37.886a7.474 7.474 0 0 1-4.799-1.735c.061-.033.168-.091.237-.134l7.964-4.6a1.294 1.294 0 0 0 .655-1.134V19.054l3.366 1.944a.12.12 0 0 1 .066.092v9.299a7.505 7.505 0 0 1-7.49 7.496ZM6.392 31.006a7.471 7.471 0 0 1-.894-5.023c.06.036.162.099.237.141l7.964 4.6a1.297 1.297 0 0 0 1.308 0l9.724-5.614v3.888a.12.12 0 0 1-.048.103l-8.051 4.649a7.504 7.504 0 0 1-10.24-2.744ZM4.297 13.62A7.469 7.469 0 0 1 8.2 10.333c0 .068-.004.19-.004.274v9.201a1.294 1.294 0 0 0 .654 1.132l9.723 5.614-3.366 1.944a.12.12 0 0 1-.114.012L7.044 23.86a7.504 7.504 0 0 1-2.747-10.24Zm27.658 6.437-9.724-5.615 3.367-1.943a.12.12 0 0 1 .113-.012l8.051 4.649a7.497 7.497 0 0 1-1.158 13.528v-9.476a1.293 1.293 0 0 0-.649-1.131Zm3.35-5.043c-.059-.037-.162-.099-.236-.141l-7.965-4.6a1.298 1.298 0 0 0-1.308 0l-9.723 5.614v-3.888a.12.12 0 0 1 .048-.103l8.05-4.645a7.497 7.497 0 0 1 11.135 7.763Zm-21.063 6.929-3.367-1.944a.12.12 0 0 1-.065-.092v-9.299a7.497 7.497 0 0 1 12.293-5.756 6.94 6.94 0 0 0-.236.134l-7.965 4.6a1.294 1.294 0 0 0-.654 1.132l-.006 11.225Zm1.829-3.943 4.33-2.501 4.332 2.5v5l-4.331 2.5-4.331-2.5V18Z" fill="#ffffff"/></svg>
@@ -518,7 +518,7 @@ After ~8 min: "Show your neighbors! Beautiful. You are all AI artists now."
   <div style="text-align: center;">
     <div style="font-size: 0.95rem; color: #94a3b8; margin-bottom: 0.5rem;"><span class="i-lucide-palette inline-block" style="vertical-align: middle;" /> AI Caricature <span style="font-size: 0.75rem;"></span></div>
     <div class="caricature-reveal">
-      <img :src="`${import.meta.env.BASE_URL}images/caricature_itzik.png`" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
+      <img :src="`${$base}images/caricature_itzik.png`" style="width: 240px; height: 240px; border-radius: 12px; object-fit: cover; box-shadow: 0 4px 20px rgba(0,0,0,0.5);" />
       <div class="caricature-overlay">
         <p class="caricature-prompt-text">Create a colorful cartoon caricature of the person in this photo. Make it fun and exaggerated with a warm friendly style. They are passionate about volleyball, AI, teaching, and research. Include visual elements representing these passions floating around them. Place them on the Eilat promenade with the Red Sea in the background.</p>
       </div>
@@ -739,7 +739,7 @@ Walk around, encourage, help.
 layout: updates
 ---
 
-<img :src="`${import.meta.env.BASE_URL}images/red_button.png`" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin: -3rem auto 0; display: block; filter: drop-shadow(0 4px 24px rgba(255,50,50,0.35));" />
+<img :src="`${$base}images/red_button.png`" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin: -3rem auto 0; display: block; filter: drop-shadow(0 4px 24px rgba(255,50,50,0.35));" />
 
 # Let's Press THE BUTTON
 
@@ -785,7 +785,7 @@ Open Gemini → tap <strong style="color: white;">+</strong> → attach photo �
     </div>
   </div>
   <div style="text-align: center; flex-shrink: 0;">
-    <img :src="`${import.meta.env.BASE_URL}images/gemini_lego_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
+    <img :src="`${$base}images/gemini_lego_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
     <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
     <button onclick="navigator.clipboard.writeText('Take this photo of a Lego figure and create polished character concept art of this mascot. Keep the same proportions, colors, and personality but make it look like a [your preferred art style, e.g. cartoon, realistic, anime] game character design. Studio lighting, white background, suitable as a 3D game character. Strictly front view only — centered, fully upright, absolutely no angle or perspective. Square 1:1 ratio.').then(() => { this.textContent = '✓ Copied!'; setTimeout(() => { this.textContent = '📋 Copy Prompt' }, 1500) })" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; padding: 0.35rem 1.1rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 0.4rem;">📋 Copy Prompt</button>
   </div>
@@ -870,7 +870,7 @@ Open Gemini → paste your group's poem + this prompt → get a singable version
     </div>
   </div>
   <div style="text-align: center; flex-shrink: 0;">
-    <img :src="`${import.meta.env.BASE_URL}images/gemini_poem_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
+    <img :src="`${$base}images/gemini_poem_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
     <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
     <button onclick="navigator.clipboard.writeText('Take this anthem written by a group and enhance the rhythm. Keep the original heart and meaning but make it singable with a verse-chorus-verse structure. Add vivid imagery. Keep it warm and fun.').then(() => { this.textContent = '✓ Copied!'; setTimeout(() => { this.textContent = '📋 Copy Prompt' }, 1500) })" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; padding: 0.35rem 1.1rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 0.4rem;">📋 Copy Prompt</button>
   </div>
@@ -900,7 +900,7 @@ Open <strong style="color: #38bdf8;"><a href="https://suno.com/home" target="_bl
     </div>
   </div>
   <div style="text-align: center; flex-shrink: 0;">
-    <img :src="`${import.meta.env.BASE_URL}images/suno_music_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
+    <img :src="`${$base}images/suno_music_prompt_qr.png`" style="width: 160px; border-radius: 8px;" />
     <p style="font-size: 0.85rem; color: #94a3b8; margin-top: 0.3rem;">Scan to copy the prompt</p>
     <button onclick="navigator.clipboard.writeText('[your favourite genre, e.g. pop, jazz, rock], community choir style, joyful and clap-along, acoustic guitar and tambourine, warm and celebratory.').then(() => { this.textContent = '✓ Copied!'; setTimeout(() => { this.textContent = '📋 Copy Prompt' }, 1500) })" style="background: rgba(56,189,248,0.15); border: 1px solid rgba(56,189,248,0.4); color: #38bdf8; padding: 0.35rem 1.1rem; border-radius: 8px; cursor: pointer; font-size: 0.9rem; margin-top: 0.4rem;">📋 Copy Prompt</button>
   </div>
@@ -1003,7 +1003,7 @@ Our greatest tool is adaptability.
     </blockquote>
   </div>
   <div style="flex-shrink: 0; width: 42%;">
-    <img :src="`${import.meta.env.BASE_URL}images/the_future_of_ai.png`" style="width: 100%; border-radius: 12px; object-fit: cover; max-height: 340px;" />
+    <img :src="`${$base}images/the_future_of_ai.png`" style="width: 100%; border-radius: 12px; object-fit: cover; max-height: 340px;" />
   </div>
 </div>
 
@@ -1101,7 +1101,7 @@ The future is being built right now. And it needs your stories.
 </p>
 
 <div style="display: flex; align-items: center; gap: 2rem; justify-content: center;">
-  <img :src="`${import.meta.env.BASE_URL}images/Itzik_ben_shabat_protrait.jpg`" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(56,189,248,0.4); flex-shrink: 0;" />
+  <img :src="`${$base}images/Itzik_ben_shabat_protrait.jpg`" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(56,189,248,0.4); flex-shrink: 0;" />
   <div style="text-align: left;">
     <div style="font-size: 1.3rem; font-weight: 700; color: white;">Itzik (Yizhak) Ben-Shabat</div>
     <div style="font-size: 1rem; color: #94a3b8; margin-top: 0.2rem;">Senior Scientist, Roblox</div>
@@ -1111,7 +1111,7 @@ The future is being built right now. And it needs your stories.
     </div>
   </div>
   <div style="text-align: center; flex-shrink: 0;">
-    <img :src="`${import.meta.env.BASE_URL}images/itzikbs_qr.png`" style="width: 90px; border-radius: 6px;" />
+    <img :src="`${$base}images/itzikbs_qr.png`" style="width: 90px; border-radius: 6px;" />
     <p style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.3rem;">scan to visit</p>
   </div>
 </div>
