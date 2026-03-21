@@ -22,7 +22,7 @@ How AI and 3D Worlds are Redefining Play, Creativity, and Education
 </div>
 
 <div class="presenter-info">
-Itzik (Yizhak) Ben-Shabat
+Dr. Itzik (Yizhak) Ben-Shabat (PhD)
 <br>
 Senior Scientist, Roblox
 <br>
@@ -1082,7 +1082,7 @@ The future is being built right now. And it needs your stories.
 <div style="display: flex; align-items: center; gap: 2rem; justify-content: center;">
   <img :src="`${$base}images/Itzik_ben_shabat_protrait.jpg`" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(56,189,248,0.4); flex-shrink: 0;" />
   <div style="text-align: left;">
-    <div style="font-size: 1.3rem; font-weight: 700; color: white;">Dr Itzik (Yizhak) Ben-Shabat (PhD)</div>
+    <div style="font-size: 1.3rem; font-weight: 700; color: white;">Dr. Itzik (Yizhak) Ben-Shabat (PhD)</div>
     <div style="font-size: 1rem; color: #94a3b8; margin-top: 0.2rem;">Senior Scientist, Roblox</div>
     <div style="display: flex; align-items: center; gap: 0.6rem; margin-top: 0.8rem;">
       <span class="i-lucide-globe inline-block" style="color: #38bdf8; font-size: 1rem;" />
