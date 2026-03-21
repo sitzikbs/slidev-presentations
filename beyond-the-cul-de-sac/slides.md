@@ -339,23 +339,6 @@ AI won't add one dramatic gadget to your life. It'll be a million small changes
 to how you write, learn, create, and play — like the caricature you just made."
 -->
 
-<!-- COMMENTED OUT — Slide 11: The Knowledge Revolution (removed)
----
-layout: figure
-media: /images/knowledge_revolution.png
-caption: "Each one replaced the last. Each time, access got easier."
----
-
-# The Knowledge Revolution
-
-Speaker: "Think about how you used to find information.
-You'd go to the library — open specific hours, hope the book was there.
-Then encyclopedias — Britannica at home, but outdated before you finished reading.
-Then Google and Wikipedia — instant, free, from anywhere.
-And now? You ASK a question in plain language and get a personal answer.
-Same knowledge — just faster, easier, more personal every time."
--->
-
 <!-- COMMENTED OUT — Slide 12: Same Field, New Suit Every 5 Years (feels out of place for now)
 To restore: uncomment and add slide separator (three dashes) before and after.
 
@@ -1099,7 +1082,7 @@ The future is being built right now. And it needs your stories.
 <div style="display: flex; align-items: center; gap: 2rem; justify-content: center;">
   <img :src="`${$base}images/Itzik_ben_shabat_protrait.jpg`" style="width: 110px; height: 110px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(56,189,248,0.4); flex-shrink: 0;" />
   <div style="text-align: left;">
-    <div style="font-size: 1.3rem; font-weight: 700; color: white;">Itzik (Yizhak) Ben-Shabat</div>
+    <div style="font-size: 1.3rem; font-weight: 700; color: white;">Dr Itzik (Yizhak) Ben-Shabat (PhD)</div>
     <div style="font-size: 1rem; color: #94a3b8; margin-top: 0.2rem;">Senior Scientist, Roblox</div>
     <div style="display: flex; align-items: center; gap: 0.6rem; margin-top: 0.8rem;">
       <span class="i-lucide-globe inline-block" style="color: #38bdf8; font-size: 1rem;" />
