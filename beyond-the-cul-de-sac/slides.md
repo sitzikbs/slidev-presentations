@@ -726,7 +726,7 @@ You have 15 minutes. GO!"
 
 ---
 
-s<WorkshopTimer />
+<WorkshopTimer />
 
 <!--
 Speaker: Press ▶ Start to begin the countdown, then 🎵 Music On for ambient background music.
