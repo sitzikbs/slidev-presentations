@@ -339,6 +339,7 @@ AI won't add one dramatic gadget to your life. It'll be a million small changes
 to how you write, learn, create, and play — like the caricature you just made."
 -->
 
+<!-- COMMENTED OUT — Slide 11: The Knowledge Revolution (removed)
 ---
 layout: figure
 media: /images/knowledge_revolution.png
@@ -346,11 +347,6 @@ caption: "Each one replaced the last. Each time, access got easier."
 ---
 
 # The Knowledge Revolution
-
-<!--
-🎨 GEMINI IMAGE PROMPT:
-"A horizontal evolution-style illustration on a dark background showing 4 stages of how humans access knowledge, progressing left to right with glowing arrows between them. Stage 1: a grand ancient library with tall bookshelves and a person climbing a ladder to reach a book, warm candlelight, labeled 'LIBRARIES'. Stage 2: a cozy living room with a family gathered around a thick encyclopedia set on a wooden bookshelf, 1970s warm tones, labeled 'ENCYCLOPEDIAS'. Stage 3: a glowing computer monitor showing the Google search page and a Wikipedia article side by side, early 2000s feel with a desk lamp, labeled 'GOOGLE + WIKIPEDIA'. Stage 4: a modern person casually holding a smartphone with a glowing AI chat interface, the AI response floating above the phone as holographic text, futuristic blue glow, labeled 'AI ASSISTANTS'. Each stage should be visually distinct with its own color temperature — warm/amber for libraries, cozy/yellow for encyclopedias, cool/white for internet, vibrant/blue-purple for AI. The progression should feel like an acceleration — the stages get closer together toward the right. Clean editorial illustration style, vibrant colors, no text other than the labels."
-Save as: public/images/knowledge_revolution.png
 
 Speaker: "Think about how you used to find information.
 You'd go to the library — open specific hours, hope the book was there.
