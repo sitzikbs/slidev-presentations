@@ -1,4 +1,4 @@
-name: Deploy — Beyond the Cul-de-Sac
+name: Deploy decks
 
 on:
   push:
@@ -14,31 +14,33 @@ concurrency:
   group: pages
   cancel-in-progress: true
 
+# GitHub Pages serves a single artifact, so every deck is built and assembled in one job.
+# Add new decks to DECKS.
+env:
+  DECKS: beyond-the-cul-de-sac career-quest
+
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          lfs: true # videos (*.mp4) are stored in Git LFS
 
       - uses: actions/setup-node@v4
         with:
           node-version: 20
 
-      - name: Install dependencies
-        working-directory: beyond-the-cul-de-sac
-        run: npm install
-
-      - name: Build slides
-        working-directory: beyond-the-cul-de-sac
-        run: npm run build
-
-      - name: Assemble site
+      - name: Build decks and assemble site
         run: |
-          mkdir -p _site/beyond-the-cul-de-sac
-          cp index.html _site/index.html
-          cp 404.html _site/404.html
-          cp -r beyond-the-cul-de-sac/dist/. _site/beyond-the-cul-de-sac/
+          mkdir -p _site
+          cp index.html 404.html _site/
+          for deck in $DECKS; do
+            (cd "$deck" && npm install && npm run build)
+            mkdir -p "_site/$deck"
+            cp -r "$deck/dist/." "_site/$deck/"
+          done
 
       - uses: actions/upload-pages-artifact@v3
         with:
