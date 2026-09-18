@@ -1,8 +1,16 @@
-<!-- One stop on the career map. Frontmatter: `level: 1..6`. Left slot = words, `::right::` = visual. -->
+<!-- One stop on the career map. Frontmatter: `level: 1..7`. Left slot = words, `::right::` = visual. -->
+<script setup>
+import { stops } from '../stops'
+</script>
+
 <template>
   <div class="slidev-layout cq-level">
     <div class="cq-level-words">
-      <div class="cq-level-tag">LEVEL {{ $frontmatter.level }}</div>
+      <div class="cq-level-tag">
+        <component :is="stops[$frontmatter.level - 1].icon" />
+        <span>{{ stops[$frontmatter.level - 1].name }}</span>
+        <span class="cq-level-place">{{ stops[$frontmatter.level - 1].place }}</span>
+      </div>
       <slot />
     </div>
     <div class="cq-level-visual">
@@ -23,15 +31,24 @@
   height: 100%;
 }
 .cq-level-tag {
-  display: inline-block;
-  padding: 0.3rem 0.9rem;
-  margin-bottom: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.35rem 0.9rem;
+  margin-bottom: 1.1rem;
   border-radius: 8px;
   background: #fff;
   color: #000;
   font-size: 1rem;
   font-weight: 800;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+.cq-level-place {
+  padding-left: 0.6rem;
+  border-left: 2px solid rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  opacity: 0.6;
 }
 .cq-level-visual {
   height: 100%;

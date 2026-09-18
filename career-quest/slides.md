@@ -20,7 +20,7 @@ head:
 <h1>What is this person doing?</h1>
 
 <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; height: 360px;">
-  <div style="height: 100%; min-height: 0;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" /></div>
+  <div style="height: 100%; min-height: 0;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" :zoom="1.3" /></div>
   <div>
     <GuessPoll compact :cols="1" :options="['Conducting an orchestra', 'Swatting mosquitoes', 'Playing a VR game', 'Landing a plane']" :answer="2" />
     <p v-click="2" style="margin-top: 1rem; font-size: 1.3rem;">Nobody animated this. <span class="dim">A computer watched a video and rebuilt it in 3D.</span></p>
@@ -316,7 +316,6 @@ clicks: 1
 
 <!--
 [6:50] ~40 sec. "I won a European fellowship: money to chase my OWN questions. It started in Australia and finished back in Israel."
-THE HEART OF 'WHAT IS A SCIENTIST': "In school, every question has an answer in the back of the book. My job is the questions where there IS no back of the book. Nobody on Earth knows the answer yet. You get to be the first to find out."
 "Then COVID hit. Remember I said scientists fly around the world to share what they found? All of that stopped. People did years of work and had nobody to tell."
 CLICK the bridge: "So I started a podcast, Talking Papers, to give scientists everywhere a place to explain their work. Just to help. I had no idea it would change my life."
 -->
@@ -367,7 +366,7 @@ layout: updates
 [8:05] ~75 sec, one click per card.
 1. "I play and I talk to the people who make games. I ask: what do you WISH you could do?"
 2. "Most of my time: writing code."
-3. "Then experiments. Try an idea, measure it, see if it actually works."
+3. "Then experiments." SLOW DOWN HERE, this is the heart of what a scientist is: "In school, every question has an answer in the back of the book. My job is the questions where there IS no back of the book. Nobody on Earth knows the answer yet. So you try an idea, you measure it, and you get to be the first person to find out."
 4. "When it works, we have to prove it to the world's top experts. They try hard to find holes in it. We have to show it's new, nobody did it before, and it's useful. If they agree, it gets published for everyone in the world to use."
 (Deliberately no "paper" jargon. If you say "paper", define it as that proof.)
 -->
@@ -387,6 +386,7 @@ layout: updates
 "These are from a collection we built. Hundreds of kinds of movement, all labeled." (You can drag to rotate.)
 "Learn from enough of these and the computer can make NEW movement from just words. Imagine typing how your avatar should move."
 Accuracy note for you: these are motions a computer recovered from real videos (RoMo), each with its description. They are the examples a movement-generating AI learns FROM, not generated output.
+Handoff: "So that's the job. Now the question you actually care about: is it any fun?"
 -->
 
 ---
@@ -445,6 +445,7 @@ Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travel
 <!--
 [10:40] ~30 sec, all three are already on screen. One sentence each, keep moving.
 The kids' science show is NOT out yet: say "coming soon", and tease it ("you'll be the first to hear about it").
+Handoff: "Sounds pretty great, right? OK. Now the truth."
 -->
 
 ---
@@ -507,13 +508,14 @@ clicks: 1
 2. "I moved my family across the world. Twice. New language, new friends, new everything. Anyone here ever switch schools? It's that. Scary for a while, then it's the best thing you did."
 3. "And two years ago I left the university world, the only world I knew, for a company. Different rules, different speed. Beginner again."
 "Every time, I was the new kid. It never stops being scary. It always ends up worth it."
+Handoff: "So what actually got me through all of that?"
 -->
 
 ---
 
 # Power-ups I collected
 
-<div class="cards" style="grid-template-columns: repeat(5, 1fr); margin-top: 2.5rem;">
+<div class="cards five" style="grid-template-columns: repeat(5, 1fr); margin-top: 2.5rem;">
   <div class="card"><span class="emoji"><lucide-calculator /></span>Math</div>
   <div class="card"><span class="emoji"><lucide-wrench /></span>Building stuff</div>
   <div class="card"><span class="emoji"><lucide-laptop /></span>Coding<br><span class="dim" style="font-size: 1rem;">(mostly self-taught)</span></div>
@@ -537,7 +539,8 @@ transition: fade
 
 <p v-click class="dim">I didn't know some doctors aren't <i>doctor</i> doctors.</p>
 <p v-click>Yours might not exist yet either.</p>
-<p v-click>So learn the hard stuff <b>now</b>. <span class="dim">If it's hard for you, it's hard for everyone. That's your edge.</span></p>
+<p v-click class="punch">So learn the hard stuff now.</p>
+<p v-after class="dim">If it's hard for you, it's hard for everyone. That's your edge.</p>
 
 <!--
 [13:40] THE CLOSE. Slow down. Three clicks, a breath between each.
@@ -550,18 +553,24 @@ Then stop. Don't add anything. Let it sit for two seconds, and go to questions.
 -->
 
 ---
-layout: updates
+layout: default
+class: updates
 ---
 
-# Ask me anything
-
-<div class="cards" style="grid-template-columns: repeat(3, 1fr); margin-top: 2rem; max-width: 800px;">
-  <div class="card">"Do you get free Robux?"</div>
-  <div class="card">"Will AI take over?"</div>
-  <div class="card">"What's the worst bug you made?"</div>
+<div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 2.5rem; align-items: center; height: 100%;">
+  <div style="height: 380px;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" mode="dots" :zoom="1.2" /></div>
+  <div>
+    <h1>Ask me anything</h1>
+    <div class="cards" style="grid-template-columns: 1fr; gap: 0.7rem; margin-top: 1.5rem;">
+      <div class="card" style="padding: 0.8rem 1rem; text-align: left;">"Do you get free Robux?"</div>
+      <div class="card" style="padding: 0.8rem 1rem; text-align: left;">"Will AI take over?"</div>
+      <div class="card" style="padding: 0.8rem 1rem; text-align: left;">"What's the worst bug you ever made?"</div>
+    </div>
+  </div>
 </div>
 
 <!--
-[14:10] Q&A, 5 to 10 minutes. The starter questions are there in case nobody wants to go first. Have your answers ready.
+[14:10] Q&A, 5 to 10 minutes. The bookend: "Recognise this one? Same person from the start, the way a computer sees them. Now you know what you're looking at." Then: "Ask me anything."
+The starter questions are there in case nobody wants to go first. Have your answers ready.
 If it's quiet, ask THEM: "What would you build if games could do anything?"
 -->

@@ -33,18 +33,20 @@ npm run build    # static site in dist/
 
 ## Pieces
 
+`stops.js` is the single list of the seven story stops (name, icon, place). The map and the chapter tag on every level slide both read from it.
+
 | Component | What it does |
 |---|---|
 | `GuessPoll` | Four-option show-of-hands question; the answer lights up on the next click (`cols`, `compact`) |
 | `LevelMap` | The seven-stop career map with place regions; `level` lights the path and a small avatar walks in from the previous stop; `compact` is the strip on level slides |
-| `MotionViewer` | Animated 3D character from a `.glb`, draggable; `mode="dots"` or `reveal` (dots, then solid on click) |
+| `MotionViewer` | Animated 3D character from a `.glb`, draggable; `mode="dots"` or `reveal` (dots, then solid on click); `zoom` moves the camera closer |
 | `Clip` | Looping muted video; `invert` turns white-background renders black |
 | `WorldPins` | Offline world map: lived (rings), travelled (white), collaborators (blue, on click); `left`/`dy` untangle labels |
 | `TenTries` | Ten idea tiles; nine flip to a miss, one to a hit |
 | `PhotoSlot` | Photo with a labelled placeholder until the file exists; `invert` flips a white-background figure to black |
 
 Everything is bundled (no iframes, no YouTube, no CDN scripts), so it works on a locked-down school computer.
-The only network request is the theme's Inter web font, which falls back to a system font.
+Inter is bundled too (`@fontsource-variable/inter`), so the typography is identical even if the school blocks Google Fonts.
 
 ## Media credits
 

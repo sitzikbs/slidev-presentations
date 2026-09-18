@@ -4,30 +4,14 @@
 // every time the slide is entered. `compact` renders the small strip used on level slides.
 import { computed, nextTick, onMounted, ref } from 'vue'
 import { onSlideEnter } from '@slidev/client'
-import IconCog from '~icons/lucide/cog'
-import IconShield from '~icons/lucide/shield'
-import IconBone from '~icons/lucide/bone'
-import IconBrain from '~icons/lucide/brain'
-import IconBot from '~icons/lucide/bot'
-import IconMic from '~icons/lucide/mic'
-import IconGamepad from '~icons/lucide/gamepad-2'
 import IconPlane from '~icons/lucide/plane'
+import { stops } from '../stops'
 
 const props = defineProps({
   level: { type: Number, default: 0 },
   from: { type: Number, default: null }, // stop the avatar walks in from (default: level - 1)
   compact: { type: Boolean, default: false },
 })
-
-const stops = [
-  { icon: IconCog, name: 'Machines', sub: 'engineering degree' },
-  { icon: IconShield, name: 'Army', sub: '4 years' },
-  { icon: IconBone, name: 'Bones', sub: "master's degree" },
-  { icon: IconBrain, name: '3D + AI', sub: 'PhD' },
-  { icon: IconBot, name: 'Robots', sub: 'postdoc' },
-  { icon: IconMic, name: 'Podcast', sub: 'EU research fellow' },
-  { icon: IconGamepad, name: 'Roblox', sub: 'senior scientist' },
-]
 
 // Evenly spaced zigzag, so every path segment has the same length.
 const X0 = 105

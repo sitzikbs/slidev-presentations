@@ -15,8 +15,12 @@ const props = defineProps({
 })
 
 const W = 1000
-const H = 500
-const projection = geoNaturalEarth1().fitSize([W, H], { type: 'Sphere' })
+const H = 400
+// Fit to the inhabited latitudes; Antarctica is clipped off the bottom.
+const projection = geoNaturalEarth1().fitSize([W, H], {
+  type: 'MultiPoint',
+  coordinates: [[-180, 0], [180, 0], [0, -56], [0, 80]], // equator sets the width, the latitudes set the height
+})
 const landPath = geoPath(projection)(feature(land, land.objects.land))
 
 const placed = computed(() =>
@@ -36,7 +40,7 @@ onSlideEnter(() => run.value++)
 
 <template>
   <div class="world-wrap">
-    <svg :key="run" class="world-pins" :viewBox="`0 0 ${W} ${H}`">
+    <svg :key="run" class="world-pins" style="overflow: hidden" :viewBox="`0 0 ${W} ${H}`">
     <path :d="landPath" class="land" />
     <g
       v-for="(p, i) in placed"

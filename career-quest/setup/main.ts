@@ -1,3 +1,4 @@
+import '@fontsource-variable/inter'
 import { defineAppSetup } from '@slidev/types'
 
 export default defineAppSetup(({ app }) => {

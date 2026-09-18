@@ -16,6 +16,7 @@ const props = defineProps({
   color: { type: String, default: '#ffffff' },
   dotStride: { type: Number, default: 3 },
   spin: { type: Boolean, default: true },
+  zoom: { type: Number, default: 1 }, // >1 moves the camera closer
 })
 
 const { $clicks } = useSlideContext()
@@ -89,7 +90,7 @@ function start() {
   clock = new THREE.Clock()
 
   camera = new THREE.PerspectiveCamera(40, 1, 0.05, 100)
-  camera.position.set(2.0, 1.35, 2.7)
+  camera.position.set(2.0 / props.zoom, 0.95 + 0.4 / props.zoom, 2.7 / props.zoom)
   controls = new OrbitControls(camera, canvas.value)
   controls.enableDamping = true
   controls.enablePan = false
