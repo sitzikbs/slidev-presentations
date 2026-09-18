@@ -8,6 +8,8 @@ const props = defineProps({
   options: { type: Array, required: true },
   answer: { type: Number, required: true },
   revealAt: { type: Number, default: 1 },
+  cols: { type: Number, default: 2 },
+  compact: { type: Boolean, default: false },
 })
 
 const { $clicks } = useSlideContext()
@@ -16,7 +18,7 @@ const letters = ['A', 'B', 'C', 'D']
 </script>
 
 <template>
-  <div class="guess-poll" :class="{ revealed }">
+  <div class="guess-poll" :class="{ revealed, compact }" :style="{ gridTemplateColumns: `repeat(${cols}, 1fr)` }">
     <div
       v-for="(option, i) in options"
       :key="i"
@@ -72,5 +74,16 @@ const letters = ['A', 'B', 'C', 'D']
 }
 .guess-option.wrong {
   opacity: 0.22;
+}
+.compact {
+  gap: 0.6rem;
+}
+.compact .guess-option {
+  padding: 0.55rem 1rem;
+  font-size: 1.3rem;
+}
+.compact .guess-letter {
+  width: 2rem;
+  height: 2rem;
 }
 </style>

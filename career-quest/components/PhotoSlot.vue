@@ -6,6 +6,7 @@ import { ref } from 'vue'
 defineProps({
   src: { type: String, required: true },
   label: { type: String, default: 'photo' },
+  invert: { type: Boolean, default: false }, // flip a white-background figure to black, keeping its colours
 })
 const base = import.meta.env.BASE_URL
 const missing = ref(false)
@@ -13,7 +14,7 @@ const missing = ref(false)
 
 <template>
   <div class="photo-slot">
-    <img v-if="!missing" :src="base + src.replace(/^\//, '')" :alt="label" @error="missing = true" />
+    <img v-if="!missing" :class="{ invert }" :src="base + src.replace(/^\//, '')" :alt="label" @error="missing = true" />
     <div v-else class="placeholder">
       <span>📷</span>
       <span>{{ label }}</span>
@@ -53,5 +54,8 @@ const missing = ref(false)
 .placeholder code {
   font-size: 0.8rem;
   opacity: 0.7;
+}
+.photo-slot img.invert {
+  filter: invert(1) hue-rotate(180deg);
 }
 </style>

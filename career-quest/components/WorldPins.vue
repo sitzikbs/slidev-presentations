@@ -81,15 +81,15 @@ onSlideEnter(() => run.value++)
 }
 .pin text {
   fill: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
 }
 .pin.team circle {
-  fill: rgba(255, 255, 255, 0.65);
+  fill: #4cb4ff;
 }
 .pin.team text {
-  fill: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
+  fill: #4cb4ff;
+  font-size: 16px;
   font-weight: 600;
 }
 .pin.hidden {
@@ -137,9 +137,9 @@ onSlideEnter(() => run.value++)
   background: #fff;
 }
 .legend .dot.small {
-  width: 7px;
-  height: 7px;
-  background: rgba(255, 255, 255, 0.65);
+  width: 8px;
+  height: 8px;
+  background: #4cb4ff;
 }
 @keyframes pop {
   from { opacity: 0; transform: translateY(-14px); }

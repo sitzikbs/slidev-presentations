@@ -75,3 +75,12 @@
   font-weight: 700;
   text-align: center;
 }
+
+/* The cliffhanger line that pulls one stop of the story into the next */
+.slidev-layout p.bridge {
+  margin-top: 1.4rem;
+  padding-left: 1rem;
+  border-left: 4px solid #fff;
+  font-size: 1.45rem;
+  font-style: italic;
+}
