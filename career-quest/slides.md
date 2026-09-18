@@ -46,7 +46,7 @@ clicks: 2
     <h1>Hi, I'm Itzik</h1>
     <p><span class="dim">Say it like</span> "Itsy" bitsy spider <span class="dim">+ k</span></p>
     <p v-click="1">Scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 1.6rem; vertical-align: baseline; margin-left: 0.3rem;" alt="Roblox" /></p>
-    <p v-click="2">Also: somebody's dad. 👋 <span class="dim">Hi sweetie!</span></p>
+    <p v-click="2">Also: somebody's dad. <lucide-hand style="display: inline; vertical-align: -0.15em;" /> <span class="dim">Hi sweetie!</span></p>
   </div>
 </div>
 
@@ -124,7 +124,7 @@ clicks: 1
 
 <p class="dim">Not like the movies. A small grey cubicle, designing machine parts.</p>
 
-<p v-click class="bridge">After four grey years, I wanted colour…</p>
+<p v-click class="bridge">Grey all day. So I went looking for colour…</p>
 
 ::right::
 
@@ -135,7 +135,30 @@ clicks: 1
 "I know what you're picturing. Helicopters. Explosions."
 "I sat in a tiny grey cubicle. Grey walls, grey desk, grey computer. I designed mechanical parts and got them manufactured."
 "But they were real parts that real people depended on. If I got it wrong, it didn't fit. That's where I learned to be careful and to finish the job."
-CLICK the bridge: "After four grey years I wanted something with more colour. So I went back to school."
+CLICK the bridge: "Grey all day. So after work, I went looking for some colour."
+-->
+
+---
+layout: level
+level: 2
+clicks: 1
+---
+
+# After hours: robots
+
+<p class="dim">I volunteered to coach a high school team</p>
+
+<p v-click class="bridge">Those kids made me want to learn more…</p>
+
+::right::
+
+<Clip src="clips/frc-3316.mp4" />
+
+<!--
+[3:25] ~30 sec. "The cubicle was grey. So after work, I found some colour. I volunteered as a mentor for a high school robotics team. Team 3316."
+"High schoolers, not much older than you, design and build THIS in six weeks. Then they compete. That's our robot with the red bumpers, hanging tubes on the rack."
+"Nobody paid me. It was the best part of my week." (There are FIRST teams for middle schoolers too, if anyone asks.)
+CLICK the bridge: "Watching those kids figure things out made me want to go back and learn more myself."
 -->
 
 ---
@@ -155,7 +178,7 @@ clicks: 1
 <div style="width: 100%;"><PhotoSlot src="photos/bone-structure.png" label="bone micro-structure" /></div>
 
 <!--
-[3:25] ~35 sec. "Anyone know what this is?" Take a guess or two. "It's the INSIDE of a bone, zoomed way in. It's not solid. It's a sponge. That's why bones are light AND strong."
+[3:55] ~35 sec. "Anyone know what this is?" Take a guess or two. "It's the INSIDE of a bone, zoomed way in. It's not solid. It's a sponge. That's why bones are light AND strong."
 "For my master's degree I asked: can we design and 3D-print something like this, to replace damaged bone?"
 "Still a machines question. Still engineering. But..."
 CLICK the bridge: "To work with a shape this complicated, the computer has to understand it first. The colours are the computer splitting the bone into pieces, by itself. And THAT part, I could not stop thinking about."
@@ -179,7 +202,7 @@ clicks: 1
 <div style="width: 100%;"><PhotoSlot src="photos/street-dots.png" label="street scanned as 3D dots" invert /></div>
 
 <!--
-[4:00] ~40 sec. THE turn in the story.
+[4:30] ~40 sec. THE turn in the story.
 "The trick I built for bones worked on other 3D things too. This is a street, scanned by a laser. See the cars? The computer coloured each object by itself."
 "I realised I cared more about teaching computers to see in 3D than about the bones. So for my PhD I switched: 3D vision and AI."
 "I was still sitting in the machines department. My classmates were building engines. I was doing AI."
@@ -203,7 +226,7 @@ clicks: 1
 <MotionViewer src="models/Sport-Skateboarding-2.glb" reveal />
 
 <!--
-[4:40] GUESS #3. "So I moved my whole family to the other side of the planet. Australia. To work with robots."
+[5:10] GUESS #3. "So I moved my whole family to the other side of the planet. Australia. To work with robots."
 "A robot's 3D camera sees THIS. Just dots. What's happening here? Shout it out."
 Let them guess (dancing? falling? surfing?). Drag to rotate it.
 CLICK: dots become a person. "Skateboarding! Onto a rail and off. Your brain got that in two seconds. Teaching a computer to get it took us years."
@@ -223,7 +246,7 @@ level: 5
 <Clip src="clips/goferbot.mp4" />
 
 <!--
-[5:20] ~30 sec. "This is our lab in Australia. The robot watches a person build IKEA furniture, works out which step they're on, and hands them the next part."
+[5:50] ~30 sec. "This is our lab in Australia. The robot watches a person build IKEA furniture, works out which step they're on, and hands them the next part."
 "To teach it, we needed examples. LOTS of examples of people building furniture. So we filmed everyone we could find..."
 -->
 
@@ -235,7 +258,7 @@ clicks: 2
 
 # We filmed hundreds of builders
 
-<p v-click="1">…and one dinosaur. 🦖</p>
+<p v-click="1">…and one dinosaur.</p>
 
 <p v-click="2" class="bridge">AI is great at what it has seen before. This? Scientists call it <b>"out of distribution"</b>.</p>
 
@@ -244,7 +267,7 @@ clicks: 2
 <div style="width: 100%;"><PhotoSlot src="photos/dinosaur-ikea.jpg" label="dinosaur assembling IKEA furniture" /></div>
 
 <!--
-[5:45] ~35 sec. Let them spot it first: "Notice anything strange about this builder?"
+[6:15] ~35 sec. Let them spot it first: "Notice anything strange about this builder?"
 CLICK 1. "Students. Professors. My own kids. And yes. One dinosaur."
 CLICK 2. "Here's why that's actually science. AI is only good at things it has seen before. It learns from examples. And I promise you: no AI on Earth had ever seen a dinosaur build a table."
 "Scientists have a name for that: OUT OF DISTRIBUTION. It means 'nothing like what I practised on.' It's the hardest test there is. Like studying for a maths test and getting a question about dinosaurs."
@@ -281,21 +304,21 @@ level: 6
 clicks: 1
 ---
 
-# My own questions
+# The world shut down
 
-<p class="dim">My own team. And a podcast where I ask scientists anything.</p>
+<p class="dim">No conferences. Nowhere to share discoveries.</p>
 
-<p v-click class="bridge">Then one guest said something that changed everything…</p>
+<p v-click class="bridge">So I started a podcast. Then one guest said…</p>
 
 ::right::
 
-<div class="center-stack"><span class="huge">🎙️</span></div>
+<div style="height: 330px; width: 100%;"><img :src="$base + 'photos/talking-papers-logo.png'" style="height: 100%; margin: 0 auto;" alt="Talking Papers Podcast" /></div>
 
 <!--
-[6:20] ~35 sec. "As a research fellow I got to choose my own questions and lead my own team."
+[6:50] ~40 sec. "I won a European fellowship: money to chase my OWN questions. It started in Australia and finished back in Israel."
 THE HEART OF 'WHAT IS A SCIENTIST': "In school, every question has an answer in the back of the book. My job is the questions where there IS no back of the book. Nobody on Earth knows the answer yet. You get to be the first to find out."
-"And I started a podcast, just for fun, where I call up scientists and ask how they did it."
-CLICK the bridge. Pause. Next slide.
+"Then COVID hit. Remember I said scientists fly around the world to share what they found? All of that stopped. People did years of work and had nobody to tell."
+CLICK the bridge: "So I started a podcast, Talking Papers, to give scientists everywhere a place to explain their work. Just to help. I had no idea it would change my life."
 -->
 
 ---
@@ -312,7 +335,7 @@ level: 7
 <div class="center-stack"><img :src="$base + 'RBLX_Tilt_Secondary_White.svg'" style="height: 200px;" alt="Roblox" /></div>
 
 <!--
-[6:55] ~30 sec. "I interviewed a scientist for my podcast. He worked at Roblox. And he told me: 'I'm having a great time.'"
+[7:30] ~30 sec. "I interviewed a scientist for my podcast. He worked at Roblox. And he told me: 'I'm having a great time.'"
 "I didn't get this job because I planned it. I got it because of a hobby. Because I was curious and talked to people."
 "And every stop on the map came with me: machines taught me how bodies move. Bones and streets taught me 3D. The robots taught me how computers see. None of it was wasted."
 -->
@@ -326,7 +349,7 @@ layout: updates
 <p class="dim">No, I don't play games ALL day. (Just a little.)</p>
 
 <!--
-[7:25] Section break. Get the laugh, then: "My job is to build things games can't do YET."
+[8:00] Section break. Get the laugh, then: "My job is to build things games can't do YET."
 -->
 
 ---
@@ -334,14 +357,14 @@ layout: updates
 # Build what games can't do yet
 
 <div class="cards" style="grid-template-columns: repeat(4, 1fr); margin-top: 2.5rem;">
-  <div v-click class="card"><span class="emoji">🎮</span>Play and talk to creators</div>
-  <div v-click class="card"><span class="emoji">⌨️</span>Write code</div>
-  <div v-click class="card"><span class="emoji">🧪</span>Run experiments</div>
-  <div v-click class="card"><span class="emoji">🏆</span>Prove it to the experts</div>
+  <div v-click class="card"><span class="emoji"><lucide-gamepad-2 /></span>Play and talk to creators</div>
+  <div v-click class="card"><span class="emoji"><lucide-code-xml /></span>Write code</div>
+  <div v-click class="card"><span class="emoji"><lucide-flask-conical /></span>Run experiments</div>
+  <div v-click class="card"><span class="emoji"><lucide-trophy /></span>Prove it to the experts</div>
 </div>
 
 <!--
-[7:30] ~75 sec, one click per card.
+[8:05] ~75 sec, one click per card.
 1. "I play and I talk to the people who make games. I ask: what do you WISH you could do?"
 2. "Most of my time: writing code."
 3. "Then experiments. Try an idea, measure it, see if it actually works."
@@ -360,7 +383,7 @@ layout: updates
 </div>
 
 <!--
-[8:40] ~60 sec. "Computers have never had a body. They don't know what a jump feels like. So we show them a HUGE number of examples of real people moving, each with a description."
+[9:15] ~60 sec. "Computers have never had a body. They don't know what a jump feels like. So we show them a HUGE number of examples of real people moving, each with a description."
 "These are from a collection we built. Hundreds of kinds of movement, all labeled." (You can drag to rotate.)
 "Learn from enough of these and the computer can make NEW movement from just words. Imagine typing how your avatar should move."
 Accuracy note for you: these are motions a computer recovered from real videos (RoMo), each with its description. They are the examples a movement-generating AI learns FROM, not generated output.
@@ -403,7 +426,7 @@ class: updates
 </div>
 
 <!--
-[9:25] ~45 sec. "When you discover something, you travel to tell other scientists about it."
+[10:00] ~45 sec. "When you discover something, you travel to tell other scientists about it."
 "Rings: places I've lived. White dots: places my job flew me to. Hawaii counts as work. I checked."
 CLICK: the blue teammate dots appear. "And these are where the people I've worked with come from. Science is a team sport, and the team is the whole planet."
 Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travelled, 'team' = collaborators (appear on click).
@@ -414,13 +437,14 @@ Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travel
 # More perks
 
 <div class="cards" style="grid-template-columns: repeat(3, 1fr); margin-top: 2.5rem;">
-  <div class="card"><span class="emoji">🤖</span>Cool toys: robots, 3D cameras, motion capture</div>
-  <div class="card"><span class="emoji">🎮</span>"Testing it in Roblox" counts as work</div>
-  <div class="card"><span class="emoji">🧒</span>I made a science show for kids</div>
+  <div class="card"><span class="emoji"><lucide-bot /></span>Cool toys: robots, 3D cameras, motion capture</div>
+  <div class="card"><span class="emoji"><lucide-gamepad-2 /></span>"Testing it in Roblox" counts as work</div>
+  <div class="card"><span class="emoji"><lucide-clapperboard /></span>A science show for kids <span class="dim">(coming soon)</span></div>
 </div>
 
 <!--
-[10:05] ~30 sec, all three are already on screen. One sentence each, keep moving.
+[10:40] ~30 sec, all three are already on screen. One sentence each, keep moving.
+The kids' science show is NOT out yet: say "coming soon", and tease it ("you'll be the first to hear about it").
 -->
 
 ---
@@ -432,7 +456,7 @@ layout: updates
 <p class="dim">The hard parts</p>
 
 <!--
-[10:35] Section break. Tone shift: slower, more honest. This is the part they'll remember.
+[11:10] Section break. Tone shift: slower, more honest. This is the part they'll remember.
 -->
 
 ---
@@ -446,7 +470,7 @@ clicks: 1
 </div>
 
 <!--
-[10:40] GUESS #4. CLICK to reveal.
+[11:15] GUESS #4. CLICK to reveal.
 "More than I can count. I honestly lost track. Remember the experts who try to find holes? They usually find some. You fix it, make it better, and try again."
 "Every scientist you've ever heard of has a pile of these."
 -->
@@ -462,7 +486,7 @@ clicks: 1
 <p v-click="1" style="margin-top: 2.5rem; text-align: center;">9 out of 10 fail. <span class="dim">That's not losing. That's the job.</span></p>
 
 <!--
-[11:10] ~50 sec. "Ten ideas, ten experiments." CLICK. "About nine don't work."
+[11:45] ~50 sec. "Ten ideas, ten experiments." CLICK. "About nine don't work."
 "The one that works only exists because of the nine. Each failure taught me something about the problem."
 "What it takes isn't being a genius. It's understanding the problem deeply, exploring, and not quitting. Same as beating a hard boss: nobody does it first try."
 -->
@@ -472,14 +496,17 @@ clicks: 1
 # Starting over. Three times.
 
 <div class="cards" style="grid-template-columns: repeat(3, 1fr); margin-top: 2.5rem;">
-  <div class="card"><span class="emoji">🐣</span>Switched fields. Taught myself the hard parts.</div>
-  <div class="card"><span class="emoji">🌏</span>Moved across the world. Twice.</div>
-  <div class="card"><span class="emoji">👋</span>New country, new language, new friends</div>
+  <div class="card"><span class="emoji"><lucide-shuffle /></span>Switched fields. Taught myself the hard parts.</div>
+  <div class="card"><span class="emoji"><lucide-earth /></span>Moved across the world. Twice. New language, new friends.</div>
+  <div class="card"><span class="emoji"><lucide-building-2 /></span>Left the university for a company</div>
 </div>
 
 <!--
-[11:55] ~45 sec. Tell ONE real, specific story here (a moment you felt lost in Australia, or something you got badly wrong while teaching yourself). Specific beats general.
-"Anyone here ever switch schools? It's that. Scary for a while, then it becomes the best thing you did."
+[12:30] ~40 sec. Three restarts, one sentence each, then ONE real story.
+1. "I switched fields, and had to teach myself the hard parts."
+2. "I moved my family across the world. Twice. New language, new friends, new everything. Anyone here ever switch schools? It's that. Scary for a while, then it's the best thing you did."
+3. "And two years ago I left the university world, the only world I knew, for a company. Different rules, different speed. Beginner again."
+"Every time, I was the new kid. It never stops being scary. It always ends up worth it."
 -->
 
 ---
@@ -487,15 +514,15 @@ clicks: 1
 # Power-ups I collected
 
 <div class="cards" style="grid-template-columns: repeat(5, 1fr); margin-top: 2.5rem;">
-  <div class="card"><span class="emoji">➗</span>Math</div>
-  <div class="card"><span class="emoji">🔧</span>Building stuff</div>
-  <div class="card"><span class="emoji">💻</span>Coding<br><span class="dim" style="font-size: 1rem;">(mostly self-taught)</span></div>
-  <div class="card"><span class="emoji">🗣️</span>Explaining ideas</div>
-  <div class="card"><span class="emoji">❓</span>Asking "why?"</div>
+  <div class="card"><span class="emoji"><lucide-calculator /></span>Math</div>
+  <div class="card"><span class="emoji"><lucide-wrench /></span>Building stuff</div>
+  <div class="card"><span class="emoji"><lucide-laptop /></span>Coding<br><span class="dim" style="font-size: 1rem;">(mostly self-taught)</span></div>
+  <div class="card"><span class="emoji"><lucide-megaphone /></span>Explaining ideas</div>
+  <div class="card"><span class="emoji"><lucide-circle-help /></span>Asking "why?"</div>
 </div>
 
 <!--
-[12:20] ~40 sec. NOT "here's what you should study". It's "here's what turned out to be useful".
+[13:10] ~40 sec. NOT "here's what you should study". It's "here's what turned out to be useful".
 "Math is how you tell a computer what you mean. Building stuff taught me how things break. Coding: I got the basics in school, but the advanced stuff I taught myself. You can too. Everything you need is online."
 "Surprise one: writing and explaining. The best idea in the world is worthless if you can't convince anyone."
 "And the one you already have: asking why."
@@ -513,7 +540,7 @@ transition: fade
 <p v-click>So learn the hard stuff <b>now</b>. <span class="dim">If it's hard for you, it's hard for everyone. That's your edge.</span></p>
 
 <!--
-[13:15] THE CLOSE. Slow down. Three clicks, a breath between each.
+[13:40] THE CLOSE. Slow down. Three clicks, a breath between each.
 "When I was 13, this job did not exist. Nobody could have told me to aim for it."
 CLICK 1, the laugh: "When I was 13 I didn't even know there were doctors who aren't medical doctors. I have a PhD, so technically I'm Dr. Itzik. My grandma STILL doesn't get it. She keeps asking me about her knee."
 CLICK 2: "The job you'll have might not exist yet either. So you can't plan for it exactly."
@@ -535,6 +562,6 @@ layout: updates
 </div>
 
 <!--
-[13:15] Q&A, 5 to 10 minutes. The starter questions are there in case nobody wants to go first. Have your answers ready.
+[14:10] Q&A, 5 to 10 minutes. The starter questions are there in case nobody wants to go first. Have your answers ready.
 If it's quiet, ask THEM: "What would you build if games could do anything?"
 -->

@@ -21,8 +21,9 @@ const revealed = computed(() => $clicks.value >= props.revealAt)
       :class="{ hit: i === hit }"
       :style="{ transitionDelay: revealed ? `${i * 0.12}s` : '0s' }"
     >
-      <span class="idea">💡</span>
-      <span class="result">{{ i === hit ? '✓' : '✗' }}</span>
+      <lucide-lightbulb class="idea" />
+      <lucide-check v-if="i === hit" class="result" />
+      <lucide-x v-else class="result" />
     </div>
   </div>
 </template>

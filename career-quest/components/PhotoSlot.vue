@@ -16,7 +16,7 @@ const missing = ref(false)
   <div class="photo-slot">
     <img v-if="!missing" :class="{ invert }" :src="base + src.replace(/^\//, '')" :alt="label" @error="missing = true" />
     <div v-else class="placeholder">
-      <span>📷</span>
+      <lucide-camera class="cam" />
       <span>{{ label }}</span>
       <code>public/{{ src }}</code>
     </div>
@@ -48,7 +48,7 @@ const missing = ref(false)
   font-size: 1.1rem;
   text-align: center;
 }
-.placeholder span:first-child {
+.placeholder .cam {
   font-size: 2.5rem;
 }
 .placeholder code {

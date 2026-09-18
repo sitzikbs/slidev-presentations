@@ -47,9 +47,10 @@
   font-weight: 700;
 }
 .card .emoji {
-  display: block;
+  display: flex;
+  justify-content: center;
   font-size: 3rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.6rem;
 }
 .viewer-row {
   display: grid;

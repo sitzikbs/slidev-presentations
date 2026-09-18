@@ -40,4 +40,9 @@
   align-items: center;
   justify-content: center;
 }
+.slidev-layout.cq-level h1 {
+  font-size: 2.9rem;
+  line-height: 1.08;
+  margin-bottom: 0.4rem;
+}
 </style>

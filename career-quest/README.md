@@ -1,6 +1,6 @@
 # Career Quest
 
-A ~13.5 minute career talk for a 7th grade CTE class: how a mechanical engineer ended up as a scientist at Roblox.
+A ~14 minute career talk for a 7th grade CTE class: how a mechanical engineer ended up as a scientist at Roblox.
 Black background, white text, max ~8 words per slide. The full speaking script with timing cues is in the
 speaker notes of `slides.md` (press `p` in the deck for presenter view).
 
@@ -11,7 +11,6 @@ Live: https://sitzikbs.github.io/slidev-presentations/career-quest/
 - [ ] `public/photos/level2-military.jpg`: a military photo you're comfortable showing
 - [ ] Optional: a photo of you at ~13 for the closing slide ("When I was 13, my job didn't exist")
 - [ ] Optional: a higher-resolution original of the IKEA dinosaur photo (`public/photos/dinosaur-ikea.jpg` is 480px wide)
-- [ ] Confirm the map's places: is the research-fellow stop in Australia? (edit `regions` in `components/LevelMap.vue`)
 - [ ] Check the "inside of a bone" and "plot twist" speaker notes against how the master's-to-PhD switch really happened
 - [x] Army slide: grey cubicle, designing and manufacturing parts ("not like the movies")
 - [x] Rejections: "More than I can count"
@@ -54,3 +53,5 @@ The only network request is the theme's Inter web font, which falls back to a sy
 - Speedometer/odometer CAD animation and the tiny self-driving car (RVSS 2019): Itzik's YouTube channel
 - Bone micro-structure and street point cloud: figures from Itzik's master's-era papers
 - Dinosaur assembling IKEA furniture: the IKEA ASM dataset blog post
+- FRC team 3316 (2011 Israel regional), which Itzik mentored as a volunteer: Itzik's YouTube channel
+- Talking Papers Podcast logo; icons are [Lucide](https://lucide.dev) via `@iconify-json/lucide` (bundled at build time, no network)

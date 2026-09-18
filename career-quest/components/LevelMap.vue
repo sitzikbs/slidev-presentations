@@ -4,6 +4,14 @@
 // every time the slide is entered. `compact` renders the small strip used on level slides.
 import { computed, nextTick, onMounted, ref } from 'vue'
 import { onSlideEnter } from '@slidev/client'
+import IconCog from '~icons/lucide/cog'
+import IconShield from '~icons/lucide/shield'
+import IconBone from '~icons/lucide/bone'
+import IconBrain from '~icons/lucide/brain'
+import IconBot from '~icons/lucide/bot'
+import IconMic from '~icons/lucide/mic'
+import IconGamepad from '~icons/lucide/gamepad-2'
+import IconPlane from '~icons/lucide/plane'
 
 const props = defineProps({
   level: { type: Number, default: 0 },
@@ -12,13 +20,13 @@ const props = defineProps({
 })
 
 const stops = [
-  { icon: '⚙️', name: 'Machines', sub: 'engineering degree' },
-  { icon: '🪖', name: 'Army', sub: '4 years' },
-  { icon: '🦴', name: 'Bones', sub: "master's degree" },
-  { icon: '🧠', name: '3D + AI', sub: 'PhD' },
-  { icon: '🤖', name: 'Robots', sub: 'Australia' },
-  { icon: '🎙️', name: 'My own lab', sub: 'research fellow' },
-  { icon: '🎮', name: 'Roblox', sub: 'senior scientist' },
+  { icon: IconCog, name: 'Machines', sub: 'engineering degree' },
+  { icon: IconShield, name: 'Army', sub: '4 years' },
+  { icon: IconBone, name: 'Bones', sub: "master's degree" },
+  { icon: IconBrain, name: '3D + AI', sub: 'PhD' },
+  { icon: IconBot, name: 'Robots', sub: 'postdoc' },
+  { icon: IconMic, name: 'Podcast', sub: 'EU research fellow' },
+  { icon: IconGamepad, name: 'Roblox', sub: 'senior scientist' },
 ]
 
 // Evenly spaced zigzag, so every path segment has the same length.
@@ -41,7 +49,7 @@ const path = computed(() => {
 // Where in the world each stretch of the path happened.
 const regions = [
   { name: 'ISRAEL', a: 0, b: 3 },
-  { name: 'AUSTRALIA', a: 4, b: 5 },
+  { name: 'AUSTRALIA → ISRAEL', a: 4, b: 5 },
   { name: 'CALIFORNIA', a: 6, b: 6 },
 ]
 const regionBoxes = regions.map((r) => ({
@@ -84,7 +92,7 @@ onSlideEnter(walk)
           <rect :x="r.x" y="40" :width="r.w" height="420" rx="28" />
           <text :x="r.x + r.w / 2" y="22" text-anchor="middle">{{ r.name }}</text>
         </g>
-        <text v-for="f in flights" :key="f.x" :x="f.x" y="262" class="flight" text-anchor="middle">✈️</text>
+        <IconPlane v-for="f in flights" :key="f.x" :x="f.x - 15" y="236" width="30" height="30" class="flight" />
       </g>
 
       <path :d="path" class="trail" />
@@ -97,7 +105,7 @@ onSlideEnter(walk)
 
       <g v-for="(n, i) in nodes" :key="i" :class="{ done: i + 1 <= level, current: i + 1 === level }">
         <circle :cx="n.x" :cy="n.y" r="44" class="node" />
-        <text :x="n.x" :y="n.y + 15" class="icon" text-anchor="middle">{{ n.icon }}</text>
+        <component :is="n.icon" :x="n.x - 23" :y="n.y - 23" width="46" height="46" class="icon" />
         <template v-if="!compact">
           <text :x="n.x" :y="n.y + (i % 2 === 0 ? 84 : -62)" class="label" text-anchor="middle">{{ n.name }}</text>
           <text :x="n.x" :y="n.y + (i % 2 === 0 ? 108 : -86)" class="sublabel" text-anchor="middle">{{ n.sub }}</text>
@@ -146,8 +154,7 @@ onSlideEnter(walk)
   letter-spacing: 0.25em;
 }
 .regions .flight {
-  font-size: 30px;
-  letter-spacing: 0;
+  color: rgba(255, 255, 255, 0.55);
 }
 .trail {
   fill: none;
@@ -167,7 +174,7 @@ onSlideEnter(walk)
   transition: all 0.5s ease;
 }
 .icon {
-  font-size: 40px;
+  color: #fff;
   opacity: 0.3;
   transition: opacity 0.5s ease;
 }

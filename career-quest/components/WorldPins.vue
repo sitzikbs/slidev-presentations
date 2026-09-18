@@ -85,10 +85,10 @@ onSlideEnter(() => run.value++)
   font-weight: 700;
 }
 .pin.team circle {
-  fill: #4cb4ff;
+  fill: #5fe0ff;
 }
 .pin.team text {
-  fill: #4cb4ff;
+  fill: #5fe0ff;
   font-size: 16px;
   font-weight: 600;
 }
@@ -139,7 +139,7 @@ onSlideEnter(() => run.value++)
 .legend .dot.small {
   width: 8px;
   height: 8px;
-  background: #4cb4ff;
+  background: #5fe0ff;
 }
 @keyframes pop {
   from { opacity: 0; transform: translateY(-14px); }
