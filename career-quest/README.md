@@ -11,10 +11,10 @@ Live: https://sitzikbs.github.io/slidev-presentations/career-quest/
 - [ ] `public/photos/level1-machines.jpg`: you as a student, or something you built
 - [ ] `public/photos/level2-military.jpg`: a military photo you're comfortable showing
 - [ ] Optional: a photo of you at ~13 for the closing slide ("When I was 13, my job didn't exist")
-- [ ] Slide "4 years of service": one kid-friendly line about what you did (speaker notes)
-- [ ] Slide "How many times did the experts say no?": confirm the real answer; change `:answer` if it isn't "way more than ten"
-- [ ] Slide "Science sends me places": edit the `pins` list to match where you've really lived and travelled
-- [ ] Ask your son whether he wants to be mentioned
+- [x] Army slide: grey cubicle, designing and manufacturing parts ("not like the movies")
+- [x] Rejections: "More than I can count"
+- [x] World map: lived / flew there / teammates come from (edit the `pins` list in slides.md to add more)
+- [x] Son: embarrassing-dad beat on the intro slide (his name stays off the public slide; say it out loud)
 - [ ] Ask Mr. Umberger to open the live URL on the classroom computer (school filters may block `github.io`)
 - [ ] Bring a PDF backup on USB: `npm run export` (needs an emoji font: `sudo apt install fonts-noto-color-emoji`)
 

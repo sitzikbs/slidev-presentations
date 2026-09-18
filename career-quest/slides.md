@@ -50,14 +50,19 @@ CLICK to reveal: chicken.
     <h1>Hi, I'm Itzik</h1>
     <p><span class="dim">Say it like</span> "Itsy" bitsy spider <span class="dim">+ k</span></p>
     <p>Scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 1.6rem; vertical-align: baseline; margin-left: 0.3rem;" alt="Roblox" /></p>
+    <p v-click>Also: somebody's dad. 👋 <span class="dim">Hi sweetie!</span></p>
   </div>
 </div>
 
 <!--
 [1:00] Keep it short. Name gag: "Itsy, like the spider, plus a k." Have them say it once together.
 "I grew up in Israel, lived in Australia, now I live here. I'm a scientist at Roblox."
-Pause for the reaction, then: "I know. But I did NOT plan this. Let me show you."
-(If your son is OK with it, mention him here. Ask him first.)
+CLICK for the dad line. Embarrass him ON PURPOSE, big and warm, then let him off the hook fast:
+ - Wave with both hands: "Hi sweetie! Did you eat the lunch I packed?"
+ - "He asked me for exactly one thing today: 'Dad, please don't be weird.'" (beat) "So. Anyway."
+ - Callback option for later: on the 9-out-of-10 slide, "ask him how many times I failed to fix the wifi."
+One joke, maybe two. Then: "I did NOT plan this job. Let me show you."
+(His name stays off the slide on purpose: this deck is public on the web.)
 -->
 
 ---
@@ -113,18 +118,19 @@ layout: level
 level: 2
 ---
 
-# 4 years of service
+# 4 years in the army
 
-<p class="dim">Teamwork. Staying calm. Finishing what you start.</p>
+<p class="dim">Not like the movies. A small grey cubicle, designing machine parts.</p>
 
 ::right::
 
 <PhotoSlot src="photos/level2-military.jpg" label="A military photo you're comfortable showing" />
 
 <!--
-[3:00] ~25 sec. One or two sentences about what you did, in kid words.
-"Where I grew up, everyone serves after high school."
-The lesson: working with a team when things are hard. Then move on, don't linger.
+[3:00] ~25 sec. Play the contrast for the laugh.
+"Where I grew up, everyone serves after high school. I know what you're picturing. Helicopters. Explosions."
+"I sat in a tiny grey cubicle. Grey walls, grey desk, grey computer. I designed mechanical parts and got them manufactured."
+"But here's the thing: real parts, that real people depended on. If I got it wrong, it didn't fit. That's where I learned to be careful and finish the job."
 -->
 
 ---
@@ -182,7 +188,25 @@ level: 4
 
 <!--
 [4:50] ~30 sec. "This is from our lab in Australia. The robot watches a person build IKEA furniture, understands which step they're on, and hands them the next part."
-"We filmed hundreds of people building furniture so the computer could learn from examples."
+-->
+
+---
+layout: level
+level: 4
+---
+
+# We filmed hundreds of builders
+
+<p v-click>…and one dinosaur. 🦖</p>
+
+::right::
+
+<div style="width: 100%;"><PhotoSlot src="photos/dinosaur-ikea.jpg" label="dinosaur assembling IKEA furniture" /></div>
+
+<!--
+[5:15] ~20 sec, pure laugh. Let them spot it before you click: "Notice anything strange about this builder?"
+CLICK. "To teach a computer, you need LOTS of examples of people building furniture. So we filmed everyone we could find. Students. Professors. My own kids. And yes, one dinosaur."
+"Real science. Published. There is a dinosaur in our data."
 -->
 
 ---
@@ -296,23 +320,40 @@ layout: updates
 -->
 
 ---
+clicks: 1
+---
 
 # Science sends me places
 
-<div style="height: 350px;">
+<div style="height: 370px;">
   <WorldPins :pins="[
-    { name: 'Israel', lon: 35.0, lat: 32.8, home: true },
-    { name: 'Australia', lon: 149.1, lat: -35.3, home: true },
-    { name: 'California', lon: -122.3, lat: 37.5, home: true, left: true },
-    { name: 'Munich', lon: 11.6, lat: 48.1 },
+    { name: 'Israel', lon: 35.0, lat: 32.0, kind: 'home', left: true, dy: 12 },
+    { name: 'Canberra', lon: 149.1, lat: -35.3, kind: 'home' },
+    { name: 'California', lon: -122.3, lat: 37.5, kind: 'home', left: true },
+    { name: 'Hawaii', lon: -155.5, lat: 19.9, left: true },
     { name: 'Vancouver', lon: -123.1, lat: 49.3, left: true },
-    { name: 'New Orleans', lon: -90.1, lat: 30.0 },
+    { name: 'Arizona', lon: -111.9, lat: 33.4, dy: -14 },
+    { name: 'New Orleans', lon: -90.1, lat: 30.0, dy: 8 },
+    { name: 'Madrid', lon: -3.7, lat: 40.4, left: true },
+    { name: 'Munich', lon: 11.6, lat: 48.1 },
+    { name: 'Adelaide', lon: 138.6, lat: -34.9, left: true },
+    { name: 'Chile', lon: -70.7, lat: -33.4, kind: 'team', left: true },
+    { name: 'Brazil', lon: -47.9, lat: -15.8, kind: 'team' },
+    { name: 'Iran', lon: 53.0, lat: 32.5, kind: 'team' },
+    { name: 'India', lon: 78.9, lat: 22.0, kind: 'team', left: true },
+    { name: 'Sri Lanka', lon: 80.7, lat: 7.8, kind: 'team', left: true },
+    { name: 'China', lon: 104.0, lat: 35.0, kind: 'team', left: true },
+    { name: 'Korea', lon: 127.5, lat: 36.5, kind: 'team' },
+    { name: 'Taiwan', lon: 121.0, lat: 23.7, kind: 'team' },
+    { name: 'Singapore', lon: 103.8, lat: 1.35, kind: 'team' },
   ]" />
 </div>
 
 <!--
-[9:30] ~35 sec. "When you discover something, you travel to tell other scientists about it. Rings = places I've lived. Dots = places my job flew me to."
-EDIT THE PINS in slides.md to match where you've really been (add Hawaii, Seattle, etc. if true).
+[9:30] ~45 sec. "When you discover something, you travel to tell other scientists about it."
+"Rings: places I've lived. White dots: places my job flew me to. Hawaii counts as work. I checked."
+CLICK: the teammate dots appear. "And these are where the people I've worked with come from. Science is a team sport, and the team is the whole planet."
+Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travelled, 'team' = collaborators (appear on click).
 -->
 
 ---
@@ -351,13 +392,13 @@ clicks: 1
 # How many times did the experts say "no"?
 
 <div style="margin-top: 2.5rem;">
-  <GuessPoll :options="['Never', 'Once or twice', 'About five times', 'Way more than ten']" :answer="3" />
+  <GuessPoll :options="['Never', 'Once or twice', 'About five times', 'More than I can count']" :answer="3" />
 </div>
 
 <!--
 [11:05] GUESS #4. CLICK to reveal.
-"Way more than ten. Remember the experts who try to find holes? They usually find some. You fix it, make it better, and try again."
-TODO (Itzik): put your real number in the story. If the true answer isn't "way more than ten", change :answer in slides.md.
+"More than I can count. I honestly lost track. Remember the experts who try to find holes? They usually find some. You fix it, make it better, and try again."
+"Every scientist you've ever heard of has a pile of these."
 -->
 
 ---
