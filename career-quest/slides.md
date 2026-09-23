@@ -94,24 +94,27 @@ Don't explain the stops. 8 seconds, then go.
 ---
 layout: level
 level: 1
-clicks: 1
+clicks: 2
 ---
 
 # I wanted to know how things work
 
-<p class="dim">So I studied machines</p>
+<p class="dim">So I studied mechanical engineering.</p>
 
-<p v-click class="bridge">Then it was my turn to serve…</p>
+<p v-click="1">In my notebook I wrote: <b>"Lego, but for real."</b></p>
+
+<p v-click="2" class="bridge">Then it was my turn to serve…</p>
 
 ::right::
 
 <Clip src="clips/cad-gears.mp4" />
 
 <!--
-[2:30] ~30 sec. "As a kid I took things apart. So at university I studied mechanical engineering: how machines work and why they break."
+[2:30] ~35 sec. "As a kid I took things apart. So I went to the university's open day, and after the mechanical engineering talk I wrote three words in my notebook."
+CLICK 1: "Lego. But for real." (beat) "That was it. I was in."
 "This is one of mine: the inside of a car's speedometer and the counter that tracks how far you've driven. Every gear, designed on a computer."
 "I thought: this is it. I'll design machines forever."
-CLICK the bridge: "Then it was my turn to serve. Where I grew up, everybody does."
+CLICK 2, the bridge: "Then it was my turn to serve."
 -->
 
 ---
@@ -122,18 +125,19 @@ clicks: 1
 
 # 4 years in the army
 
-<p class="dim">Not like the movies. A small grey cubicle, designing machine parts.</p>
+<p class="dim">In Israel, everyone serves. You picture action. I got a grey cubicle and machine parts.</p>
 
 <p v-click class="bridge">Grey all day. So I went looking for colour…</p>
 
 ::right::
 
-<PhotoSlot src="photos/level2-military.jpg" label="A military photo you're comfortable showing" />
+<div style="width: 100%;"><PhotoSlot src="photos/army-cartoon.png" label="cartoon: expectation vs reality" contain /></div>
 
 <!--
-[3:00] ~25 sec. Play the contrast for the laugh.
-"I know what you're picturing. Helicopters. Explosions."
-"I sat in a tiny grey cubicle. Grey walls, grey desk, grey computer. I designed mechanical parts and got them manufactured."
+[3:05] ~30 sec. Play the contrast for the laugh.
+"In Israel, army service isn't a choice: everyone goes after high school. Three years for men, two for women. Yes, women too. I did four."
+"I know what you're picturing. Helicopters. Explosions." (Point at the top half of the cartoon.)
+"What I got:" (point at the bottom half) "a tiny grey cubicle. Grey walls, grey desk, grey computer. I designed mechanical parts and got them manufactured."
 "But they were real parts that real people depended on. If I got it wrong, it didn't fit. That's where I learned to be careful and to finish the job."
 CLICK the bridge: "Grey all day. So after work, I went looking for some colour."
 -->
@@ -146,19 +150,22 @@ clicks: 1
 
 # After hours: robots
 
-<p class="dim">I volunteered to coach a high school team</p>
+<p class="dim">I volunteered to coach a high school team in the <b>FIRST Robotics Competition</b></p>
 
-<p v-click class="bridge">Those kids made me want to learn more…</p>
+<p v-click class="bridge">Those kids made me want to go back to school…</p>
 
 ::right::
 
-<Clip src="clips/frc-3316.mp4" />
+<div style="width: 100%; display: flex; flex-direction: column; gap: 0.8rem; align-items: center;">
+  <Clip src="clips/frc-3316.mp4" />
+  <img :src="$base + 'photos/frc-emblem.png'" style="height: 70px;" alt="FIRST Robotics Competition" />
+</div>
 
 <!--
-[3:25] ~30 sec. "The cubicle was grey. So after work, I found some colour. I volunteered as a mentor for a high school robotics team. Team 3316."
+[3:25] ~30 sec. "The cubicle was grey. So after work, I found some colour. I volunteered as a mentor for a high school team in the FIRST Robotics Competition. Team 3316."
 "High schoolers, not much older than you, design and build THIS in six weeks. Then they compete. That's our robot with the red bumpers, hanging tubes on the rack."
 "Nobody paid me. It was the best part of my week." (There are FIRST teams for middle schoolers too, if anyone asks.)
-CLICK the bridge: "Watching those kids figure things out made me want to go back and learn more myself."
+CLICK the bridge: "Watching those kids figure things out made me want to go back to school myself. So I signed up for a master's degree."
 -->
 
 ---
@@ -167,9 +174,9 @@ level: 3
 clicks: 1
 ---
 
-# The inside of a bone
+# Back to school
 
-<p class="dim">Could we 3D-print a replacement?</p>
+<p class="dim">I went for a master's degree… and found myself 3D-modelling the inside of bones.</p>
 
 <p v-click class="bridge">To study bones, I had to teach a computer to see them…</p>
 
@@ -178,7 +185,8 @@ clicks: 1
 <div style="width: 100%;"><PhotoSlot src="photos/bone-structure.png" label="bone micro-structure" /></div>
 
 <!--
-[3:55] ~35 sec. "Anyone know what this is?" Take a guess or two. "It's the INSIDE of a bone, zoomed way in. It's not solid. It's a sponge. That's why bones are light AND strong."
+[3:55] ~35 sec. "I wanted a master's degree. I did not plan on bones. But that's where the interesting problem was."
+"Anyone know what this is?" Take a guess or two. "It's the INSIDE of a bone, zoomed way in. It's not solid. It's a sponge. That's why bones are light AND strong."
 "For my master's degree I asked: can we design and 3D-print something like this, to replace damaged bone?"
 "Still a machines question. Still engineering. But..."
 CLICK the bridge: "To work with a shape this complicated, the computer has to understand it first. The colours are the computer splitting the bone into pieces, by itself. And THAT part, I could not stop thinking about."
@@ -188,14 +196,16 @@ CLICK the bridge: "To work with a shape this complicated, the computer has to un
 ---
 layout: level
 level: 4
-clicks: 1
+clicks: 2
 ---
 
 # Plot twist
 
 <p class="dim">Same trick. Not bones any more: whole streets.</p>
 
-<p v-click class="bridge">Nobody taught me this part. I had to teach myself.</p>
+<p v-click="1">And AI was just becoming a thing. <span class="dim">Back then we called it "deep learning".</span></p>
+
+<p v-click="2" class="bridge">Nobody taught me this part. I had to teach myself.</p>
 
 ::right::
 
@@ -204,9 +214,10 @@ clicks: 1
 <!--
 [4:30] ~40 sec. THE turn in the story.
 "The trick I built for bones worked on other 3D things too. This is a street, scanned by a laser. See the cars? The computer coloured each object by itself."
-"I realised I cared more about teaching computers to see in 3D than about the bones. So for my PhD I switched: 3D vision and AI."
+"I realised I cared more about teaching computers to see in 3D than about the bones."
+CLICK 1: "And right then, AI was starting to become a thing. Nobody called it AI yet. We called it deep learning. Computers learning from examples instead of being told the rules. So for my PhD I switched: 3D vision and AI."
 "I was still sitting in the machines department. My classmates were building engines. I was doing AI."
-CLICK: "One problem. I'd done a little coding in high school, and two basic classes at university. That's it. AI needs WAY more than that."
+CLICK 2: "One problem. I'd done a little coding in high school, and two basic classes at university. That's it. AI needs WAY more than that."
 "There was no class for what I needed. So I taught myself. Tutorials, other people's code, breaking things and fixing them. Most of what I use every day, nobody taught me."
 Bridge out loud: "And if you want to teach ROBOTS to see, one of the best labs in the world was 15,000 kilometres away."
 -->
@@ -304,11 +315,11 @@ level: 6
 clicks: 1
 ---
 
-# The world shut down
+# Then COVID shut the world down
 
 <p class="dim">No conferences. Nowhere to share discoveries.</p>
 
-<p v-click class="bridge">So I started a podcast. Then one guest said…</p>
+<p v-click class="bridge">So I started a podcast. And one guest told me…</p>
 
 ::right::
 
@@ -325,16 +336,16 @@ layout: level
 level: 7
 ---
 
-# "I'm having a great time."
+# "I'm having a great time as a scientist at Roblox."
 
-<p class="dim">A podcast guest. He worked at Roblox.</p>
+<p class="dim">So I went to see for myself.</p>
 
 ::right::
 
 <div class="center-stack"><img :src="$base + 'RBLX_Tilt_Secondary_White.svg'" style="height: 200px;" alt="Roblox" /></div>
 
 <!--
-[7:30] ~30 sec. "I interviewed a scientist for my podcast. He worked at Roblox. And he told me: 'I'm having a great time.'"
+[7:30] ~30 sec. "One of my podcast guests told me: 'I'm having a great time as a scientist at Roblox.' A games company. Hiring scientists. I had to see for myself."
 "I didn't get this job because I planned it. I got it because of a hobby. Because I was curious and talked to people."
 "And every stop on the map came with me: machines taught me how bodies move. Bones and streets taught me 3D. The robots taught me how computers see. None of it was wasted."
 -->
@@ -359,7 +370,7 @@ layout: updates
   <div v-click class="card"><span class="emoji"><lucide-gamepad-2 /></span>Play and talk to creators</div>
   <div v-click class="card"><span class="emoji"><lucide-code-xml /></span>Write code</div>
   <div v-click class="card"><span class="emoji"><lucide-flask-conical /></span>Run experiments</div>
-  <div v-click class="card"><span class="emoji"><lucide-trophy /></span>Prove it to the experts</div>
+  <div v-click class="card"><span class="emoji"><lucide-file-text /></span>Write academic papers</div>
 </div>
 
 <!--
@@ -367,23 +378,22 @@ layout: updates
 1. "I play and I talk to the people who make games. I ask: what do you WISH you could do?"
 2. "Most of my time: writing code."
 3. "Then experiments." SLOW DOWN HERE, this is the heart of what a scientist is: "In school, every question has an answer in the back of the book. My job is the questions where there IS no back of the book. Nobody on Earth knows the answer yet. So you try an idea, you measure it, and you get to be the first person to find out."
-4. "When it works, we have to prove it to the world's top experts. They try hard to find holes in it. We have to show it's new, nobody did it before, and it's useful. If they agree, it gets published for everyone in the world to use."
-(Deliberately no "paper" jargon. If you say "paper", define it as that proof.)
+4. "When it works, I write it up as an academic paper. A paper is how we prove it to the world's top experts. They try hard to find holes in it. We have to show it's new, nobody did it before, and it's useful. If they agree, it gets published for everyone in the world to use."
+(Define "paper" out loud: it's the proof that it's new and useful, checked by the top experts.)
 -->
 
 ---
 
 # Teaching computers how people move
 
-<div class="viewer-row" style="grid-template-columns: repeat(3, 1fr); margin-top: 1rem;">
-  <div class="viewer-cell"><MotionViewer src="models/Video-Games-Rhythm-Games-0.glb" /><div class="prompt-chip">"play a guitar video game"</div></div>
+<div class="viewer-row" style="grid-template-columns: repeat(2, 1fr); height: 340px; margin-top: 1rem;">
   <div class="viewer-cell"><MotionViewer src="models/Dance-Ballet-2.glb" /><div class="prompt-chip">"spin like a ballet dancer"</div></div>
-  <div class="viewer-cell"><MotionViewer src="models/Sport-Volleyball-0.glb" /><div class="prompt-chip">"serve a volleyball"</div></div>
+  <div class="viewer-cell"><MotionViewer src="models/Sport-Volleyball-0.glb" /><div class="prompt-chip">"receive a volleyball serve"</div></div>
 </div>
 
 <!--
 [9:15] ~60 sec. "Computers have never had a body. They don't know what a jump feels like. So we show them a HUGE number of examples of real people moving, each with a description."
-"These are from a collection we built. Hundreds of kinds of movement, all labeled." (You can drag to rotate.)
+"These two are from a collection we built. Hundreds of kinds of movement, each with a description." (You can drag to rotate.)
 "Learn from enough of these and the computer can make NEW movement from just words. Imagine typing how your avatar should move."
 Accuracy note for you: these are motions a computer recovered from real videos (RoMo), each with its description. They are the examples a movement-generating AI learns FROM, not generated output.
 Handoff: "So that's the job. Now the question you actually care about: is it any fun?"
@@ -464,7 +474,7 @@ layout: updates
 clicks: 1
 ---
 
-# How many times did the experts say "no"?
+# How many times did the experts say "no"<br>and my papers got rejected?
 
 <div style="margin-top: 2.5rem;">
   <GuessPoll :options="['Never', 'Once or twice', 'About five times', 'More than I can count']" :answer="3" />
@@ -480,14 +490,14 @@ clicks: 1
 clicks: 1
 ---
 
-# 10 ideas
+# Out of 10 ideas, how many actually work?
 
 <div style="margin-top: 2.5rem;"><TenTries /></div>
 
-<p v-click="1" style="margin-top: 2.5rem; text-align: center;">9 out of 10 fail. <span class="dim">That's not losing. That's the job.</span></p>
+<p v-click="1" style="margin-top: 2.5rem; text-align: center;">About 1. <span class="dim">The other 9 aren't losing. They're the job.</span></p>
 
 <!--
-[11:45] ~50 sec. "Ten ideas, ten experiments." CLICK. "About nine don't work."
+[11:45] ~50 sec. GUESS #5, quick: "Ten ideas, ten experiments. How many do you think actually work? Shout a number." Take three or four answers. CLICK. "About one. Nine don't."
 "The one that works only exists because of the nine. Each failure taught me something about the problem."
 "What it takes isn't being a genius. It's understanding the problem deeply, exploring, and not quitting. Same as beating a hard boss: nobody does it first try."
 -->

@@ -7,6 +7,7 @@ defineProps({
   src: { type: String, required: true },
   label: { type: String, default: 'photo' },
   invert: { type: Boolean, default: false }, // flip a white-background figure to black, keeping its colours
+  contain: { type: Boolean, default: false }, // show the whole image instead of cropping it to fill
 })
 const base = import.meta.env.BASE_URL
 const missing = ref(false)
@@ -14,7 +15,7 @@ const missing = ref(false)
 
 <template>
   <div class="photo-slot">
-    <img v-if="!missing" :class="{ invert }" :src="base + src.replace(/^\//, '')" :alt="label" @error="missing = true" />
+    <img v-if="!missing" :class="{ invert, contain }" :src="base + src.replace(/^\//, '')" :alt="label" @error="missing = true" />
     <div v-else class="placeholder">
       <lucide-camera class="cam" />
       <span>{{ label }}</span>
@@ -54,6 +55,9 @@ const missing = ref(false)
 .placeholder code {
   font-size: 0.8rem;
   opacity: 0.7;
+}
+.photo-slot img.contain {
+  object-fit: contain;
 }
 .photo-slot img.invert {
   filter: invert(1) hue-rotate(180deg);

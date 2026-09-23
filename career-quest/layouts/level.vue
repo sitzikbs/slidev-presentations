@@ -31,6 +31,7 @@ import { stops } from '../stops'
   height: 100%;
 }
 .cq-level-tag {
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 0.55rem;

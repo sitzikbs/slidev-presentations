@@ -8,7 +8,7 @@ Live: https://sitzikbs.github.io/slidev-presentations/career-quest/
 
 ## Before the talk: things only Itzik can supply
 
-- [ ] `public/photos/level2-military.jpg`: a military photo you're comfortable showing
+- [x] Army slide: 'expectation vs reality' cartoon generated with the local Flux model (`public/photos/army-cartoon.png`; prompt: two-panel comic, EXPECTATION action-movie soldier vs REALITY nerd in uniform at a grey cubicle)
 - [ ] Optional: a photo of you at ~13 for the closing slide ("When I was 13, my job didn't exist")
 - [ ] Optional: a higher-resolution original of the IKEA dinosaur photo (`public/photos/dinosaur-ikea.jpg` is 480px wide)
 - [ ] Check the "inside of a bone" and "plot twist" speaker notes against how the master's-to-PhD switch really happened
@@ -55,5 +55,7 @@ Inter is bundled too (`@fontsource-variable/inter`), so the typography is identi
 - Speedometer/odometer CAD animation and the tiny self-driving car (RVSS 2019): Itzik's YouTube channel
 - Bone micro-structure and street point cloud: figures from Itzik's master's-era papers
 - Dinosaur assembling IKEA furniture: the IKEA ASM dataset blog post
+- FIRST Robotics Competition emblem: Wikipedia (trademark of FIRST; used to identify the programme)
+- Army 'expectation vs reality' cartoon: generated locally with FLUX.2 [klein]
 - FRC team 3316 (2011 Israel regional), which Itzik mentored as a volunteer: Itzik's YouTube channel
 - Talking Papers Podcast logo; icons are [Lucide](https://lucide.dev) via `@iconify-json/lucide` (bundled at build time, no network)
