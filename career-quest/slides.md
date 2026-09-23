@@ -44,7 +44,7 @@ clicks: 2
   <div style="height: 300px;"><PhotoSlot src="photos/portrait.jpg" label="portrait" /></div>
   <div>
     <h1>Hi, I'm Itzik</h1>
-    <p><span class="dim">Say it like</span> "Itsy" bitsy spider <span class="dim">+ k</span></p>
+    <p><span class="dim">Say it like</span> "Itsy" <span class="dim">(bitsy spider)</span> + k</p>
     <p v-click="1">Scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 1.6rem; vertical-align: baseline; margin-left: 0.3rem;" alt="Roblox" /></p>
     <p v-click="2">Also: somebody's dad. <lucide-hand style="display: inline; vertical-align: -0.15em;" /> <span class="dim">Hi sweetie!</span></p>
   </div>
