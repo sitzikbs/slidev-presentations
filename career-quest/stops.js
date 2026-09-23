@@ -10,9 +10,9 @@ import IconGamepad from '~icons/lucide/gamepad-2'
 export const stops = [
   { icon: IconCog, name: 'Machines', sub: 'engineering degree', place: 'Israel' },
   { icon: IconShield, name: 'Army', sub: '4 years', place: 'Israel' },
-  { icon: IconBone, name: 'Bones', sub: "master's degree", place: 'Israel' },
+  { icon: IconBone, name: '3D bones', sub: "master's degree", place: 'Israel' },
   { icon: IconBrain, name: '3D + AI', sub: 'PhD', place: 'Israel' },
-  { icon: IconBot, name: 'Robots', sub: 'postdoc', place: 'Australia' },
-  { icon: IconMic, name: 'Podcast', sub: 'EU research fellow', place: 'Australia → Israel' },
+  { icon: IconBot, name: 'Robotic vision', sub: 'postdoc', place: 'Australia' },
+  { icon: IconMic, name: '3D vision + podcast', sub: 'EU research fellow', place: 'Australia → Israel' },
   { icon: IconGamepad, name: 'Roblox', sub: 'senior scientist', place: 'California' },
 ]

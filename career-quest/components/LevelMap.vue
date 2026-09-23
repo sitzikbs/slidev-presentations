@@ -14,11 +14,11 @@ const props = defineProps({
 })
 
 // Evenly spaced zigzag, so every path segment has the same length.
-const X0 = 105
+const X0 = 120
 const DX = 160
 const nodes = stops.map((s, i) => ({ ...s, x: X0 + i * DX, y: i % 2 === 0 ? 330 : 170 }))
-const last = nodes.length - 1
 
+const last = nodes.length - 1
 const path = computed(() => {
   let d = `M ${nodes[0].x} ${nodes[0].y}`
   for (let i = 1; i < nodes.length; i++) {
@@ -36,10 +36,13 @@ const regions = [
   { name: 'AUSTRALIA → ISRAEL', a: 4, b: 5 },
   { name: 'CALIFORNIA', a: 6, b: 6 },
 ]
+// Boxes meet halfway between neighbouring stops (with a small gap), so no label can poke out of its box.
+const GAP = 10
+const edge = (i) => (i <= 0 ? nodes[0].x - DX / 2 : i >= nodes.length ? nodes[last].x + DX / 2 : (nodes[i - 1].x + nodes[i].x) / 2)
 const regionBoxes = regions.map((r) => ({
   ...r,
-  x: nodes[r.a].x - 70,
-  w: nodes[r.b].x - nodes[r.a].x + 140,
+  x: edge(r.a) + GAP / 2,
+  w: edge(r.b + 1) - edge(r.a) - GAP,
 }))
 // A flight hop wherever the path crosses from one region to the next.
 const flights = regions.slice(1).map((r) => ({ x: (nodes[r.a - 1].x + nodes[r.a].x) / 2 }))
@@ -70,7 +73,7 @@ onSlideEnter(walk)
 
 <template>
   <div class="level-map" :class="{ compact }">
-    <svg viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid meet">
+    <svg viewBox="0 0 1200 480" preserveAspectRatio="xMidYMid meet">
       <g v-if="!compact" class="regions">
         <g v-for="r in regionBoxes" :key="r.name">
           <rect :x="r.x" y="40" :width="r.w" height="420" rx="28" />
@@ -91,8 +94,8 @@ onSlideEnter(walk)
         <circle :cx="n.x" :cy="n.y" r="44" class="node" />
         <component :is="n.icon" :x="n.x - 23" :y="n.y - 23" width="46" height="46" class="icon" />
         <template v-if="!compact">
-          <text :x="n.x" :y="n.y + (i % 2 === 0 ? 84 : -62)" class="label" text-anchor="middle">{{ n.name }}</text>
-          <text :x="n.x" :y="n.y + (i % 2 === 0 ? 108 : -86)" class="sublabel" text-anchor="middle">{{ n.sub }}</text>
+          <text :x="n.x" :y="n.y + (i % 2 === 0 ? 80 : -60)" class="label" text-anchor="middle">{{ n.name }}</text>
+          <text :x="n.x" :y="n.y + (i % 2 === 0 ? 102 : -82)" class="sublabel" text-anchor="middle">{{ n.sub }}</text>
         </template>
       </g>
 
@@ -164,12 +167,12 @@ onSlideEnter(walk)
 }
 .label {
   fill: rgba(255, 255, 255, 0.4);
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 800;
 }
 .sublabel {
   fill: rgba(255, 255, 255, 0.3);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
 }
 .done .node {
