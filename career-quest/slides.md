@@ -522,10 +522,14 @@ Handoff: "So what actually got me through all of that?"
 -->
 
 ---
+clicks: 1
+---
 
-# Power-ups I collected
+# What do you think I needed for this job?
 
-<div class="cards five" style="grid-template-columns: repeat(5, 1fr); margin-top: 2.5rem;">
+<p class="dim">Shout it out.</p>
+
+<div v-click class="cards five" style="grid-template-columns: repeat(5, 1fr); margin-top: 1.5rem;">
   <div class="card"><span class="emoji"><lucide-calculator /></span>Math</div>
   <div class="card"><span class="emoji"><lucide-wrench /></span>Building stuff</div>
   <div class="card"><span class="emoji"><lucide-laptop /></span>Coding<br><span class="dim" style="font-size: 1rem;">(mostly self-taught)</span></div>
@@ -534,12 +538,13 @@ Handoff: "So what actually got me through all of that?"
 </div>
 
 <!--
-[13:10] ~40 sec. NOT "here's what you should study". It's "here's what turned out to be useful".
+[13:10] GUESS #6, ~50 sec. The title is the question. Let them throw ideas for 20 seconds: "coding", "math", "being smart", "playing games"...
+Repeat the good ones back. If someone says "being a genius", that's your cue: "Nope. Not on my list."
+CLICK: the five cards. "Here's a small part of my list. Some of what you said is on it."
 "Math is how you tell a computer what you mean. Building stuff taught me how things break. Coding: I got the basics in school, but the advanced stuff I taught myself. You can too. Everything you need is online."
-"Surprise one: writing and explaining. The best idea in the world is worthless if you can't convince anyone."
+"Surprise one: explaining. The best idea in the world is worthless if you can't convince anyone."
 "And the one you already have: asking why."
 -->
-
 ---
 layout: updates
 transition: fade
@@ -550,7 +555,7 @@ transition: fade
 <p v-click class="dim">I didn't know some doctors aren't <i>doctor</i> doctors.</p>
 <p v-click>Yours might not exist yet either.</p>
 <p v-click class="punch">So learn the hard stuff now.</p>
-<p v-after class="dim">If it's hard for you, it's hard for everyone. That's your edge.</p>
+<p v-after class="dim" style="margin-top: 1.6rem;">If it's hard for you, it's hard for everyone. That's your edge.</p>
 
 <!--
 [13:40] THE CLOSE. Slow down. Three clicks, a breath between each.
