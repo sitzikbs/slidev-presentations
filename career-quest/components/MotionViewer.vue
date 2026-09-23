@@ -24,6 +24,9 @@ const wrap = ref(null)
 const canvas = ref(null)
 
 let renderer, scene, camera, controls, mixer, clock, raf, ro
+// Bumped on every start(); a GLB load that finishes after a later stop()/start() is ignored,
+// otherwise a second, un-animated body would be added to the new scene.
+let generation = 0
 let skinned = null
 let rootBone = null
 let points = null
@@ -83,6 +86,7 @@ function frame() {
 
 function start() {
   if (renderer || !canvas.value) return
+  const gen = ++generation
   renderer = new THREE.WebGLRenderer({ canvas: canvas.value, antialias: true, alpha: true })
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
   renderer.outputColorSpace = THREE.SRGBColorSpace
@@ -112,7 +116,7 @@ function start() {
   scene.add(grid)
 
   new GLTFLoader().load(import.meta.env.BASE_URL + props.src.replace(/^\//, ''), (gltf) => {
-    if (!renderer) return
+    if (!renderer || gen !== generation || skinned) return
     const root = gltf.scene
     root.traverse((o) => {
       if (!o.isSkinnedMesh) return
@@ -148,6 +152,7 @@ function start() {
 }
 
 function stop() {
+  generation++
   if (!renderer) return
   cancelAnimationFrame(raf)
   ro?.disconnect()
