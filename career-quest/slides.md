@@ -45,14 +45,14 @@ clicks: 2
   <div>
     <h1>Hi, I'm Itzik</h1>
     <p><span class="dim">Say it like</span> "Itsy" <span class="dim">(bitsy spider)</span> + k</p>
-    <p v-click="1">Scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 1.6rem; vertical-align: baseline; margin-left: 0.3rem;" alt="Roblox" /></p>
-    <p v-click="2">Also: somebody's dad. <lucide-hand style="display: inline; vertical-align: -0.15em;" /> <span class="dim">Hi sweetie!</span></p>
+    <p v-click="1">Senior Scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 1.6rem; vertical-align: baseline; margin-left: 0.3rem;" alt="Roblox" /></p>
+    <p v-click="2" style="margin-top: 2.6rem;">Also: somebody's dad. <lucide-hand style="display: inline; vertical-align: -0.15em;" /></p>
   </div>
 </div>
 
 <!--
 [1:00] Name gag: "Itsy, like the spider, plus a k." Have them say it once together.
-CLICK 1: "I'm a scientist at... Roblox." Pause. Let the reaction happen.
+CLICK 1: "I'm a senior scientist at... Roblox." Pause. Let the reaction happen.
 CLICK 2, the dad line. Embarrass him ON PURPOSE, big and warm, then let him off the hook fast:
  - Wave with both hands: "Hi sweetie! Did you eat the lunch I packed?"
  - "He asked me for exactly one thing today: 'Dad, please don't be weird.'" (beat) "So. Anyway."
