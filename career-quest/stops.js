@@ -1,4 +1,5 @@
 // The seven stops of the story, shared by the map and the level slides.
+// A '\n' in a name breaks the map label onto multiple lines (the chapter tag shows it on one line).
 import IconCog from '~icons/lucide/cog'
 import IconShield from '~icons/lucide/shield'
 import IconBone from '~icons/lucide/bone'
@@ -13,6 +14,6 @@ export const stops = [
   { icon: IconBone, name: '3D bones', sub: "master's degree", place: 'Israel' },
   { icon: IconBrain, name: '3D + AI', sub: 'PhD', place: 'Israel' },
   { icon: IconBot, name: 'Robotic vision', sub: 'postdoc', place: 'Australia' },
-  { icon: IconMic, name: '3D vision + podcast', sub: 'EU research fellow', place: 'Australia → Israel' },
+  { icon: IconMic, name: '3D vision\n+\npodcast', sub: 'EU research fellow', place: 'Australia → Israel' },
   { icon: IconGamepad, name: 'Roblox', sub: 'senior scientist', place: 'California' },
 ]

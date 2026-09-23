@@ -16,7 +16,7 @@ const props = defineProps({
 // Evenly spaced zigzag, so every path segment has the same length.
 const X0 = 120
 const DX = 160
-const nodes = stops.map((s, i) => ({ ...s, x: X0 + i * DX, y: i % 2 === 0 ? 330 : 170 }))
+const nodes = stops.map((s, i) => ({ ...s, x: X0 + i * DX, y: i % 2 === 0 ? 340 : 200 }))
 
 const last = nodes.length - 1
 const path = computed(() => {
@@ -94,8 +94,21 @@ onSlideEnter(walk)
         <circle :cx="n.x" :cy="n.y" r="44" class="node" />
         <component :is="n.icon" :x="n.x - 23" :y="n.y - 23" width="46" height="46" class="icon" />
         <template v-if="!compact">
-          <text :x="n.x" :y="n.y + (i % 2 === 0 ? 80 : -60)" class="label" text-anchor="middle">{{ n.name }}</text>
-          <text :x="n.x" :y="n.y + (i % 2 === 0 ? 102 : -82)" class="sublabel" text-anchor="middle">{{ n.sub }}</text>
+          <!-- Bottom-row stops: label lines run downward from the node. Top-row stops: they stack upward, sublabel on top. -->
+          <text
+            v-for="(line, k) in n.name.split('\n')"
+            :key="k"
+            :x="n.x"
+            :y="i % 2 === 0 ? n.y + 80 + k * 22 : n.y - 60 - (n.name.split('\n').length - 1 - k) * 22"
+            class="label"
+            text-anchor="middle"
+          >{{ line }}</text>
+          <text
+            :x="n.x"
+            :y="i % 2 === 0 ? n.y + 80 + n.name.split('\n').length * 22 : n.y - 60 - n.name.split('\n').length * 22"
+            class="sublabel"
+            text-anchor="middle"
+          >{{ n.sub }}</text>
         </template>
       </g>
 

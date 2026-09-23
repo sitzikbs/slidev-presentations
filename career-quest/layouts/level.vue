@@ -8,7 +8,7 @@ import { stops } from '../stops'
     <div class="cq-level-words">
       <div class="cq-level-tag">
         <component :is="stops[$frontmatter.level - 1].icon" />
-        <span>{{ stops[$frontmatter.level - 1].name }}</span>
+        <span>{{ stops[$frontmatter.level - 1].name.replace(/\n/g, ' ') }}</span>
         <span class="cq-level-place">{{ stops[$frontmatter.level - 1].place }}</span>
       </div>
       <slot />
