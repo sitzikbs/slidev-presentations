@@ -152,7 +152,7 @@ clicks: 1
 
 <p class="dim">I volunteered to mentor a high school team in the <b>FIRST Robotics Competition</b></p>
 
-<p v-click class="bridge">Those kids made me want to go back to school…</p>
+<p v-click class="bridge">Those kids (and robots) made me want to go back to school…</p>
 
 ::right::
 
