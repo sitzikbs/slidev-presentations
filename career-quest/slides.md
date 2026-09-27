@@ -388,7 +388,7 @@ layout: updates
 
 <div class="viewer-row" style="grid-template-columns: repeat(2, 1fr); height: 340px; margin-top: 1rem;">
   <div class="viewer-cell"><MotionViewer src="models/Dance-Ballet-2.glb" /><div class="prompt-chip">"spin like a ballet dancer"</div></div>
-  <div class="viewer-cell"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" /><div class="prompt-chip">"swing two lightsabers in VR"</div></div>
+  <div class="viewer-cell"><MotionViewer src="models/Sport-Throwing-Sports-1.glb" /><div class="prompt-chip">"run and throw a javelin"</div></div>
 </div>
 
 <!--
