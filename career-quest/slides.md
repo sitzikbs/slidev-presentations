@@ -64,15 +64,15 @@ CLICK 2, the dad line. Embarrass him ON PURPOSE, big and warm, then let him off 
 clicks: 1
 ---
 
-# What did I study to become a scientist at Roblox?
+<h1>What did I study to become a scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 0.85em; vertical-align: baseline; margin-left: 0.15em;" alt="Roblox" />?</h1>
 
 <div style="margin-top: 2.5rem;">
-  <GuessPoll :options="['Video game design', 'Computer science', 'Art and animation', 'Gears and engines']" :answer="3" />
+  <GuessPoll :options="['Video game design', 'Computer science', 'Art and animation', 'Mechanical engineering']" :answer="3" />
 </div>
 
 <!--
 [1:45] GUESS #2. Quick hands for each. Most will pick A or B.
-CLICK: gears and engines. "Mechanical engineering. Machines. Nothing to do with games. Nothing to do with AI."
+CLICK: mechanical engineering. "Machines. Nothing to do with games. Nothing to do with AI."
 "So how does a gears guy end up at Roblox? It was not a straight line. It looked like this."
 -->
 
