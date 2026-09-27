@@ -67,7 +67,7 @@ clicks: 1
 <h1>What did I study to become a scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 0.85em; vertical-align: baseline; margin-left: 0.15em;" alt="Roblox" />?</h1>
 
 <div style="margin-top: 2.5rem;">
-  <GuessPoll :options="['Video game design', 'Computer science', 'Art and animation', 'Mechanical engineering']" :answer="3" />
+  <GuessPoll compact :options="['Video game design', 'Computer science', 'Art and animation', 'Mechanical engineering']" :answer="3" />
 </div>
 
 <!--
