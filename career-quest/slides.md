@@ -528,6 +528,30 @@ CLICK: the five cards. "Here's a small part of my list. Some of what you said is
 "And the one you already have: asking why."
 -->
 ---
+clicks: 1
+---
+
+# But the #1 skill?
+
+<h2 v-click style="margin-top: 2rem; font-size: 2.8rem;">Critical thinking.</h2>
+
+<p v-click class="dim" style="margin-top: 1.5rem; font-size: 1.3rem;">
+AI can write code, draw pictures, even give advice.<br>
+Your job is to know when it's <strong>wrong</strong>.
+</p>
+
+<p v-click style="margin-top: 2rem; font-size: 1.1rem; opacity: 0.55; font-style: italic;">
+"The best advice I ever got was not to take anyone else's advice."
+</p>
+
+<!--
+[~13:25] CRITICAL THINKING, ~30 sec. Bridge from the skills slide: "Those five things are important. But there's one skill that matters more than all of them."
+CLICK: "Critical thinking." Let it land.
+CLICK: "AI can already write code, draw pictures, even give you advice. But it gets things wrong — a lot. YOUR job is to figure out WHEN. Don't believe everything you read, everything you're told, or everything a computer tells you. Question it."
+CLICK, the joke: "In fact, the best advice I ever got was not to take anyone else's advice." Pause for laughs. "So maybe don't listen to me either."
+-->
+
+---
 layout: updates
 transition: fade
 ---
