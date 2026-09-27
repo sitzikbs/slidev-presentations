@@ -150,7 +150,7 @@ clicks: 1
 
 # After hours: robots
 
-<p class="dim">I volunteered to coach a high school team in the <b>FIRST Robotics Competition</b></p>
+<p class="dim">I volunteered to mentor a high school team in the <b>FIRST Robotics Competition</b></p>
 
 <p v-click class="bridge">Those kids made me want to go back to school…</p>
 
