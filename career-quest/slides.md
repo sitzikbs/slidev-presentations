@@ -528,12 +528,14 @@ CLICK: the five cards. "Here's a small part of my list. Some of what you said is
 "And the one you already have: asking why."
 -->
 ---
-clicks: 1
+clicks: 3
 ---
+
+<div style="text-align: center;">
 
 # But the #1 skill?
 
-<h2 v-click style="margin-top: 2rem; font-size: 2.8rem;">Critical thinking.</h2>
+<h2 v-click style="margin-top: 2rem; font-size: 2.8rem; text-transform: uppercase; letter-spacing: 0.15em;">Critical Thinking.</h2>
 
 <p v-click class="dim" style="margin-top: 1.5rem; font-size: 1.3rem;">
 AI can write code, draw pictures, even give advice.<br>
@@ -543,6 +545,8 @@ Your job is to know when it's <strong>wrong</strong>.
 <p v-click style="margin-top: 2rem; font-size: 1.1rem; opacity: 0.55; font-style: italic;">
 "The best advice I ever got was not to take anyone else's advice."
 </p>
+
+</div>
 
 <!--
 [~13:25] CRITICAL THINKING, ~30 sec. Bridge from the skills slide: "Those five things are important. But there's one skill that matters more than all of them."
