@@ -11,7 +11,6 @@ Live: https://sitzikbs.github.io/slidev-presentations/career-quest/
 - [x] Army slide: 'expectation vs reality' cartoon generated with the local Flux model (`public/photos/army-cartoon.png`; prompt: two-panel comic, EXPECTATION action-movie soldier vs REALITY nerd in uniform at a grey cubicle)
 - [ ] Optional: a photo of you at ~13 for the closing slide ("When I was 13, my job didn't exist")
 - [ ] Optional: a higher-resolution original of the IKEA dinosaur photo (`public/photos/dinosaur-ikea.jpg` is 480px wide)
-- [ ] Check the "inside of a bone" and "plot twist" speaker notes against how the master's-to-PhD switch really happened
 - [x] Army slide: grey cubicle, designing and manufacturing parts ("not like the movies")
 - [x] Rejections: "More than I can count"
 - [x] World map: lived / flew there / teammates come from (edit the `pins` list in slides.md to add more)
@@ -21,7 +20,7 @@ Live: https://sitzikbs.github.io/slidev-presentations/career-quest/
 
 Missing photos show as a dashed placeholder naming the expected file, so nothing breaks.
 
-**Running long?** The tiny self-driving car slide is already hidden (`hide: true` in its frontmatter; delete that line to bring it back, +20 sec). Next candidates to hide: "More perks", then "Starting over. Three times."
+**Running long?** Three slides are hidden (`hide: true`): the tiny self-driving car, "More perks", and "Starting over. Three times." Delete that line in a slide's frontmatter to bring it back.
 
 ## Run
 
@@ -53,7 +52,6 @@ Inter is bundled too (`@fontsource-variable/inter`), so the typography is identi
 - 3D motions: [RoMo dataset project page](https://davidzhang73.github.io/romo-website/) (CVPR 2026). These are motions recovered from real videos, not generated ones.
 - Robot clip: GoferBot (IROS 2022), from the authors' video
 - Speedometer/odometer CAD animation and the tiny self-driving car (RVSS 2019): Itzik's YouTube channel
-- Bone micro-structure and street point cloud: figures from Itzik's master's-era papers
 - Dinosaur assembling IKEA furniture: the IKEA ASM dataset blog post
 - FIRST Robotics Competition emblem: Wikipedia (trademark of FIRST; used to identify the programme)
 - Army 'expectation vs reality' cartoon: generated locally with FLUX.2 [klein]

@@ -20,9 +20,9 @@ head:
 <h1>What is this person doing?</h1>
 
 <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; height: 360px;">
-  <div style="height: 100%; min-height: 0;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" :zoom="1.3" /></div>
+  <div style="height: 100%; min-height: 0;"><MotionViewer src="models/Sport-Volleyball-0.glb" :zoom="1.1" /></div>
   <div>
-    <GuessPoll compact :cols="1" :options="['Conducting an orchestra', 'Swatting mosquitoes', 'Playing a VR game', 'Landing a plane']" :answer="2" />
+    <GuessPoll compact :cols="1" :options="['Catching a baby', 'Doing a TikTok dance', 'Playing volleyball', 'Pushing a shopping cart']" :answer="2" />
     <p v-click="2" style="margin-top: 1rem; font-size: 1.3rem;">Nobody animated this. <span class="dim">A computer watched a video and rebuilt it in 3D.</span></p>
   </div>
 </div>
@@ -31,8 +31,8 @@ head:
 [0:00] THE HOOK. This is on screen, moving, while Mr. Umberger introduces you. No title, no name, no Roblox. Let them wonder.
 First words out of your mouth: "Before I tell you who I am, I need your help. What is this person doing?" (You can drag to spin it.)
 Hands up for A... B... C... D. Let it get loud.
-CLICK 1: VR game. "Two lightsabers, slicing blocks that fly at you."
-CLICK 2: "Here's the weird part. Nobody animated this. Nobody wore a special suit. A computer watched an ordinary video of a real person playing, and rebuilt the movement in 3D by itself."
+CLICK 1: volleyball. "Ready stance, then the arms come up to receive the serve."
+CLICK 2: "Here's the weird part. Nobody animated this. Nobody wore a special suit. A computer watched an ordinary video of a real person playing volleyball, and rebuilt the movement in 3D by itself."
 "Getting computers to understand how people move is my job. And how I got that job makes no sense. Let me show you."
 -->
 
@@ -64,15 +64,15 @@ CLICK 2, the dad line. Embarrass him ON PURPOSE, big and warm, then let him off 
 clicks: 1
 ---
 
-# So what did I study to get here?
+<h1>What did I study to become a scientist at <img :src="$base + 'RBLX_Wordmark_White.svg'" style="display: inline; height: 0.85em; vertical-align: baseline; margin-left: 0.15em;" alt="Roblox" />?</h1>
 
 <div style="margin-top: 2.5rem;">
-  <GuessPoll :options="['Video game design', 'Computer science', 'Art and animation', 'Gears and engines']" :answer="3" />
+  <GuessPoll compact :options="['Video game design', 'Computer science', 'Art and animation', 'Mechanical engineering']" :answer="3" />
 </div>
 
 <!--
 [1:45] GUESS #2. Quick hands for each. Most will pick A or B.
-CLICK: gears and engines. "Mechanical engineering. Machines. Nothing to do with games. Nothing to do with AI."
+CLICK: mechanical engineering. "Machines. Nothing to do with games. Nothing to do with AI."
 "So how does a gears guy end up at Roblox? It was not a straight line. It looked like this."
 -->
 
@@ -83,10 +83,10 @@ transition: fade
 
 # Not a straight line
 
-<LevelMap :level="7" :from="1" />
+<LevelMap :level="6" :from="1" />
 
 <!--
-[2:15] Let the little guy walk the whole path. "Seven stops. Three countries. And every zigzag is a moment where I changed direction."
+[2:15] Let the little guy walk the whole path. "Six stops. Three countries. And every zigzag is a moment where I changed direction."
 "Here's the secret: at no point did I know what the next stop was."
 Don't explain the stops. 8 seconds, then go.
 -->
@@ -150,9 +150,9 @@ clicks: 1
 
 # After hours: robots
 
-<p class="dim">I volunteered to coach a high school team in the <b>FIRST Robotics Competition</b></p>
+<p class="dim">I volunteered to mentor a high school team in the <b>FIRST Robotics Competition</b></p>
 
-<p v-click class="bridge">Those kids made me want to go back to school…</p>
+<p v-click class="bridge">Those kids (and robots) made me want to go back to school…</p>
 
 ::right::
 
@@ -165,56 +165,32 @@ clicks: 1
 [3:25] ~30 sec. "The cubicle was grey. So after work, I found some colour. I volunteered as a mentor for a high school team in the FIRST Robotics Competition. Team 3316."
 "High schoolers, not much older than you, design and build THIS in six weeks. Then they compete. That's our robot with the red bumpers, hanging tubes on the rack."
 "Nobody paid me. It was the best part of my week." (There are FIRST teams for middle schoolers too, if anyone asks.)
-CLICK the bridge: "Watching those kids figure things out made me want to go back to school myself. So I signed up for a master's degree."
+CLICK the bridge: "Watching those kids figure things out made me want to go back to school myself. Master's degree, then a PhD."
 -->
 
 ---
 layout: level
 level: 3
-clicks: 1
----
-
-# Back to school
-
-<p class="dim">I went for a master's degree… and found myself 3D-modelling the inside of bones.</p>
-
-<p v-click class="bridge">To study bones, I had to teach a computer to see them…</p>
-
-::right::
-
-<div style="width: 100%;"><PhotoSlot src="photos/bone-structure.png" label="bone micro-structure" /></div>
-
-<!--
-[3:55] ~35 sec. "I wanted a master's degree. I did not plan on bones. But that's where the interesting problem was."
-"Anyone know what this is?" Take a guess or two. "It's the INSIDE of a bone, zoomed way in. It's not solid. It's a sponge. That's why bones are light AND strong."
-"For my master's degree I asked: can we design and 3D-print something like this, to replace damaged bone?"
-"Still a machines question. Still engineering. But..."
-CLICK the bridge: "To work with a shape this complicated, the computer has to understand it first. The colours are the computer splitting the bone into pieces, by itself. And THAT part, I could not stop thinking about."
-(Itzik: adjust to how it really happened. This is my reading of your master's papers.)
--->
-
----
-layout: level
-level: 4
 clicks: 2
 ---
 
-# Plot twist
+# Teaching computers to see
 
-<p class="dim">Same trick. Not bones any more: whole streets.</p>
+<p class="dim">How does a computer see in 3D? I was hooked.</p>
 
-<p v-click="1">And AI was just becoming a thing. <span class="dim">Back then we called it "deep learning".</span></p>
+<p v-click="1">And AI was just taking off.</p>
 
-<p v-click="2" class="bridge">Nobody taught me this part. I had to teach myself.</p>
+<p v-click="2" class="bridge">Nobody taught me this. I taught myself.</p>
 
 ::right::
 
-<div style="width: 100%;"><PhotoSlot src="photos/street-dots.png" label="street scanned as 3D dots" invert /></div>
+<MotionViewer src="models/Survival-Skills-Self-Defense-2.glb" mode="dots" />
 
 <!--
 [4:30] ~40 sec. THE turn in the story.
-"The trick I built for bones worked on other 3D things too. This is a street, scanned by a laser. See the cars? The computer coloured each object by itself."
-"I realised I cared more about teaching computers to see in 3D than about the bones."
+"I went back for a master's degree, still in mechanical engineering. And I got hooked on one problem: teaching computers to see in 3D."
+"A 3D camera doesn't see a picture. It sees millions of dots, like this. To us it's obviously a person walking. To a computer it's just dots. Teaching it to understand them was the problem."
+"And remember, this was years ago. Tesla didn't have self-driving yet. Nobody did. A self-driving car sees the world exactly like this, and teaching it to make sense of the dots was one of the big open problems."
 CLICK 1: "And right then, AI was starting to become a thing. Nobody called it AI yet. We called it deep learning. Computers learning from examples instead of being told the rules. So for my PhD I switched: 3D vision and AI."
 "I was still sitting in the machines department. My classmates were building engines. I was doing AI."
 CLICK 2: "One problem. I'd done a little coding in high school, and two basic classes at university. That's it. AI needs WAY more than that."
@@ -224,7 +200,7 @@ Bridge out loud: "And if you want to teach ROBOTS to see, one of the best labs i
 
 ---
 layout: level
-level: 5
+level: 4
 clicks: 1
 ---
 
@@ -245,7 +221,7 @@ CLICK: dots become a person. "Skateboarding! Onto a rail and off. Your brain got
 
 ---
 layout: level
-level: 5
+level: 4
 ---
 
 # Robots that help you build
@@ -263,7 +239,7 @@ level: 5
 
 ---
 layout: level
-level: 5
+level: 4
 clicks: 2
 ---
 
@@ -288,7 +264,7 @@ Bridge out loud: "By now I had a thousand questions for other scientists. So I s
 
 ---
 layout: level
-level: 5
+level: 4
 clicks: 1
 hide: true
 ---
@@ -311,7 +287,7 @@ CLICK the bridge: "By now I had a thousand questions for other scientists. So I 
 
 ---
 layout: level
-level: 6
+level: 5
 clicks: 1
 ---
 
@@ -333,7 +309,7 @@ CLICK the bridge: "So I started a podcast, Talking Papers, to give scientists ev
 
 ---
 layout: level
-level: 7
+level: 6
 ---
 
 # "I'm having a great time as a scientist at Roblox."
@@ -388,7 +364,7 @@ layout: updates
 
 <div class="viewer-row" style="grid-template-columns: repeat(2, 1fr); height: 340px; margin-top: 1rem;">
   <div class="viewer-cell"><MotionViewer src="models/Dance-Ballet-2.glb" /><div class="prompt-chip">"spin like a ballet dancer"</div></div>
-  <div class="viewer-cell"><MotionViewer src="models/Sport-Volleyball-0.glb" /><div class="prompt-chip">"receive a volleyball serve"</div></div>
+  <div class="viewer-cell"><MotionViewer src="models/Housework-Surface-Cleaning-2.glb" /><div class="prompt-chip">"sweep the table with a broom"</div></div>
 </div>
 
 <!--
@@ -440,8 +416,11 @@ class: updates
 "Rings: places I've lived. White dots: places my job flew me to. Hawaii counts as work. I checked."
 CLICK: the blue teammate dots appear. "And these are where the people I've worked with come from. Science is a team sport, and the team is the whole planet."
 Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travelled, 'team' = collaborators (appear on click).
+Handoff: "Sounds pretty great, right? OK. Now the truth."
 -->
 
+---
+hide: true
 ---
 
 # More perks
@@ -453,9 +432,9 @@ Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travel
 </div>
 
 <!--
+HIDDEN to keep the talk near 12 min (Mr. Umberger: attention fades at 15). Delete `hide: true` in this slide's frontmatter to bring it back.
 [10:40] ~30 sec, all three are already on screen. One sentence each, keep moving.
 The kids' science show is NOT out yet: say "coming soon", and tease it ("you'll be the first to hear about it").
-Handoff: "Sounds pretty great, right? OK. Now the truth."
 -->
 
 ---
@@ -474,7 +453,7 @@ layout: updates
 clicks: 1
 ---
 
-# How many times did the experts say "no"<br>and my papers got rejected?
+# How many times did my papers get rejected?
 
 <div style="margin-top: 2.5rem;">
   <GuessPoll :options="['Never', 'Once or twice', 'About five times', 'More than I can count']" :answer="3" />
@@ -500,8 +479,11 @@ clicks: 1
 [11:45] ~50 sec. GUESS #5, quick: "Ten ideas, ten experiments. How many do you think actually work? Shout a number." Take three or four answers. CLICK. "About one. Nine don't."
 "The one that works only exists because of the nine. Each failure taught me something about the problem."
 "What it takes isn't being a genius. It's understanding the problem deeply, exploring, and not quitting. Same as beating a hard boss: nobody does it first try."
+Handoff: "So what actually got me through all of that?"
 -->
 
+---
+hide: true
 ---
 
 # Starting over. Three times.
@@ -513,19 +495,23 @@ clicks: 1
 </div>
 
 <!--
+HIDDEN to keep the talk near 12 min (Mr. Umberger: attention fades at 15). Delete `hide: true` in this slide's frontmatter to bring it back.
 [12:30] ~40 sec. Three restarts, one sentence each, then ONE real story.
 1. "I switched fields, and had to teach myself the hard parts."
 2. "I moved my family across the world. Twice. New language, new friends, new everything. Anyone here ever switch schools? It's that. Scary for a while, then it's the best thing you did."
 3. "And two years ago I left the university world, the only world I knew, for a company. Different rules, different speed. Beginner again."
 "Every time, I was the new kid. It never stops being scary. It always ends up worth it."
-Handoff: "So what actually got me through all of that?"
 -->
 
 ---
+clicks: 1
+---
 
-# Power-ups I collected
+# What do you think I needed for this job?
 
-<div class="cards five" style="grid-template-columns: repeat(5, 1fr); margin-top: 2.5rem;">
+<p class="dim">Shout it out.</p>
+
+<div v-click class="cards five" style="grid-template-columns: repeat(5, 1fr); margin-top: 1.5rem;">
   <div class="card"><span class="emoji"><lucide-calculator /></span>Math</div>
   <div class="card"><span class="emoji"><lucide-wrench /></span>Building stuff</div>
   <div class="card"><span class="emoji"><lucide-laptop /></span>Coding<br><span class="dim" style="font-size: 1rem;">(mostly self-taught)</span></div>
@@ -534,12 +520,13 @@ Handoff: "So what actually got me through all of that?"
 </div>
 
 <!--
-[13:10] ~40 sec. NOT "here's what you should study". It's "here's what turned out to be useful".
+[13:10] GUESS #6, ~50 sec. The title is the question. Let them throw ideas for 20 seconds: "coding", "math", "being smart", "playing games"...
+Repeat the good ones back. If someone says "being a genius", that's your cue: "Nope. Not on my list."
+CLICK: the five cards. "Here's a small part of my list. Some of what you said is on it."
 "Math is how you tell a computer what you mean. Building stuff taught me how things break. Coding: I got the basics in school, but the advanced stuff I taught myself. You can too. Everything you need is online."
-"Surprise one: writing and explaining. The best idea in the world is worthless if you can't convince anyone."
+"Surprise one: explaining. The best idea in the world is worthless if you can't convince anyone."
 "And the one you already have: asking why."
 -->
-
 ---
 layout: updates
 transition: fade
@@ -550,7 +537,7 @@ transition: fade
 <p v-click class="dim">I didn't know some doctors aren't <i>doctor</i> doctors.</p>
 <p v-click>Yours might not exist yet either.</p>
 <p v-click class="punch">So learn the hard stuff now.</p>
-<p v-after class="dim">If it's hard for you, it's hard for everyone. That's your edge.</p>
+<p v-after class="dim" style="margin-top: 1.6rem;">If it's hard for you, it's hard for everyone. That's your edge.</p>
 
 <!--
 [13:40] THE CLOSE. Slow down. Three clicks, a breath between each.
@@ -568,7 +555,7 @@ class: updates
 ---
 
 <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 2.5rem; align-items: center; height: 100%;">
-  <div style="height: 380px;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" mode="dots" :zoom="1.2" /></div>
+  <div style="height: 380px;"><MotionViewer src="models/Sport-Volleyball-0.glb" mode="dots" :zoom="1.1" /></div>
   <div>
     <h1>Ask me anything</h1>
     <div class="cards" style="grid-template-columns: 1fr; gap: 0.7rem; margin-top: 1.5rem;">
