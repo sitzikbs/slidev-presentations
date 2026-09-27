@@ -20,9 +20,9 @@ head:
 <h1>What is this person doing?</h1>
 
 <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; height: 360px;">
-  <div style="height: 100%; min-height: 0;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" :zoom="1.3" /></div>
+  <div style="height: 100%; min-height: 0;"><MotionViewer src="models/Sport-Volleyball-0.glb" :zoom="1.1" /></div>
   <div>
-    <GuessPoll compact :cols="1" :options="['Conducting an orchestra', 'Swatting mosquitoes', 'Playing a VR game', 'Landing a plane']" :answer="2" />
+    <GuessPoll compact :cols="1" :options="['Catching a baby', 'Doing a TikTok dance', 'Playing volleyball', 'Pushing a shopping cart']" :answer="2" />
     <p v-click="2" style="margin-top: 1rem; font-size: 1.3rem;">Nobody animated this. <span class="dim">A computer watched a video and rebuilt it in 3D.</span></p>
   </div>
 </div>
@@ -31,8 +31,8 @@ head:
 [0:00] THE HOOK. This is on screen, moving, while Mr. Umberger introduces you. No title, no name, no Roblox. Let them wonder.
 First words out of your mouth: "Before I tell you who I am, I need your help. What is this person doing?" (You can drag to spin it.)
 Hands up for A... B... C... D. Let it get loud.
-CLICK 1: VR game. "Two lightsabers, slicing blocks that fly at you."
-CLICK 2: "Here's the weird part. Nobody animated this. Nobody wore a special suit. A computer watched an ordinary video of a real person playing, and rebuilt the movement in 3D by itself."
+CLICK 1: volleyball. "Ready stance, then the arms come up to receive the serve."
+CLICK 2: "Here's the weird part. Nobody animated this. Nobody wore a special suit. A computer watched an ordinary video of a real person playing volleyball, and rebuilt the movement in 3D by itself."
 "Getting computers to understand how people move is my job. And how I got that job makes no sense. Let me show you."
 -->
 
@@ -388,7 +388,7 @@ layout: updates
 
 <div class="viewer-row" style="grid-template-columns: repeat(2, 1fr); height: 340px; margin-top: 1rem;">
   <div class="viewer-cell"><MotionViewer src="models/Dance-Ballet-2.glb" /><div class="prompt-chip">"spin like a ballet dancer"</div></div>
-  <div class="viewer-cell"><MotionViewer src="models/Sport-Volleyball-0.glb" /><div class="prompt-chip">"receive a volleyball serve"</div></div>
+  <div class="viewer-cell"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" /><div class="prompt-chip">"swing two lightsabers in VR"</div></div>
 </div>
 
 <!--
@@ -573,7 +573,7 @@ class: updates
 ---
 
 <div style="display: grid; grid-template-columns: 1fr 1.5fr; gap: 2.5rem; align-items: center; height: 100%;">
-  <div style="height: 380px;"><MotionViewer src="models/Video-Games-Virtual-Reality-1.glb" mode="dots" :zoom="1.2" /></div>
+  <div style="height: 380px;"><MotionViewer src="models/Sport-Volleyball-0.glb" mode="dots" :zoom="1.1" /></div>
   <div>
     <h1>Ask me anything</h1>
     <div class="cards" style="grid-template-columns: 1fr; gap: 0.7rem; margin-top: 1.5rem;">
