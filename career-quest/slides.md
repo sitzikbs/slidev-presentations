@@ -478,7 +478,7 @@ layout: updates
 clicks: 1
 ---
 
-# How many times did the experts say "no"<br>and my papers got rejected?
+# How many times did my papers get rejected?
 
 <div style="margin-top: 2.5rem;">
   <GuessPoll :options="['Never', 'Once or twice', 'About five times', 'More than I can count']" :answer="3" />
