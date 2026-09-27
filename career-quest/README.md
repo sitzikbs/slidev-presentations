@@ -21,7 +21,7 @@ Live: https://sitzikbs.github.io/slidev-presentations/career-quest/
 
 Missing photos show as a dashed placeholder naming the expected file, so nothing breaks.
 
-**Running long?** The tiny self-driving car slide is already hidden (`hide: true` in its frontmatter; delete that line to bring it back, +20 sec). Next candidates to hide: "More perks", then "Starting over. Three times."
+**Running long?** Three slides are hidden (`hide: true`): the tiny self-driving car, "More perks", and "Starting over. Three times." Delete that line in a slide's frontmatter to bring it back.
 
 ## Run
 

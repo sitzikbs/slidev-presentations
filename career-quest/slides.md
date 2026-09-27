@@ -440,8 +440,11 @@ class: updates
 "Rings: places I've lived. White dots: places my job flew me to. Hawaii counts as work. I checked."
 CLICK: the blue teammate dots appear. "And these are where the people I've worked with come from. Science is a team sport, and the team is the whole planet."
 Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travelled, 'team' = collaborators (appear on click).
+Handoff: "Sounds pretty great, right? OK. Now the truth."
 -->
 
+---
+hide: true
 ---
 
 # More perks
@@ -453,9 +456,9 @@ Pins are a plain list in slides.md: kind 'home' = lived (ring), default = travel
 </div>
 
 <!--
+HIDDEN to keep the talk near 12 min (Mr. Umberger: attention fades at 15). Delete `hide: true` in this slide's frontmatter to bring it back.
 [10:40] ~30 sec, all three are already on screen. One sentence each, keep moving.
 The kids' science show is NOT out yet: say "coming soon", and tease it ("you'll be the first to hear about it").
-Handoff: "Sounds pretty great, right? OK. Now the truth."
 -->
 
 ---
@@ -500,8 +503,11 @@ clicks: 1
 [11:45] ~50 sec. GUESS #5, quick: "Ten ideas, ten experiments. How many do you think actually work? Shout a number." Take three or four answers. CLICK. "About one. Nine don't."
 "The one that works only exists because of the nine. Each failure taught me something about the problem."
 "What it takes isn't being a genius. It's understanding the problem deeply, exploring, and not quitting. Same as beating a hard boss: nobody does it first try."
+Handoff: "So what actually got me through all of that?"
 -->
 
+---
+hide: true
 ---
 
 # Starting over. Three times.
@@ -513,12 +519,12 @@ clicks: 1
 </div>
 
 <!--
+HIDDEN to keep the talk near 12 min (Mr. Umberger: attention fades at 15). Delete `hide: true` in this slide's frontmatter to bring it back.
 [12:30] ~40 sec. Three restarts, one sentence each, then ONE real story.
 1. "I switched fields, and had to teach myself the hard parts."
 2. "I moved my family across the world. Twice. New language, new friends, new everything. Anyone here ever switch schools? It's that. Scary for a while, then it's the best thing you did."
 3. "And two years ago I left the university world, the only world I knew, for a company. Different rules, different speed. Beginner again."
 "Every time, I was the new kid. It never stops being scary. It always ends up worth it."
-Handoff: "So what actually got me through all of that?"
 -->
 
 ---
