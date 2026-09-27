@@ -201,9 +201,9 @@ clicks: 2
 
 # Plot twist
 
-<p class="dim">Same trick. Not bones any more: whole streets.</p>
+<p class="dim">Same trick, on whole streets. This is what a self-driving car sees.</p>
 
-<p v-click="1">And AI was just becoming a thing. <span class="dim">Back then we called it "deep learning".</span></p>
+<p v-click="1">And AI was just becoming a thing.</p>
 
 <p v-click="2" class="bridge">Nobody taught me this part. I had to teach myself.</p>
 
@@ -213,7 +213,8 @@ clicks: 2
 
 <!--
 [4:30] ~40 sec. THE turn in the story.
-"The trick I built for bones worked on other 3D things too. This is a street, scanned by a laser. See the cars? The computer coloured each object by itself."
+"The trick I built for bones worked on other 3D things too. This is a street, scanned by a laser. It's what a self-driving car sees. See the cars? The computer coloured each object by itself."
+"And remember, this was years ago. Tesla didn't have self-driving yet. Nobody did. Teaching a car to understand this was one of the big open problems."
 "I realised I cared more about teaching computers to see in 3D than about the bones."
 CLICK 1: "And right then, AI was starting to become a thing. Nobody called it AI yet. We called it deep learning. Computers learning from examples instead of being told the rules. So for my PhD I switched: 3D vision and AI."
 "I was still sitting in the machines department. My classmates were building engines. I was doing AI."
