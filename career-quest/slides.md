@@ -64,7 +64,7 @@ CLICK 2, the dad line. Embarrass him ON PURPOSE, big and warm, then let him off 
 clicks: 1
 ---
 
-# So what did I study to get here?
+# What did I study to become a scientist at Roblox?
 
 <div style="margin-top: 2.5rem;">
   <GuessPoll :options="['Video game design', 'Computer science', 'Art and animation', 'Gears and engines']" :answer="3" />
