@@ -52,7 +52,6 @@ Inter is bundled too (`@fontsource-variable/inter`), so the typography is identi
 - 3D motions: [RoMo dataset project page](https://davidzhang73.github.io/romo-website/) (CVPR 2026). These are motions recovered from real videos, not generated ones.
 - Robot clip: GoferBot (IROS 2022), from the authors' video
 - Speedometer/odometer CAD animation and the tiny self-driving car (RVSS 2019): Itzik's YouTube channel
-- Street point cloud: figure from Itzik's master's-era papers
 - Dinosaur assembling IKEA furniture: the IKEA ASM dataset blog post
 - FIRST Robotics Competition emblem: Wikipedia (trademark of FIRST; used to identify the programme)
 - Army 'expectation vs reality' cartoon: generated locally with FLUX.2 [klein]

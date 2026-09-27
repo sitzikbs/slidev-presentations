@@ -229,8 +229,8 @@ onSlideEnter(walk)
 .level-map.compact {
   position: absolute;
   left: 50%;
-  bottom: 0.2rem;
-  width: 40%;
+  bottom: 1.9rem; /* clears the page number underneath */
+  width: 34%;
   transform: translateX(-50%);
   pointer-events: none;
 }

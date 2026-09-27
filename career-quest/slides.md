@@ -174,23 +174,23 @@ level: 3
 clicks: 2
 ---
 
-# Plot twist
+# Teaching computers to see
 
-<p class="dim">Back at university, I taught computers to see in 3D. This is what a self-driving car sees.</p>
+<p class="dim">How does a computer see in 3D? I was hooked.</p>
 
-<p v-click="1">And AI was just becoming a thing.</p>
+<p v-click="1">And AI was just taking off.</p>
 
-<p v-click="2" class="bridge">Nobody taught me this part. I had to teach myself.</p>
+<p v-click="2" class="bridge">Nobody taught me this. I taught myself.</p>
 
 ::right::
 
-<div style="width: 100%;"><PhotoSlot src="photos/street-dots.png" label="street scanned as 3D dots" invert /></div>
+<MotionViewer src="models/Survival-Skills-Self-Defense-2.glb" mode="dots" />
 
 <!--
 [4:30] ~40 sec. THE turn in the story.
 "I went back for a master's degree, still in mechanical engineering. And I got hooked on one problem: teaching computers to see in 3D."
-"This is a street, scanned by a laser. It's what a self-driving car sees. See the cars? The computer coloured each object by itself."
-"And remember, this was years ago. Tesla didn't have self-driving yet. Nobody did. Teaching a car to understand this was one of the big open problems."
+"A 3D camera doesn't see a picture. It sees millions of dots, like this. To us it's obviously a person walking. To a computer it's just dots. Teaching it to understand them was the problem."
+"And remember, this was years ago. Tesla didn't have self-driving yet. Nobody did. A self-driving car sees the world exactly like this, and teaching it to make sense of the dots was one of the big open problems."
 CLICK 1: "And right then, AI was starting to become a thing. Nobody called it AI yet. We called it deep learning. Computers learning from examples instead of being told the rules. So for my PhD I switched: 3D vision and AI."
 "I was still sitting in the machines department. My classmates were building engines. I was doing AI."
 CLICK 2: "One problem. I'd done a little coding in high school, and two basic classes at university. That's it. AI needs WAY more than that."

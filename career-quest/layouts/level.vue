@@ -27,7 +27,7 @@ import { stops } from '../stops'
   grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
   align-items: center;
-  padding: 3rem 4rem 7rem 4rem;
+  padding: 2.5rem 4rem 8.5rem 4rem;
   height: 100%;
 }
 .cq-level-tag {
