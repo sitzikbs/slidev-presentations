@@ -14,9 +14,9 @@ const props = defineProps({
 })
 
 // Evenly spaced zigzag, so every path segment has the same length.
-const X0 = 120
-const DX = 160
-const nodes = stops.map((s, i) => ({ ...s, x: X0 + i * DX, y: i % 2 === 0 ? 340 : 200 }))
+const X0 = 150
+const DX = 180
+const nodes = stops.map((s, i) => ({ ...s, x: X0 + i * DX, y: i % 2 === 0 ? 200 : 340 }))
 
 const last = nodes.length - 1
 const path = computed(() => {
@@ -32,9 +32,9 @@ const path = computed(() => {
 
 // Where in the world each stretch of the path happened.
 const regions = [
-  { name: 'ISRAEL', a: 0, b: 3 },
-  { name: 'AUSTRALIA → ISRAEL', a: 4, b: 5 },
-  { name: 'CALIFORNIA', a: 6, b: 6 },
+  { name: 'ISRAEL', a: 0, b: 2 },
+  { name: 'AUSTRALIA → ISRAEL', a: 3, b: 4 },
+  { name: 'CALIFORNIA', a: 5, b: 5 },
 ]
 // Boxes meet halfway between neighbouring stops (with a small gap), so no label can poke out of its box.
 const GAP = 10
@@ -94,18 +94,18 @@ onSlideEnter(walk)
         <circle :cx="n.x" :cy="n.y" r="44" class="node" />
         <component :is="n.icon" :x="n.x - 23" :y="n.y - 23" width="46" height="46" class="icon" />
         <template v-if="!compact">
-          <!-- Bottom-row stops: label lines run downward from the node. Top-row stops: they stack upward, sublabel on top. -->
+          <!-- Bottom-row stops (odd i): label lines run downward from the node. Top-row stops (even i): they stack upward, sublabel on top. -->
           <text
             v-for="(line, k) in n.name.split('\n')"
             :key="k"
             :x="n.x"
-            :y="i % 2 === 0 ? n.y + 80 + k * 22 : n.y - 60 - (n.name.split('\n').length - 1 - k) * 22"
+            :y="i % 2 === 1 ? n.y + 80 + k * 22 : n.y - 60 - (n.name.split('\n').length - 1 - k) * 22"
             class="label"
             text-anchor="middle"
           >{{ line }}</text>
           <text
             :x="n.x"
-            :y="i % 2 === 0 ? n.y + 80 + n.name.split('\n').length * 22 : n.y - 60 - n.name.split('\n').length * 22"
+            :y="i % 2 === 1 ? n.y + 80 + n.name.split('\n').length * 22 : n.y - 60 - n.name.split('\n').length * 22"
             class="sublabel"
             text-anchor="middle"
           >{{ n.sub }}</text>

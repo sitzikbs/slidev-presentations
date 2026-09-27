@@ -83,10 +83,10 @@ transition: fade
 
 # Not a straight line
 
-<LevelMap :level="7" :from="1" />
+<LevelMap :level="6" :from="1" />
 
 <!--
-[2:15] Let the little guy walk the whole path. "Seven stops. Three countries. And every zigzag is a moment where I changed direction."
+[2:15] Let the little guy walk the whole path. "Six stops. Three countries. And every zigzag is a moment where I changed direction."
 "Here's the secret: at no point did I know what the next stop was."
 Don't explain the stops. 8 seconds, then go.
 -->
@@ -165,43 +165,18 @@ clicks: 1
 [3:25] ~30 sec. "The cubicle was grey. So after work, I found some colour. I volunteered as a mentor for a high school team in the FIRST Robotics Competition. Team 3316."
 "High schoolers, not much older than you, design and build THIS in six weeks. Then they compete. That's our robot with the red bumpers, hanging tubes on the rack."
 "Nobody paid me. It was the best part of my week." (There are FIRST teams for middle schoolers too, if anyone asks.)
-CLICK the bridge: "Watching those kids figure things out made me want to go back to school myself. So I signed up for a master's degree."
+CLICK the bridge: "Watching those kids figure things out made me want to go back to school myself. Master's degree, then a PhD."
 -->
 
 ---
 layout: level
 level: 3
-clicks: 1
----
-
-# Back to school
-
-<p class="dim">I went for a master's degree… and found myself 3D-modelling the inside of bones.</p>
-
-<p v-click class="bridge">To study bones, I had to teach a computer to see them…</p>
-
-::right::
-
-<div style="width: 100%;"><PhotoSlot src="photos/bone-structure.png" label="bone micro-structure" /></div>
-
-<!--
-[3:55] ~35 sec. "I wanted a master's degree. I did not plan on bones. But that's where the interesting problem was."
-"Anyone know what this is?" Take a guess or two. "It's the INSIDE of a bone, zoomed way in. It's not solid. It's a sponge. That's why bones are light AND strong."
-"For my master's degree I asked: can we design and 3D-print something like this, to replace damaged bone?"
-"Still a machines question. Still engineering. But..."
-CLICK the bridge: "To work with a shape this complicated, the computer has to understand it first. The colours are the computer splitting the bone into pieces, by itself. And THAT part, I could not stop thinking about."
-(Itzik: adjust to how it really happened. This is my reading of your master's papers.)
--->
-
----
-layout: level
-level: 4
 clicks: 2
 ---
 
 # Plot twist
 
-<p class="dim">Same trick, on whole streets. This is what a self-driving car sees.</p>
+<p class="dim">Back at university, I taught computers to see in 3D. This is what a self-driving car sees.</p>
 
 <p v-click="1">And AI was just becoming a thing.</p>
 
@@ -213,9 +188,9 @@ clicks: 2
 
 <!--
 [4:30] ~40 sec. THE turn in the story.
-"The trick I built for bones worked on other 3D things too. This is a street, scanned by a laser. It's what a self-driving car sees. See the cars? The computer coloured each object by itself."
+"I went back for a master's degree, still in mechanical engineering. And I got hooked on one problem: teaching computers to see in 3D."
+"This is a street, scanned by a laser. It's what a self-driving car sees. See the cars? The computer coloured each object by itself."
 "And remember, this was years ago. Tesla didn't have self-driving yet. Nobody did. Teaching a car to understand this was one of the big open problems."
-"I realised I cared more about teaching computers to see in 3D than about the bones."
 CLICK 1: "And right then, AI was starting to become a thing. Nobody called it AI yet. We called it deep learning. Computers learning from examples instead of being told the rules. So for my PhD I switched: 3D vision and AI."
 "I was still sitting in the machines department. My classmates were building engines. I was doing AI."
 CLICK 2: "One problem. I'd done a little coding in high school, and two basic classes at university. That's it. AI needs WAY more than that."
@@ -225,7 +200,7 @@ Bridge out loud: "And if you want to teach ROBOTS to see, one of the best labs i
 
 ---
 layout: level
-level: 5
+level: 4
 clicks: 1
 ---
 
@@ -246,7 +221,7 @@ CLICK: dots become a person. "Skateboarding! Onto a rail and off. Your brain got
 
 ---
 layout: level
-level: 5
+level: 4
 ---
 
 # Robots that help you build
@@ -264,7 +239,7 @@ level: 5
 
 ---
 layout: level
-level: 5
+level: 4
 clicks: 2
 ---
 
@@ -289,7 +264,7 @@ Bridge out loud: "By now I had a thousand questions for other scientists. So I s
 
 ---
 layout: level
-level: 5
+level: 4
 clicks: 1
 hide: true
 ---
@@ -312,7 +287,7 @@ CLICK the bridge: "By now I had a thousand questions for other scientists. So I 
 
 ---
 layout: level
-level: 6
+level: 5
 clicks: 1
 ---
 
@@ -334,7 +309,7 @@ CLICK the bridge: "So I started a podcast, Talking Papers, to give scientists ev
 
 ---
 layout: level
-level: 7
+level: 6
 ---
 
 # "I'm having a great time as a scientist at Roblox."
